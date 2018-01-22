@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: BBViewController {
+class CommentViewController: BBViewController {
 
     var tableView: UITableView!
     
@@ -43,7 +43,7 @@ class HomeViewController: BBViewController {
 
 }
 
-extension HomeViewController : UITableViewDataSource,UITableViewDelegate {
+extension CommentViewController : UITableViewDataSource,UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         

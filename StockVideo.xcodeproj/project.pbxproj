@@ -15,6 +15,15 @@
 		522682BA2011940700FE1ED0 /* HJImageBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522682B92011940600FE1ED0 /* HJImageBrowser.swift */; };
 		5240397B201068D7003D94FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5240397A201068D7003D94FD /* Main.storyboard */; };
 		527294A920156DA600107AE7 /* BBAboutVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294A820156DA500107AE7 /* BBAboutVideoViewController.swift */; };
+		527294AD2015AF3C00107AE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294AC2015AF3C00107AE7 /* HomeViewController.swift */; };
+		527294B12015B56900107AE7 /* CommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294AF2015B56900107AE7 /* CommonCell.swift */; };
+		527294B22015B56900107AE7 /* CommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527294B02015B56900107AE7 /* CommonCell.xib */; };
+		527294B42015D6E800107AE7 /* FadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294B32015D6E800107AE7 /* FadeView.swift */; };
+		527294BA2015DC6800107AE7 /* GCDGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294B62015DC6800107AE7 /* GCDGroup.swift */; };
+		527294BB2015DC6800107AE7 /* GCDQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294B72015DC6800107AE7 /* GCDQueue.swift */; };
+		527294BC2015DC6800107AE7 /* GCDQueuePriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294B82015DC6800107AE7 /* GCDQueuePriority.swift */; };
+		527294BD2015DC6800107AE7 /* GCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294B92015DC6800107AE7 /* GCDTimer.swift */; };
+		527294BF2015E35400107AE7 /* TranformFadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294BE2015E35400107AE7 /* TranformFadeView.swift */; };
 		52DA66B5200EE8AC00AB32E9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA66B4200EE8AC00AB32E9 /* Common.swift */; };
 		52DA66B7200EEA7500AB32E9 /* BBNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA66B6200EEA7500AB32E9 /* BBNetworkTool.swift */; };
 		52DA66BB200EEBCA00AB32E9 /* BBShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA66BA200EEBCA00AB32E9 /* BBShare.swift */; };
@@ -27,7 +36,7 @@
 		52DFD81E200D99AB0047D9A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DFD81D200D99AB0047D9A9 /* Assets.xcassets */; };
 		52DFD821200D99AB0047D9A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DFD81F200D99AB0047D9A9 /* LaunchScreen.storyboard */; };
 		52DFD829200D9A950047D9A9 /* BBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DFD828200D9A950047D9A9 /* BBTabBarController.swift */; };
-		52DFD82B200D9B0D0047D9A9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DFD82A200D9B0D0047D9A9 /* HomeViewController.swift */; };
+		52DFD82B200D9B0D0047D9A9 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DFD82A200D9B0D0047D9A9 /* CommentViewController.swift */; };
 		52DFD82D200D9BA10047D9A9 /* BBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DFD82C200D9BA10047D9A9 /* BBNavigationController.swift */; };
 		52DFD830200DF0CF0047D9A9 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DFD82F200DF0CF0047D9A9 /* MarketViewController.swift */; };
 		52DFD832200DF0E20047D9A9 /* BBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DFD831200DF0E20047D9A9 /* BBViewController.swift */; };
@@ -54,6 +63,15 @@
 		522682B92011940600FE1ED0 /* HJImageBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJImageBrowser.swift; sourceTree = "<group>"; };
 		5240397A201068D7003D94FD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		527294A820156DA500107AE7 /* BBAboutVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBAboutVideoViewController.swift; sourceTree = "<group>"; };
+		527294AC2015AF3C00107AE7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		527294AF2015B56900107AE7 /* CommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCell.swift; sourceTree = "<group>"; };
+		527294B02015B56900107AE7 /* CommonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonCell.xib; sourceTree = "<group>"; };
+		527294B32015D6E800107AE7 /* FadeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeView.swift; sourceTree = "<group>"; };
+		527294B62015DC6800107AE7 /* GCDGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDGroup.swift; sourceTree = "<group>"; };
+		527294B72015DC6800107AE7 /* GCDQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDQueue.swift; sourceTree = "<group>"; };
+		527294B82015DC6800107AE7 /* GCDQueuePriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDQueuePriority.swift; sourceTree = "<group>"; };
+		527294B92015DC6800107AE7 /* GCDTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDTimer.swift; sourceTree = "<group>"; };
+		527294BE2015E35400107AE7 /* TranformFadeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranformFadeView.swift; sourceTree = "<group>"; };
 		52DA66B4200EE8AC00AB32E9 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		52DA66B6200EEA7500AB32E9 /* BBNetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBNetworkTool.swift; sourceTree = "<group>"; };
 		52DA66BA200EEBCA00AB32E9 /* BBShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBShare.swift; sourceTree = "<group>"; };
@@ -68,7 +86,7 @@
 		52DFD820200D99AB0047D9A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52DFD822200D99AB0047D9A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52DFD828200D9A950047D9A9 /* BBTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBTabBarController.swift; sourceTree = "<group>"; };
-		52DFD82A200D9B0D0047D9A9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		52DFD82A200D9B0D0047D9A9 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		52DFD82C200D9BA10047D9A9 /* BBNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBNavigationController.swift; sourceTree = "<group>"; };
 		52DFD82F200DF0CF0047D9A9 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		52DFD831200DF0E20047D9A9 /* BBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +170,46 @@
 			path = C;
 			sourceTree = "<group>";
 		};
+		527294AA2015AE8900107AE7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				527294AE2015B50600107AE7 /* V */,
+				527294AB2015AE9600107AE7 /* C */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		527294AB2015AE9600107AE7 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				52DFD82A200D9B0D0047D9A9 /* CommentViewController.swift */,
+				527294AC2015AF3C00107AE7 /* HomeViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		527294AE2015B50600107AE7 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				527294BE2015E35400107AE7 /* TranformFadeView.swift */,
+				527294B32015D6E800107AE7 /* FadeView.swift */,
+				527294AF2015B56900107AE7 /* CommonCell.swift */,
+				527294B02015B56900107AE7 /* CommonCell.xib */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		527294B52015DC6800107AE7 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				527294B62015DC6800107AE7 /* GCDGroup.swift */,
+				527294B72015DC6800107AE7 /* GCDQueue.swift */,
+				527294B82015DC6800107AE7 /* GCDQueuePriority.swift */,
+				527294B92015DC6800107AE7 /* GCDTimer.swift */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
 		52DA66B8200EEB6800AB32E9 /* Market */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,13 +259,13 @@
 		52DFD815200D99AB0047D9A9 /* StockVideo */ = {
 			isa = PBXGroup;
 			children = (
+				527294AA2015AE8900107AE7 /* Home */,
 				522682AB20118E4F00FE1ED0 /* CirCle */,
 				52DFD816200D99AB0047D9A9 /* AppDelegate.swift */,
 				52DFD818200D99AB0047D9A9 /* ViewController.swift */,
 				52DFD88E200DFAC10047D9A9 /* Classes */,
 				52DFD82E200DEE8E0047D9A9 /* Main */,
 				52DA66B8200EEB6800AB32E9 /* Market */,
-				52DFD82A200D9B0D0047D9A9 /* HomeViewController.swift */,
 				5240397A201068D7003D94FD /* Main.storyboard */,
 				52DFD89F200DFDD70047D9A9 /* SwiftyJSON.swift */,
 				52DFD833200DF24F0047D9A9 /* KLineViewController.swift */,
@@ -221,6 +279,7 @@
 		52DFD82E200DEE8E0047D9A9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				527294B52015DC6800107AE7 /* GCD */,
 				522682B320118F6800FE1ED0 /* Common */,
 				52DFD82C200D9BA10047D9A9 /* BBNavigationController.swift */,
 				52DFD828200D9A950047D9A9 /* BBTabBarController.swift */,
@@ -323,6 +382,7 @@
 				5240397B201068D7003D94FD /* Main.storyboard in Resources */,
 				52DFD821200D99AB0047D9A9 /* LaunchScreen.storyboard in Resources */,
 				52DA66C2200F158300AB32E9 /* UpAndDownCell.xib in Resources */,
+				527294B22015B56900107AE7 /* CommonCell.xib in Resources */,
 				52DFD81E200D99AB0047D9A9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,27 +456,35 @@
 				52DFD898200DFAC10047D9A9 /* CHChartAlgorithm.swift in Sources */,
 				52DFD897200DFAC10047D9A9 /* CHAxisModel.swift in Sources */,
 				52DA66BB200EEBCA00AB32E9 /* BBShare.swift in Sources */,
+				527294BA2015DC6800107AE7 /* GCDGroup.swift in Sources */,
+				527294BF2015E35400107AE7 /* TranformFadeView.swift in Sources */,
 				52DFD89C200DFAC10047D9A9 /* CHKLineChartStyle.swift in Sources */,
 				52DA66B5200EE8AC00AB32E9 /* Common.swift in Sources */,
 				52DFD832200DF0E20047D9A9 /* BBViewController.swift in Sources */,
 				52DFD89A200DFAC10047D9A9 /* CHExtension.swift in Sources */,
+				527294B12015B56900107AE7 /* CommonCell.swift in Sources */,
 				52DA66C0200F152600AB32E9 /* UpAndDownCell.swift in Sources */,
 				522682B8201191CC00FE1ED0 /* CircleTableViewController.swift in Sources */,
 				52DFD817200D99AB0047D9A9 /* AppDelegate.swift in Sources */,
+				527294BD2015DC6800107AE7 /* GCDTimer.swift in Sources */,
 				52DFD829200D9A950047D9A9 /* BBTabBarController.swift in Sources */,
 				52DFD82D200D9BA10047D9A9 /* BBNavigationController.swift in Sources */,
+				527294B42015D6E800107AE7 /* FadeView.swift in Sources */,
 				52DFD89D200DFAC10047D9A9 /* CHSection.swift in Sources */,
 				52DFD899200DFAC10047D9A9 /* CHChartModel.swift in Sources */,
 				52DA66C4200F4A4E00AB32E9 /* ExtensionUIVIew.swift in Sources */,
 				52DFD830200DF0CF0047D9A9 /* MarketViewController.swift in Sources */,
 				522682BA2011940700FE1ED0 /* HJImageBrowser.swift in Sources */,
 				52DFD89B200DFAC10047D9A9 /* CHKLineChart.swift in Sources */,
+				527294AD2015AF3C00107AE7 /* HomeViewController.swift in Sources */,
 				52DFD834200DF24F0047D9A9 /* KLineViewController.swift in Sources */,
 				527294A920156DA600107AE7 /* BBAboutVideoViewController.swift in Sources */,
 				522682B220118F4C00FE1ED0 /* GlobalVariables.swift in Sources */,
 				52DFD8A0200DFDD70047D9A9 /* SwiftyJSON.swift in Sources */,
 				522682B52011910F00FE1ED0 /* BaseViewController.swift in Sources */,
-				52DFD82B200D9B0D0047D9A9 /* HomeViewController.swift in Sources */,
+				527294BC2015DC6800107AE7 /* GCDQueuePriority.swift in Sources */,
+				527294BB2015DC6800107AE7 /* GCDQueue.swift in Sources */,
+				52DFD82B200D9B0D0047D9A9 /* CommentViewController.swift in Sources */,
 				52DA66B7200EEA7500AB32E9 /* BBNetworkTool.swift in Sources */,
 				52DFD89E200DFAC10047D9A9 /* CHSeries.swift in Sources */,
 				522682B020118E7900FE1ED0 /* TableViewCell.swift in Sources */,
