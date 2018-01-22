@@ -1,0 +1,6 @@
+framework module Pods_StockVideo {
+  umbrella header "Pods-StockVideo-umbrella.h"
+
+  export *
+  module * { export * }
+}

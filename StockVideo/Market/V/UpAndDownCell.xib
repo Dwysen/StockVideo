@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="vMD-dr-TUD" customClass="UpAndDownCell" customModule="StockVideo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vMD-dr-TUD" id="GWZ-ld-LKh">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="som-4n-nMT">
+                        <rect key="frame" x="10" y="5" width="120" height="33.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="gIH-p4-gLK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzI-et-5Gf">
+                        <rect key="frame" x="140" y="16" width="100" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="U7t-bu-16g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdX-aI-g0G">
+                        <rect key="frame" x="257" y="5" width="100" height="33.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="of8-LZ-20I"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VdX-aI-g0G" firstAttribute="top" secondItem="GWZ-ld-LKh" secondAttribute="top" constant="5" id="7rh-az-g4H"/>
+                    <constraint firstItem="BzI-et-5Gf" firstAttribute="top" secondItem="GWZ-ld-LKh" secondAttribute="topMargin" constant="5" id="897-vn-Zea"/>
+                    <constraint firstItem="som-4n-nMT" firstAttribute="leading" secondItem="GWZ-ld-LKh" secondAttribute="leading" constant="10" id="8ZT-fk-FsN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="BzI-et-5Gf" secondAttribute="bottom" constant="5" id="N7e-ht-zEL"/>
+                    <constraint firstAttribute="bottom" secondItem="VdX-aI-g0G" secondAttribute="bottom" constant="5" id="U2v-1X-omD"/>
+                    <constraint firstItem="BzI-et-5Gf" firstAttribute="leading" secondItem="som-4n-nMT" secondAttribute="trailing" constant="10" id="g5X-LY-faA"/>
+                    <constraint firstItem="som-4n-nMT" firstAttribute="top" secondItem="GWZ-ld-LKh" secondAttribute="top" constant="5" id="ozh-qK-YrI"/>
+                    <constraint firstAttribute="trailing" secondItem="VdX-aI-g0G" secondAttribute="trailing" constant="10" id="pUz-UV-Dnv"/>
+                    <constraint firstAttribute="bottom" secondItem="som-4n-nMT" secondAttribute="bottom" constant="5" id="rJf-HE-3mt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="som-4n-nMT" id="lbU-sR-Lzy"/>
+                <outlet property="priceLabel" destination="BzI-et-5Gf" id="t4x-0I-NiD"/>
+                <outlet property="ratioLabel" destination="VdX-aI-g0G" id="t5c-3p-b6k"/>
+            </connections>
+            <point key="canvasLocation" x="-79.5" y="-171.5"/>
+        </tableViewCell>
+    </objects>
+</document>
