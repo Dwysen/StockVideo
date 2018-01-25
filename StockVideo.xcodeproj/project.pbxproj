@@ -13,7 +13,15 @@
 		522682B52011910F00FE1ED0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522682B42011910F00FE1ED0 /* BaseViewController.swift */; };
 		522682B8201191CC00FE1ED0 /* CircleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522682B7201191CC00FE1ED0 /* CircleTableViewController.swift */; };
 		522682BA2011940700FE1ED0 /* HJImageBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522682B92011940600FE1ED0 /* HJImageBrowser.swift */; };
+		52336B4620196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52336B3F20196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib */; };
+		52336B4720196843004F73F9 /* JPVideoPlayerDemoVC_Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336B4020196843004F73F9 /* JPVideoPlayerDemoVC_Setting.swift */; };
+		52336B4820196843004F73F9 /* JPVideoPlayerDemoVC_push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336B4120196843004F73F9 /* JPVideoPlayerDemoVC_push.swift */; };
+		52336B4920196843004F73F9 /* JPVideoPlayerDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336B4220196843004F73F9 /* JPVideoPlayerDemoCell.swift */; };
+		52336B4A20196843004F73F9 /* JPVideoPlayerDemoVC_home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336B4320196843004F73F9 /* JPVideoPlayerDemoVC_home.swift */; };
+		52336B4B20196843004F73F9 /* JPVideoPlayerDemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52336B4420196843004F73F9 /* JPVideoPlayerDemoCell.xib */; };
+		52336B4C20196843004F73F9 /* JPVideoPlayerDemoVC_push.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52336B4520196843004F73F9 /* JPVideoPlayerDemoVC_push.xib */; };
 		5240397B201068D7003D94FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5240397A201068D7003D94FD /* Main.storyboard */; };
+		525FCAD52019690400243838 /* JPQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 525FCAD32019690400243838 /* JPQRCodeTool.m */; };
 		527294A920156DA600107AE7 /* BBAboutVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294A820156DA500107AE7 /* BBAboutVideoViewController.swift */; };
 		527294AD2015AF3C00107AE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294AC2015AF3C00107AE7 /* HomeViewController.swift */; };
 		527294B12015B56900107AE7 /* CommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294AF2015B56900107AE7 /* CommonCell.swift */; };
@@ -70,7 +78,17 @@
 		522682B42011910F00FE1ED0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		522682B7201191CC00FE1ED0 /* CircleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTableViewController.swift; sourceTree = "<group>"; };
 		522682B92011940600FE1ED0 /* HJImageBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJImageBrowser.swift; sourceTree = "<group>"; };
+		52336B3F20196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVideoPlayerDemoVC_Setting.xib; sourceTree = "<group>"; };
+		52336B4020196843004F73F9 /* JPVideoPlayerDemoVC_Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoVC_Setting.swift; sourceTree = "<group>"; };
+		52336B4120196843004F73F9 /* JPVideoPlayerDemoVC_push.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoVC_push.swift; sourceTree = "<group>"; };
+		52336B4220196843004F73F9 /* JPVideoPlayerDemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoCell.swift; sourceTree = "<group>"; };
+		52336B4320196843004F73F9 /* JPVideoPlayerDemoVC_home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoVC_home.swift; sourceTree = "<group>"; };
+		52336B4420196843004F73F9 /* JPVideoPlayerDemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVideoPlayerDemoCell.xib; sourceTree = "<group>"; };
+		52336B4520196843004F73F9 /* JPVideoPlayerDemoVC_push.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVideoPlayerDemoVC_push.xib; sourceTree = "<group>"; };
 		5240397A201068D7003D94FD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		525FCAD0201968F400243838 /* StockVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StockVideo-Bridging-Header.h"; sourceTree = "<group>"; };
+		525FCAD32019690400243838 /* JPQRCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPQRCodeTool.m; sourceTree = "<group>"; };
+		525FCAD42019690400243838 /* JPQRCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPQRCodeTool.h; sourceTree = "<group>"; };
 		527294A820156DA500107AE7 /* BBAboutVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBAboutVideoViewController.swift; sourceTree = "<group>"; };
 		527294AC2015AF3C00107AE7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		527294AF2015B56900107AE7 /* CommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCell.swift; sourceTree = "<group>"; };
@@ -181,6 +199,22 @@
 			path = C;
 			sourceTree = "<group>";
 		};
+		52336B3E20196829004F73F9 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				525FCAD42019690400243838 /* JPQRCodeTool.h */,
+				525FCAD32019690400243838 /* JPQRCodeTool.m */,
+				52336B4220196843004F73F9 /* JPVideoPlayerDemoCell.swift */,
+				52336B4420196843004F73F9 /* JPVideoPlayerDemoCell.xib */,
+				52336B4320196843004F73F9 /* JPVideoPlayerDemoVC_home.swift */,
+				52336B4120196843004F73F9 /* JPVideoPlayerDemoVC_push.swift */,
+				52336B4520196843004F73F9 /* JPVideoPlayerDemoVC_push.xib */,
+				52336B4020196843004F73F9 /* JPVideoPlayerDemoVC_Setting.swift */,
+				52336B3F20196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib */,
+			);
+			name = VideoPlayer;
+			sourceTree = "<group>";
+		};
 		524039792010359F003D94FD /* C */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				52DA66BC200EECAE00AB32E9 /* Podfile */,
+				52336B3E20196829004F73F9 /* VideoPlayer */,
 				52DFD815200D99AB0047D9A9 /* StockVideo */,
 				52DFD814200D99AB0047D9A9 /* Products */,
 				30210FC67061EAB54DC30BA0 /* Pods */,
@@ -298,6 +333,7 @@
 				52DFD81D200D99AB0047D9A9 /* Assets.xcassets */,
 				52DFD81F200D99AB0047D9A9 /* LaunchScreen.storyboard */,
 				52DFD822200D99AB0047D9A9 /* Info.plist */,
+				525FCAD0201968F400243838 /* StockVideo-Bridging-Header.h */,
 			);
 			path = StockVideo;
 			sourceTree = "<group>";
@@ -406,9 +442,12 @@
 			files = (
 				52DA66BD200EECAE00AB32E9 /* Podfile in Resources */,
 				522682AF20118E7900FE1ED0 /* TableViewCell.xib in Resources */,
+				52336B4620196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib in Resources */,
 				52DA5FAD2016C02D0096B220 /* HotView.xib in Resources */,
 				5240397B201068D7003D94FD /* Main.storyboard in Resources */,
+				52336B4B20196843004F73F9 /* JPVideoPlayerDemoCell.xib in Resources */,
 				52DFD821200D99AB0047D9A9 /* LaunchScreen.storyboard in Resources */,
+				52336B4C20196843004F73F9 /* JPVideoPlayerDemoVC_push.xib in Resources */,
 				52DA66C2200F158300AB32E9 /* UpAndDownCell.xib in Resources */,
 				527294B22015B56900107AE7 /* CommonCell.xib in Resources */,
 				52DFD81E200D99AB0047D9A9 /* Assets.xcassets in Resources */,
@@ -444,12 +483,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StockVideo/Pods-StockVideo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/JPNavigationController/JPNavigationController.framework",
+				"${BUILT_PRODUCTS_DIR}/JPVideoPlayer/JPVideoPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JPNavigationController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JPVideoPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -486,9 +529,12 @@
 				52DFD897200DFAC10047D9A9 /* CHAxisModel.swift in Sources */,
 				52DA5FB12016CDE50096B220 /* LikeView.swift in Sources */,
 				52A8A22920182E6200710054 /* ColumnCollectionCell.swift in Sources */,
+				52336B4820196843004F73F9 /* JPVideoPlayerDemoVC_push.swift in Sources */,
 				52DA66BB200EEBCA00AB32E9 /* BBShare.swift in Sources */,
+				525FCAD52019690400243838 /* JPQRCodeTool.m in Sources */,
 				527294BA2015DC6800107AE7 /* GCDGroup.swift in Sources */,
 				527294BF2015E35400107AE7 /* TranformFadeView.swift in Sources */,
+				52336B4920196843004F73F9 /* JPVideoPlayerDemoCell.swift in Sources */,
 				52DA5FAF2016C9110096B220 /* HeadView.swift in Sources */,
 				52DFD89C200DFAC10047D9A9 /* CHKLineChartStyle.swift in Sources */,
 				52DA66B5200EE8AC00AB32E9 /* Common.swift in Sources */,
@@ -521,7 +567,9 @@
 				527294BB2015DC6800107AE7 /* GCDQueue.swift in Sources */,
 				52DFD82B200D9B0D0047D9A9 /* CommentViewController.swift in Sources */,
 				52DA66B7200EEA7500AB32E9 /* BBNetworkTool.swift in Sources */,
+				52336B4720196843004F73F9 /* JPVideoPlayerDemoVC_Setting.swift in Sources */,
 				52DFD89E200DFAC10047D9A9 /* CHSeries.swift in Sources */,
+				52336B4A20196843004F73F9 /* JPVideoPlayerDemoVC_home.swift in Sources */,
 				52A8A22B201856B800710054 /* VideoPlayVC.swift in Sources */,
 				522682B020118E7900FE1ED0 /* TableViewCell.swift in Sources */,
 			);
@@ -653,12 +701,15 @@
 			baseConfigurationReference = E6F4A6274A83C449018DDE38 /* Pods-StockVideo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZRD54JLZW;
 				INFOPLIST_FILE = StockVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Boxin.StockVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StockVideo/StockVideo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -670,12 +721,14 @@
 			baseConfigurationReference = EC870CDD02000FE6B774C444 /* Pods-StockVideo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZRD54JLZW;
 				INFOPLIST_FILE = StockVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Boxin.StockVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StockVideo/StockVideo-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

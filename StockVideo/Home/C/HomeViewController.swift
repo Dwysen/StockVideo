@@ -468,7 +468,7 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = VideoPlayVC()
+        let vc = JPVideoPlayerDemoVC_home()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

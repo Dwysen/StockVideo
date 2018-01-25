@@ -7,15 +7,16 @@
 //
 
 import UIKit
+import JPNavigationController
 
 class BBTabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         
         addChildViewControllers()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -27,26 +28,27 @@ class BBTabBarController: UITabBarController {
         addChildViewController(childController: MarketViewController(), title: "行情", imageName: "openClass")
         
         addChildViewController(childController: CircleTableViewController(), title: "圈子", imageName: "highClass")
-//        addChildViewController(childController: InformationViewController(), title: "资讯", imageName: "information")
+        //        addChildViewController(childController: InformationViewController(), title: "资讯", imageName: "information")
     }
-
+    
     private func addChildViewController(childController: UIViewController, title: String, imageName: String) {
-//        childController.tabBarItem.image = UIImage(named: imageName)
-//        childController.tabBarItem.selectedImage = UIImage(named: imageName + "selected")
-        
-        childController.title = title
+        //        childController.tabBarItem.image = UIImage(named: imageName)
+        //        childController.tabBarItem.selectedImage = UIImage(named: imageName + "selected")
         
         let navC = BBNavigationController(rootViewController: childController)
         
+                navC.title = title
+//        childController.title = title
+        
         addChildViewController(navC)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-  
+        
     }
     
-
-
-
+    
+    
+    
 }

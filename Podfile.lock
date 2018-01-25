@@ -1,18 +1,24 @@
 PODS:
   - Alamofire (4.6.0)
+  - JPNavigationController (2.0.2)
+  - JPVideoPlayer (2.3.4)
   - Kingfisher (4.5.0)
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
   - Alamofire
+  - JPNavigationController (~> 2.0.1)
+  - JPVideoPlayer (~> 2.3.0)
   - Kingfisher
   - SnapKit (~> 4.0.0)
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  JPNavigationController: 4bd27cad6d0bd559313d5c4d0ce2bf7d444c039c
+  JPVideoPlayer: 02b6d95e9dd2c8a8dcc5bdb111014957848b73b1
   Kingfisher: 26ae0473102b77b575da51960c932431e3745407
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 1da4f717a9ae6a2e287dfaadcaf61160eb436770
+PODFILE CHECKSUM: 81be9575362238a6fccda5b9cc588a08f54b235f
 
 COCOAPODS: 1.3.1
