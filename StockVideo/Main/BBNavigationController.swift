@@ -9,21 +9,34 @@
 import UIKit
 
 class BBNavigationController: UINavigationController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationBar.setBackgroundImage(UIImage.init(named: "e51c24"), for: .default)
+        //        self.navigationBar.setBackgroundImage(UIImage.init(named: "e51c24"), for: .default)
+        
+        setTitleView()
         
         let navBar = UINavigationBar.appearance()
-        //        navBar.barTintColor = Common.e51c24
-        navBar.tintColor = UIColor.white
         navBar.isTranslucent = false
-        navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
-
+        //        navBar.barTintColor = Common.e51c24
+        //        navBar.tintColor = UIColor.white
+        
+        //        navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
         
     }
-
+    
+    private func setTitleView(){
+        
+        let titleView = UIView.init(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        
+        titleView.backgroundColor = UIColor.black
+        
+        navigationItem.titleView?.addSubview(titleView)
+        //        navigationItem.titleView = titleView
+        
+    }
+    
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         /// 这时push进来的控制器viewController，不是第一个子控制器（不是根控制器）
         if viewControllers.count > 0 {
@@ -42,5 +55,5 @@ class BBNavigationController: UINavigationController {
         popViewController(animated: true)
     }
     
-
+    
 }

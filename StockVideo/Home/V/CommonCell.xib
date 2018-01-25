@@ -22,6 +22,10 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7ho-sA-dqw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="229.5"/>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZ6-FP-zEu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsK-9W-hVb">
                         <rect key="frame" x="20" y="189.5" width="280" height="20"/>
                         <constraints>
@@ -53,15 +57,19 @@
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="oZ6-FP-zEu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1By-gp-Oz1"/>
                     <constraint firstAttribute="trailing" secondItem="7ho-sA-dqw" secondAttribute="trailing" id="9vJ-r7-o6a"/>
                     <constraint firstItem="A8Z-6S-ptH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Tdk-0b-zF7"/>
                     <constraint firstAttribute="bottom" secondItem="7ho-sA-dqw" secondAttribute="bottom" id="WuM-6o-MtX"/>
                     <constraint firstItem="7ho-sA-dqw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Y8c-4a-LXC"/>
+                    <constraint firstItem="oZ6-FP-zEu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YMx-xq-xIG"/>
                     <constraint firstItem="FsK-9W-hVb" firstAttribute="top" secondItem="lWj-4s-brJ" secondAttribute="bottom" constant="15" id="ZdY-Sd-mlu"/>
+                    <constraint firstAttribute="bottom" secondItem="oZ6-FP-zEu" secondAttribute="bottom" id="b6S-pI-4FE"/>
                     <constraint firstAttribute="bottom" secondItem="FsK-9W-hVb" secondAttribute="bottom" constant="20" id="c4q-av-I7n"/>
                     <constraint firstItem="7ho-sA-dqw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eBv-3r-q4i"/>
                     <constraint firstItem="FsK-9W-hVb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="gPi-cB-Y50"/>
                     <constraint firstAttribute="trailing" secondItem="FsK-9W-hVb" secondAttribute="trailing" constant="20" id="iEh-vd-Ias"/>
+                    <constraint firstAttribute="trailing" secondItem="oZ6-FP-zEu" secondAttribute="trailing" id="ofT-V7-U0V"/>
                     <constraint firstItem="lWj-4s-brJ" firstAttribute="leading" secondItem="A8Z-6S-ptH" secondAttribute="trailing" constant="5" id="sLS-07-PE2"/>
                     <constraint firstItem="FsK-9W-hVb" firstAttribute="top" secondItem="A8Z-6S-ptH" secondAttribute="bottom" constant="15" id="zoL-S9-3e6"/>
                 </constraints>
@@ -69,6 +77,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bgImgView" destination="7ho-sA-dqw" id="Vl3-Cb-kwC"/>
+                <outlet property="blackView" destination="oZ6-FP-zEu" id="5kj-yx-Q5q"/>
                 <outlet property="columnLabel" destination="A8Z-6S-ptH" id="SnP-b8-BtO"/>
                 <outlet property="titleLabel" destination="FsK-9W-hVb" id="A7p-hs-KaG"/>
                 <outlet property="videoLengthLabel" destination="lWj-4s-brJ" id="aaK-YW-pGf"/>

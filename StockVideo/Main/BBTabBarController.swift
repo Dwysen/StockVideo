@@ -33,7 +33,9 @@ class BBTabBarController: UITabBarController {
     private func addChildViewController(childController: UIViewController, title: String, imageName: String) {
 //        childController.tabBarItem.image = UIImage(named: imageName)
 //        childController.tabBarItem.selectedImage = UIImage(named: imageName + "selected")
+        
         childController.title = title
+        
         let navC = BBNavigationController(rootViewController: childController)
         
         addChildViewController(navC)
@@ -41,18 +43,10 @@ class BBTabBarController: UITabBarController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

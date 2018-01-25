@@ -18,12 +18,21 @@
 		527294AD2015AF3C00107AE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294AC2015AF3C00107AE7 /* HomeViewController.swift */; };
 		527294B12015B56900107AE7 /* CommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294AF2015B56900107AE7 /* CommonCell.swift */; };
 		527294B22015B56900107AE7 /* CommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527294B02015B56900107AE7 /* CommonCell.xib */; };
-		527294B42015D6E800107AE7 /* FadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294B32015D6E800107AE7 /* FadeView.swift */; };
 		527294BA2015DC6800107AE7 /* GCDGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294B62015DC6800107AE7 /* GCDGroup.swift */; };
 		527294BB2015DC6800107AE7 /* GCDQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294B72015DC6800107AE7 /* GCDQueue.swift */; };
 		527294BC2015DC6800107AE7 /* GCDQueuePriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294B82015DC6800107AE7 /* GCDQueuePriority.swift */; };
 		527294BD2015DC6800107AE7 /* GCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294B92015DC6800107AE7 /* GCDTimer.swift */; };
 		527294BF2015E35400107AE7 /* TranformFadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294BE2015E35400107AE7 /* TranformFadeView.swift */; };
+		52A8A22720182B4600710054 /* ColumnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8A22620182B4600710054 /* ColumnViewController.swift */; };
+		52A8A22920182E6200710054 /* ColumnCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8A22820182E6200710054 /* ColumnCollectionCell.swift */; };
+		52A8A22B201856B800710054 /* VideoPlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8A22A201856B800710054 /* VideoPlayVC.swift */; };
+		52DA5FAB2016C0170096B220 /* HotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5FAA2016C0170096B220 /* HotView.swift */; };
+		52DA5FAD2016C02D0096B220 /* HotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DA5FAC2016C02D0096B220 /* HotView.xib */; };
+		52DA5FAF2016C9110096B220 /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5FAE2016C9110096B220 /* HeadView.swift */; };
+		52DA5FB12016CDE50096B220 /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5FB02016CDE50096B220 /* LikeView.swift */; };
+		52DA5FB32016DA840096B220 /* ResetPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5FB22016DA840096B220 /* ResetPageControl.swift */; };
+		52DA5FB52016DBA10096B220 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5FB42016DBA10096B220 /* Math.swift */; };
+		52DA5FB72016DCBB0096B220 /* ParallaxImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA5FB62016DCBB0096B220 /* ParallaxImageView.swift */; };
 		52DA66B5200EE8AC00AB32E9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA66B4200EE8AC00AB32E9 /* Common.swift */; };
 		52DA66B7200EEA7500AB32E9 /* BBNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA66B6200EEA7500AB32E9 /* BBNetworkTool.swift */; };
 		52DA66BB200EEBCA00AB32E9 /* BBShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA66BA200EEBCA00AB32E9 /* BBShare.swift */; };
@@ -66,12 +75,21 @@
 		527294AC2015AF3C00107AE7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		527294AF2015B56900107AE7 /* CommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCell.swift; sourceTree = "<group>"; };
 		527294B02015B56900107AE7 /* CommonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonCell.xib; sourceTree = "<group>"; };
-		527294B32015D6E800107AE7 /* FadeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeView.swift; sourceTree = "<group>"; };
 		527294B62015DC6800107AE7 /* GCDGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDGroup.swift; sourceTree = "<group>"; };
 		527294B72015DC6800107AE7 /* GCDQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDQueue.swift; sourceTree = "<group>"; };
 		527294B82015DC6800107AE7 /* GCDQueuePriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDQueuePriority.swift; sourceTree = "<group>"; };
 		527294B92015DC6800107AE7 /* GCDTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDTimer.swift; sourceTree = "<group>"; };
 		527294BE2015E35400107AE7 /* TranformFadeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranformFadeView.swift; sourceTree = "<group>"; };
+		52A8A22620182B4600710054 /* ColumnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnViewController.swift; sourceTree = "<group>"; };
+		52A8A22820182E6200710054 /* ColumnCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnCollectionCell.swift; sourceTree = "<group>"; };
+		52A8A22A201856B800710054 /* VideoPlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayVC.swift; sourceTree = "<group>"; };
+		52DA5FAA2016C0170096B220 /* HotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotView.swift; sourceTree = "<group>"; };
+		52DA5FAC2016C02D0096B220 /* HotView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotView.xib; sourceTree = "<group>"; };
+		52DA5FAE2016C9110096B220 /* HeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
+		52DA5FB02016CDE50096B220 /* LikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
+		52DA5FB22016DA840096B220 /* ResetPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPageControl.swift; sourceTree = "<group>"; };
+		52DA5FB42016DBA10096B220 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		52DA5FB62016DCBB0096B220 /* ParallaxImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxImageView.swift; sourceTree = "<group>"; };
 		52DA66B4200EE8AC00AB32E9 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		52DA66B6200EEA7500AB32E9 /* BBNetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBNetworkTool.swift; sourceTree = "<group>"; };
 		52DA66BA200EEBCA00AB32E9 /* BBShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBShare.swift; sourceTree = "<group>"; };
@@ -146,6 +164,7 @@
 		522682B320118F6800FE1ED0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				52DA5FB42016DBA10096B220 /* Math.swift */,
 				522682B92011940600FE1ED0 /* HJImageBrowser.swift */,
 				522682B120118F4B00FE1ED0 /* GlobalVariables.swift */,
 				52DA66B4200EE8AC00AB32E9 /* Common.swift */,
@@ -182,8 +201,10 @@
 		527294AB2015AE9600107AE7 /* C */ = {
 			isa = PBXGroup;
 			children = (
-				52DFD82A200D9B0D0047D9A9 /* CommentViewController.swift */,
 				527294AC2015AF3C00107AE7 /* HomeViewController.swift */,
+				52A8A22A201856B800710054 /* VideoPlayVC.swift */,
+				52A8A22620182B4600710054 /* ColumnViewController.swift */,
+				52DFD82A200D9B0D0047D9A9 /* CommentViewController.swift */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -192,9 +213,14 @@
 			isa = PBXGroup;
 			children = (
 				527294BE2015E35400107AE7 /* TranformFadeView.swift */,
-				527294B32015D6E800107AE7 /* FadeView.swift */,
+				52DA5FAA2016C0170096B220 /* HotView.swift */,
+				52DA5FAC2016C02D0096B220 /* HotView.xib */,
 				527294AF2015B56900107AE7 /* CommonCell.swift */,
 				527294B02015B56900107AE7 /* CommonCell.xib */,
+				52DA5FB02016CDE50096B220 /* LikeView.swift */,
+				52DA5FB22016DA840096B220 /* ResetPageControl.swift */,
+				52DA5FB62016DCBB0096B220 /* ParallaxImageView.swift */,
+				52A8A22820182E6200710054 /* ColumnCollectionCell.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -287,6 +313,7 @@
 				52DA66B6200EEA7500AB32E9 /* BBNetworkTool.swift */,
 				52DA66C3200F4A4E00AB32E9 /* ExtensionUIVIew.swift */,
 				522682B42011910F00FE1ED0 /* BaseViewController.swift */,
+				52DA5FAE2016C9110096B220 /* HeadView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -379,6 +406,7 @@
 			files = (
 				52DA66BD200EECAE00AB32E9 /* Podfile in Resources */,
 				522682AF20118E7900FE1ED0 /* TableViewCell.xib in Resources */,
+				52DA5FAD2016C02D0096B220 /* HotView.xib in Resources */,
 				5240397B201068D7003D94FD /* Main.storyboard in Resources */,
 				52DFD821200D99AB0047D9A9 /* LaunchScreen.storyboard in Resources */,
 				52DA66C2200F158300AB32E9 /* UpAndDownCell.xib in Resources */,
@@ -452,12 +480,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52A8A22720182B4600710054 /* ColumnViewController.swift in Sources */,
 				52DFD819200D99AB0047D9A9 /* ViewController.swift in Sources */,
 				52DFD898200DFAC10047D9A9 /* CHChartAlgorithm.swift in Sources */,
 				52DFD897200DFAC10047D9A9 /* CHAxisModel.swift in Sources */,
+				52DA5FB12016CDE50096B220 /* LikeView.swift in Sources */,
+				52A8A22920182E6200710054 /* ColumnCollectionCell.swift in Sources */,
 				52DA66BB200EEBCA00AB32E9 /* BBShare.swift in Sources */,
 				527294BA2015DC6800107AE7 /* GCDGroup.swift in Sources */,
 				527294BF2015E35400107AE7 /* TranformFadeView.swift in Sources */,
+				52DA5FAF2016C9110096B220 /* HeadView.swift in Sources */,
 				52DFD89C200DFAC10047D9A9 /* CHKLineChartStyle.swift in Sources */,
 				52DA66B5200EE8AC00AB32E9 /* Common.swift in Sources */,
 				52DFD832200DF0E20047D9A9 /* BBViewController.swift in Sources */,
@@ -469,7 +501,6 @@
 				527294BD2015DC6800107AE7 /* GCDTimer.swift in Sources */,
 				52DFD829200D9A950047D9A9 /* BBTabBarController.swift in Sources */,
 				52DFD82D200D9BA10047D9A9 /* BBNavigationController.swift in Sources */,
-				527294B42015D6E800107AE7 /* FadeView.swift in Sources */,
 				52DFD89D200DFAC10047D9A9 /* CHSection.swift in Sources */,
 				52DFD899200DFAC10047D9A9 /* CHChartModel.swift in Sources */,
 				52DA66C4200F4A4E00AB32E9 /* ExtensionUIVIew.swift in Sources */,
@@ -478,15 +509,20 @@
 				52DFD89B200DFAC10047D9A9 /* CHKLineChart.swift in Sources */,
 				527294AD2015AF3C00107AE7 /* HomeViewController.swift in Sources */,
 				52DFD834200DF24F0047D9A9 /* KLineViewController.swift in Sources */,
+				52DA5FAB2016C0170096B220 /* HotView.swift in Sources */,
 				527294A920156DA600107AE7 /* BBAboutVideoViewController.swift in Sources */,
+				52DA5FB32016DA840096B220 /* ResetPageControl.swift in Sources */,
+				52DA5FB52016DBA10096B220 /* Math.swift in Sources */,
 				522682B220118F4C00FE1ED0 /* GlobalVariables.swift in Sources */,
 				52DFD8A0200DFDD70047D9A9 /* SwiftyJSON.swift in Sources */,
 				522682B52011910F00FE1ED0 /* BaseViewController.swift in Sources */,
+				52DA5FB72016DCBB0096B220 /* ParallaxImageView.swift in Sources */,
 				527294BC2015DC6800107AE7 /* GCDQueuePriority.swift in Sources */,
 				527294BB2015DC6800107AE7 /* GCDQueue.swift in Sources */,
 				52DFD82B200D9B0D0047D9A9 /* CommentViewController.swift in Sources */,
 				52DA66B7200EEA7500AB32E9 /* BBNetworkTool.swift in Sources */,
 				52DFD89E200DFAC10047D9A9 /* CHSeries.swift in Sources */,
+				52A8A22B201856B800710054 /* VideoPlayVC.swift in Sources */,
 				522682B020118E7900FE1ED0 /* TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,6 +21,7 @@ class TranformFadeView: UIView {
         self.horizontalCount      = horizontalCount
         self.fadeDuradtion        = fadeDuradtion
         self.animationGapDuration = animationGapDuration
+        
         self.makeConfigEffective()
     }
     
@@ -154,11 +155,15 @@ class TranformFadeView: UIView {
     
     // MARK: System methods & Private properties
     
-    fileprivate var imageView     : UIImageView!
-    fileprivate var allMaskView   : UIView!
-    fileprivate var maskViewCount : Int!
-    fileprivate var countNumArray : [Int]!
-    fileprivate var maskViewTag   : Int = 1000
+    fileprivate var imageView        : UIImageView!
+    fileprivate var allMaskView      : UIView!
+    fileprivate var maskViewCount    : Int!
+    fileprivate var countNumArray    : [Int]!
+    fileprivate var maskViewTag      : Int = 1000
+    
+    var titleLabel       : UILabel!
+    var columnLabel      : UILabel!
+    var videoLengthLabel : UILabel!
     
     override init(frame: CGRect) {
         
@@ -168,6 +173,37 @@ class TranformFadeView: UIView {
         imageView.layer.masksToBounds = true
         countNumArray                 = [Int]()
         self.addSubview(imageView)
+        
+        self.addSubview(Common.getBlackView(frame: frame))
+        
+        
+        titleLabel = UILabel.init(frame: CGRect(x: 20 , y: 80, width: Common.screenWidth - 40, height: 20))
+        self.addSubview(titleLabel)
+        
+        columnLabel = UILabel.init(frame: CGRect(x: Common.screenWidth / 2 - 50, y: 80 + 20 + 10, width: 50 , height: 15))
+
+        self.addSubview(columnLabel)
+        
+        videoLengthLabel = UILabel.init(frame: CGRect(x: Common.screenWidth / 2 + 5 , y: 80 + 20 + 10, width: 50, height: 15))
+        self.addSubview(videoLengthLabel)
+        
+        titleLabel.textColor = UIColor.white
+        titleLabel.textAlignment = .center
+        
+        columnLabel.textColor = UIColor.white
+        columnLabel.textAlignment = .right
+        
+        videoLengthLabel.textColor = UIColor.white
+        
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        columnLabel.font = UIFont.systemFont(ofSize: 12)
+        videoLengthLabel.font = UIFont.systemFont(ofSize: 12)
+        
+        titleLabel.text = "标题"
+        columnLabel.text = "教育 |"
+        videoLengthLabel.text = "3:33"
+        
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

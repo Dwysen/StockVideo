@@ -11,6 +11,9 @@ import UIKit
 class CommonCell: UITableViewCell {
 
     @IBOutlet weak var bgImgView: UIImageView!
+    
+    @IBOutlet weak var blackView: UIView!
+    
     @IBOutlet weak var columnLabel: UILabel!
     
     @IBOutlet weak var videoLengthLabel: UILabel!
@@ -18,6 +21,8 @@ class CommonCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        blackView.alpha = Common.backViewAlaph
+
         // Initialization code
     }
 
