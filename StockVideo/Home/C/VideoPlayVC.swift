@@ -12,7 +12,6 @@ class VideoPlayVC: BBViewController {
 
     var image : UIImage!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let imageView = UIImageView.init(frame: view.bounds)

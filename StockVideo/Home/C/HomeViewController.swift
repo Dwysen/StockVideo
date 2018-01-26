@@ -55,7 +55,7 @@ class HomeViewController: BaseViewController {
         return scrollView
     }()
     
-
+    
     
     /* ------------------------------------------------ */
     
@@ -150,7 +150,7 @@ class HomeViewController: BaseViewController {
         let FadeViewRect = CGRect(x: 0, y: 0, width:Common.screenWidth, height: 200)
         
         let tapOne = UITapGestureRecognizer(target: self, action: #selector(tapImage))
-    
+        
         tranformFadeViewOne                      = TranformFadeView(frame: FadeViewRect, verticalCount: 1, horizontalCount: 12,fadeDuradtion: 1, animationGapDuration: 0.075)
         
         scrollView.addSubview(tranformFadeViewOne)
@@ -160,9 +160,9 @@ class HomeViewController: BaseViewController {
         tranformFadeViewOne.image                = currentImage()
         tranformFadeViewOne.titleLabel.text      = "标题1"
         tranformFadeViewOne.start(animated: false, transformTo: .show)
-     
+        
         let tapTwo = UITapGestureRecognizer(target: self, action: #selector(tapImage))
-
+        
         //        tapOne.direction = .right
         tranformFadeViewTwo                      = TranformFadeView(frame: FadeViewRect,verticalCount: 6, horizontalCount: 1,fadeDuradtion: 1, animationGapDuration: 0.075)
         
@@ -173,8 +173,8 @@ class HomeViewController: BaseViewController {
         tranformFadeViewTwo.image                = currentImage()
         tranformFadeViewTwo.titleLabel.text      = "标题2"
         tranformFadeViewTwo.start(animated: false, transformTo: .fade)
-
-    
+        
+        
         
         
         setTimer(delay: 0)
@@ -191,7 +191,7 @@ class HomeViewController: BaseViewController {
         tableView.showsVerticalScrollIndicator = false
         tableView.isScrollEnabled = false
         tableView.separatorStyle = .none
-    
+        
         
         let headView = HeadView.init(frame: CGRect.init(x: 0, y: 0, width: Common.screenWidth, height: 60))
         tableView.tableHeaderView =  headView
@@ -204,7 +204,7 @@ class HomeViewController: BaseViewController {
     
     // 热门
     private func setupHotSection(){
-    
+        
         let backView = UIView.init(frame: CGRect(x: 0, y: Common.newSectionHeight + Common.bannerHeight , width: Common.screenWidth, height: Common.headViewHeight + Common.singleBlockHeight * 2))
         scrollView.addSubview(backView)
         
@@ -386,7 +386,7 @@ class HomeViewController: BaseViewController {
         let vc = VideoPlayVC()
         vc.title = "\(sender.view?.tag)"
         navigationController?.pushViewController(vc, animated: true)
-    
+        
     }
     
     private func currentImage() -> UIImage{
@@ -468,7 +468,10 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = JPVideoPlayerDemoVC_home()
+        //        let vc = JPVideoPlayerDemoVC_home()
+        //        navigationController?.pushViewController(vc, animated: true)
+        
+        let vc = SomeoneViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

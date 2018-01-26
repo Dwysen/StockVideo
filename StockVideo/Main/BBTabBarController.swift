@@ -22,13 +22,15 @@ class BBTabBarController: UITabBarController {
     
     private func addChildViewControllers() {
         
-        addChildViewController(childController: HomeViewController(), title: "相关", imageName: "home")
-        
         addChildViewController(childController: HomeViewController(), title: "视频", imageName: "home")
-        addChildViewController(childController: MarketViewController(), title: "行情", imageName: "openClass")
         
-        addChildViewController(childController: CircleTableViewController(), title: "圈子", imageName: "highClass")
-        //        addChildViewController(childController: InformationViewController(), title: "资讯", imageName: "information")
+        addChildViewController(childController: MeViewController(), title: "我的", imageName: "home")
+        
+//        addChildViewController(childController: MarketViewController(), title: "行情", imageName: "openClass")
+//
+//        addChildViewController(childController: CircleTableViewController(), title: "圈子", imageName: "highClass")
+        
+        
     }
     
     private func addChildViewController(childController: UIViewController, title: String, imageName: String) {

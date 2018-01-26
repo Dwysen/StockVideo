@@ -15,6 +15,10 @@
 		522682BA2011940700FE1ED0 /* HJImageBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522682B92011940600FE1ED0 /* HJImageBrowser.swift */; };
 		522B703F201ABA1A002108F2 /* JPVideoPlayerDemoVC_push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B703D201ABA19002108F2 /* JPVideoPlayerDemoVC_push.swift */; };
 		522B7040201ABA1A002108F2 /* JPVideoPlayerDemoVC_push.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522B703E201ABA1A002108F2 /* JPVideoPlayerDemoVC_push.xib */; };
+		522B7045201AD0D7002108F2 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B7043201AD0D7002108F2 /* MeViewController.swift */; };
+		522B7046201AD0D7002108F2 /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522B7044201AD0D7002108F2 /* MeViewController.xib */; };
+		522B704B201AFCB8002108F2 /* SomeoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B7049201AFCB8002108F2 /* SomeoneViewController.swift */; };
+		522B704C201AFCB8002108F2 /* SomeoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522B704A201AFCB8002108F2 /* SomeoneViewController.xib */; };
 		52336B4620196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52336B3F20196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib */; };
 		52336B4720196843004F73F9 /* JPVideoPlayerDemoVC_Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336B4020196843004F73F9 /* JPVideoPlayerDemoVC_Setting.swift */; };
 		52336B4920196843004F73F9 /* JPVideoPlayerDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336B4220196843004F73F9 /* JPVideoPlayerDemoCell.swift */; };
@@ -80,6 +84,10 @@
 		522682B92011940600FE1ED0 /* HJImageBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJImageBrowser.swift; sourceTree = "<group>"; };
 		522B703D201ABA19002108F2 /* JPVideoPlayerDemoVC_push.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoVC_push.swift; sourceTree = "<group>"; };
 		522B703E201ABA1A002108F2 /* JPVideoPlayerDemoVC_push.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVideoPlayerDemoVC_push.xib; sourceTree = "<group>"; };
+		522B7043201AD0D7002108F2 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		522B7044201AD0D7002108F2 /* MeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
+		522B7049201AFCB8002108F2 /* SomeoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeoneViewController.swift; sourceTree = "<group>"; };
+		522B704A201AFCB8002108F2 /* SomeoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SomeoneViewController.xib; sourceTree = "<group>"; };
 		52336B3F20196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVideoPlayerDemoVC_Setting.xib; sourceTree = "<group>"; };
 		52336B4020196843004F73F9 /* JPVideoPlayerDemoVC_Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoVC_Setting.swift; sourceTree = "<group>"; };
 		52336B4220196843004F73F9 /* JPVideoPlayerDemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoCell.swift; sourceTree = "<group>"; };
@@ -195,6 +203,40 @@
 			isa = PBXGroup;
 			children = (
 				522682B7201191CC00FE1ED0 /* CircleTableViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		522B7041201AD001002108F2 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				522B7042201AD00A002108F2 /* C */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		522B7042201AD00A002108F2 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				522B7043201AD0D7002108F2 /* MeViewController.swift */,
+				522B7044201AD0D7002108F2 /* MeViewController.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		522B7047201AFC6B002108F2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				522B7048201AFC72002108F2 /* C */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		522B7048201AFC72002108F2 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				522B7049201AFCB8002108F2 /* SomeoneViewController.swift */,
+				522B704A201AFCB8002108F2 /* SomeoneViewController.xib */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -320,6 +362,8 @@
 		52DFD815200D99AB0047D9A9 /* StockVideo */ = {
 			isa = PBXGroup;
 			children = (
+				522B7047201AFC6B002108F2 /* Other */,
+				522B7041201AD001002108F2 /* Me */,
 				527294AA2015AE8900107AE7 /* Home */,
 				522682AB20118E4F00FE1ED0 /* CirCle */,
 				52DFD816200D99AB0047D9A9 /* AppDelegate.swift */,
@@ -446,11 +490,13 @@
 				52DA5FAD2016C02D0096B220 /* HotView.xib in Resources */,
 				5240397B201068D7003D94FD /* Main.storyboard in Resources */,
 				52336B4B20196843004F73F9 /* JPVideoPlayerDemoCell.xib in Resources */,
+				522B7046201AD0D7002108F2 /* MeViewController.xib in Resources */,
 				52DFD821200D99AB0047D9A9 /* LaunchScreen.storyboard in Resources */,
 				522B7040201ABA1A002108F2 /* JPVideoPlayerDemoVC_push.xib in Resources */,
 				52DA66C2200F158300AB32E9 /* UpAndDownCell.xib in Resources */,
 				527294B22015B56900107AE7 /* CommonCell.xib in Resources */,
 				52DFD81E200D99AB0047D9A9 /* Assets.xcassets in Resources */,
+				522B704C201AFCB8002108F2 /* SomeoneViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +573,7 @@
 				52DFD819200D99AB0047D9A9 /* ViewController.swift in Sources */,
 				522B703F201ABA1A002108F2 /* JPVideoPlayerDemoVC_push.swift in Sources */,
 				52DFD898200DFAC10047D9A9 /* CHChartAlgorithm.swift in Sources */,
+				522B704B201AFCB8002108F2 /* SomeoneViewController.swift in Sources */,
 				52DFD897200DFAC10047D9A9 /* CHAxisModel.swift in Sources */,
 				52DA5FB12016CDE50096B220 /* LikeView.swift in Sources */,
 				52A8A22920182E6200710054 /* ColumnCollectionCell.swift in Sources */,
@@ -553,6 +600,7 @@
 				52DFD830200DF0CF0047D9A9 /* MarketViewController.swift in Sources */,
 				522682BA2011940700FE1ED0 /* HJImageBrowser.swift in Sources */,
 				52DFD89B200DFAC10047D9A9 /* CHKLineChart.swift in Sources */,
+				522B7045201AD0D7002108F2 /* MeViewController.swift in Sources */,
 				527294AD2015AF3C00107AE7 /* HomeViewController.swift in Sources */,
 				52DFD834200DF24F0047D9A9 /* KLineViewController.swift in Sources */,
 				52DA5FAB2016C0170096B220 /* HotView.swift in Sources */,
