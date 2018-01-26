@@ -22,6 +22,11 @@ public enum kJPPlayUnreachCellStyle : Int {
 
 class JPVideoPlayerDemoCell: UITableViewCell {
     
+    lazy var blackView : UIView = {
+        
+        return Common.getBBlackView(frame: bounds)
+        
+    }()
     public var videoPath = String()
     
     public var indexPath: IndexPath {
@@ -29,10 +34,13 @@ class JPVideoPlayerDemoCell: UITableViewCell {
             return self.indexPath
         }
         set {
+            
             let placeholderName = newValue.row % 2 == 0 ? "four" : "st"
             videoImv.image = UIImage(named: placeholderName)
-            videoImv.alpha = 0.1
+//            videoImv.alpha = 0.1
             videoImv.backgroundColor = UIColor.black
+            
+            videoImv.addSubview(blackView)
         }
     }
     

@@ -37,6 +37,15 @@ struct Common {
         return blackView
 
     }
+    
+    static func getBBlackView(frame:CGRect) -> UIView {
+        
+        let blackView = UIView.init(frame: frame)
+        blackView.backgroundColor = UIColor.black
+        blackView.alpha = 0.8
+        return blackView
+        
+    }
 
  
 }

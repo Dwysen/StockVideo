@@ -327,7 +327,7 @@ extension JPVideoPlayerDemoVC_home {
         playingCell = videoCell
         
         // 调亮第一个Cell
-        videoCell.videoImv.alpha = 1
+        videoCell.blackView.alpha = 0
         
         // display status view.
         videoCell.videoImv.jp_playVideo(with: URL(string: videoCell.videoPath))
@@ -349,7 +349,7 @@ extension JPVideoPlayerDemoVC_home {
             playingCell?.videoImv.jp_stopPlay()
             
             UIView.animate(withDuration: 0.25, animations: {
-                self.playingCell?.videoImv.alpha = 0.2
+                self.playingCell?.blackView.alpha = 0.8
             })
             
             let url = URL(string: bestCell.videoPath)
@@ -358,7 +358,7 @@ extension JPVideoPlayerDemoVC_home {
             bestCell.videoImv.jp_playVideo(with: url)
             
 //            UIView.animate(withDuration: 0.25, animations: {
-                bestCell.videoImv.alpha = 1
+                bestCell.blackView.alpha = 0
 //            })
             
             

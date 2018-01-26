@@ -8,7 +8,6 @@
 
 import UIKit
 import JPVideoPlayer
-import JPNavigationController
 
 // MARK: 注意: 播放视频的工具类是单例, 单例生命周期为整个应用生命周期, 故而须在 `-viewWillDisappear:`(推荐)或其他方法里 调用 `stopPlay` 方法来停止视频播放, 否则当前控制器销毁了, 视频仍然在后台播放, 虽然看不到图像, 但是能听到声音(如果有).
 
@@ -28,13 +27,9 @@ class JPVideoPlayerDemoVC_push: UIViewController {
     var videoContainer = UIView()
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
 
         setup()
-        
-   
-        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -66,11 +61,9 @@ extension JPVideoPlayerDemoVC_push : JPVideoPlayerDelegate {
 
 extension JPVideoPlayerDemoVC_push {
     func setup() {
-        
-      
-    
-//      self.navigationController?.jp_useCustomPopAnimationForCurrentViewController = true
-        
+        self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.jp_useCustomPopAnimationForCurrentViewController = true
+       
         setupVideoEvents()
         setupTouchEvents()
     }
@@ -93,7 +86,7 @@ extension JPVideoPlayerDemoVC_push {
         videoContainer.addGestureRecognizer(tapGestureRecognize)
     }
     
-    func didTapVideoView(gestureRecognizer : UITapGestureRecognizer) {
+    @objc func didTapVideoView(gestureRecognizer : UITapGestureRecognizer) {
         if gestureRecognizer.state == UIGestureRecognizerState.ended {
             if videoContainer.viewStatus == JPVideoPlayerVideoViewStatus.portrait {
                 videoContainer.jp_gotoLandscape(animated: true, completion: nil)
