@@ -23,6 +23,8 @@
 		52336B4920196843004F73F9 /* JPVideoPlayerDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336B4220196843004F73F9 /* JPVideoPlayerDemoCell.swift */; };
 		52336B4A20196843004F73F9 /* JPVideoPlayerDemoVC_home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336B4320196843004F73F9 /* JPVideoPlayerDemoVC_home.swift */; };
 		52336B4B20196843004F73F9 /* JPVideoPlayerDemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52336B4420196843004F73F9 /* JPVideoPlayerDemoCell.xib */; };
+		523B48312020466D00556868 /* VideoPlayTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523B48302020466D00556868 /* VideoPlayTopView.xib */; };
+		523B48332020555100556868 /* VideoPlayTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B48322020555100556868 /* VideoPlayTopView.swift */; };
 		5240397B201068D7003D94FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5240397A201068D7003D94FD /* Main.storyboard */; };
 		525FCAD52019690400243838 /* JPQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 525FCAD32019690400243838 /* JPQRCodeTool.m */; };
 		527294A920156DA600107AE7 /* BBAboutVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527294A820156DA500107AE7 /* BBAboutVideoViewController.swift */; };
@@ -92,6 +94,8 @@
 		52336B4220196843004F73F9 /* JPVideoPlayerDemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoCell.swift; sourceTree = "<group>"; };
 		52336B4320196843004F73F9 /* JPVideoPlayerDemoVC_home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoVC_home.swift; sourceTree = "<group>"; };
 		52336B4420196843004F73F9 /* JPVideoPlayerDemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVideoPlayerDemoCell.xib; sourceTree = "<group>"; };
+		523B48302020466D00556868 /* VideoPlayTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayTopView.xib; sourceTree = "<group>"; };
+		523B48322020555100556868 /* VideoPlayTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayTopView.swift; sourceTree = "<group>"; };
 		5240397A201068D7003D94FD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		525FCAD0201968F400243838 /* StockVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StockVideo-Bridging-Header.h"; sourceTree = "<group>"; };
 		525FCAD32019690400243838 /* JPQRCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPQRCodeTool.m; sourceTree = "<group>"; };
@@ -265,6 +269,24 @@
 			path = V;
 			sourceTree = "<group>";
 		};
+		523B482E202045FB00556868 /* VideoPlay */ = {
+			isa = PBXGroup;
+			children = (
+				523B482F2020461300556868 /* V */,
+			);
+			path = VideoPlay;
+			sourceTree = "<group>";
+		};
+		523B482F2020461300556868 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				52A8A22A201856B800710054 /* VideoPlayVC.swift */,
+				523B48322020555100556868 /* VideoPlayTopView.swift */,
+				523B48302020466D00556868 /* VideoPlayTopView.xib */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
 		524039792010359F003D94FD /* C */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,7 +308,6 @@
 			isa = PBXGroup;
 			children = (
 				527294AC2015AF3C00107AE7 /* HomeViewController.swift */,
-				52A8A22A201856B800710054 /* VideoPlayVC.swift */,
 				52A8A22620182B4600710054 /* ColumnViewController.swift */,
 				52DFD82A200D9B0D0047D9A9 /* CommentViewController.swift */,
 			);
@@ -370,6 +391,7 @@
 		52DFD815200D99AB0047D9A9 /* StockVideo */ = {
 			isa = PBXGroup;
 			children = (
+				523B482E202045FB00556868 /* VideoPlay */,
 				522B7047201AFC6B002108F2 /* Other */,
 				522B7041201AD001002108F2 /* Me */,
 				527294AA2015AE8900107AE7 /* Home */,
@@ -492,6 +514,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523B48312020466D00556868 /* VideoPlayTopView.xib in Resources */,
 				52DA66BD200EECAE00AB32E9 /* Podfile in Resources */,
 				522682AF20118E7900FE1ED0 /* TableViewCell.xib in Resources */,
 				52336B4620196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib in Resources */,
@@ -588,6 +611,7 @@
 				52A8A22920182E6200710054 /* ColumnCollectionCell.swift in Sources */,
 				5280DAE4201F0C2400175F68 /* SomeoneLikeViewController.swift in Sources */,
 				52DA66BB200EEBCA00AB32E9 /* BBShare.swift in Sources */,
+				523B48332020555100556868 /* VideoPlayTopView.swift in Sources */,
 				525FCAD52019690400243838 /* JPQRCodeTool.m in Sources */,
 				527294BA2015DC6800107AE7 /* GCDGroup.swift in Sources */,
 				527294BF2015E35400107AE7 /* TranformFadeView.swift in Sources */,
