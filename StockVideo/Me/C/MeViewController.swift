@@ -17,6 +17,12 @@ class MeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+        
+        self.title = "我的"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .add, target: self, action: #selector(rightBarButtonClick))
+ 
+//        self.navigationController!.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .add, target: self, action: #selector(rightBarButtonClick))
         setupTableView()
     }
     
@@ -36,6 +42,13 @@ class MeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @objc private func rightBarButtonClick(){
+        
+        print("1")
+        
+    }
+    
 }
 
 extension MeViewController : UITableViewDataSource,UITableViewDelegate {

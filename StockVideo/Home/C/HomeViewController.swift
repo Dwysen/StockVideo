@@ -49,6 +49,7 @@ class HomeViewController: BaseViewController {
     
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
+        scrollView.bounces = false
         scrollView.isScrollEnabled = true
         scrollView.showsVerticalScrollIndicator = false
         scrollView.frame = CGRect(x: 0, y: 0, width: Common.screenWidth, height: Common.scrollViewHeight)
@@ -443,6 +444,7 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
         guard scrollView == likeScrollView else {
             return
         }

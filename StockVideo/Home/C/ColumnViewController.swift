@@ -26,14 +26,13 @@ class ColumnViewController: UIViewController {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .vertical
         collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: Common.screenWidth, height: Common.scrollViewHeight ), collectionViewLayout: flowLayout)
-        
+        collectionView.bounces = false 
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.showsVerticalScrollIndicator = false
         
         collectionView.register(ColumnCollectionCell.self, forCellWithReuseIdentifier: "cell")
         view.addSubview(collectionView)
-        
         
     }
     

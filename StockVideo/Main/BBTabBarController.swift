@@ -26,9 +26,9 @@ class BBTabBarController: UITabBarController {
         
         addChildViewController(childController: MeViewController(), title: "我的", imageName: "home")
         
-//        addChildViewController(childController: MarketViewController(), title: "行情", imageName: "openClass")
-//
-//        addChildViewController(childController: CircleTableViewController(), title: "圈子", imageName: "highClass")
+        addChildViewController(childController: MarketViewController(), title: "行情", imageName: "openClass")
+
+        addChildViewController(childController: CircleTableViewController(), title: "圈子", imageName: "highClass")
         
         
     }

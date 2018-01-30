@@ -3,6 +3,7 @@ PODS:
   - JPNavigationController (2.0.2)
   - JPVideoPlayer (2.3.4)
   - Kingfisher (4.5.0)
+  - MJRefresh (3.1.15.1)
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
@@ -10,6 +11,7 @@ DEPENDENCIES:
   - JPNavigationController (~> 2.0.1)
   - JPVideoPlayer (~> 2.3.0)
   - Kingfisher
+  - MJRefresh
   - SnapKit (~> 4.0.0)
 
 SPEC CHECKSUMS:
@@ -17,8 +19,9 @@ SPEC CHECKSUMS:
   JPNavigationController: 4bd27cad6d0bd559313d5c4d0ce2bf7d444c039c
   JPVideoPlayer: 02b6d95e9dd2c8a8dcc5bdb111014957848b73b1
   Kingfisher: 26ae0473102b77b575da51960c932431e3745407
+  MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 81be9575362238a6fccda5b9cc588a08f54b235f
+PODFILE CHECKSUM: 77bf108a1066fd08cb022d4ee5e4b246b99c4a3b
 
 COCOAPODS: 1.3.1

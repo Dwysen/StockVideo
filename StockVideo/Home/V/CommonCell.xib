@@ -19,10 +19,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="229.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7ho-sA-dqw">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="7ho-sA-dqw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="229.5"/>
                     </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZ6-FP-zEu">
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZ6-FP-zEu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -84,4 +84,7 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="background" width="1080" height="705"/>
+    </resources>
 </document>

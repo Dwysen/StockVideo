@@ -11,17 +11,17 @@ import UIKit
 class CommonCell: UITableViewCell {
 
     @IBOutlet weak var bgImgView: UIImageView!
-    
     @IBOutlet weak var blackView: UIView!
-    
     @IBOutlet weak var columnLabel: UILabel!
-    
     @IBOutlet weak var videoLengthLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         blackView.alpha = Common.backViewAlaph
+        bgImgView.contentMode = .scaleAspectFill
+        bgImgView.layer.masksToBounds = true
 
         // Initialization code
     }
