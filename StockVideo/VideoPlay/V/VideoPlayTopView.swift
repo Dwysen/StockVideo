@@ -14,8 +14,12 @@ class VideoPlayTopView: UIView {
     
     var testTagArr  = ["运动","科学"]
     
+    @IBOutlet weak var introduceLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        introduceLabel.attributedText = Common.getAttributeStringWithString("视频简介视频简介视频简介视频简介视频简介视频简介视频简介视频简介视频简介视频简介", lineSpace: 8)
         
         for i in 0 ..< testTagArr.count{
             

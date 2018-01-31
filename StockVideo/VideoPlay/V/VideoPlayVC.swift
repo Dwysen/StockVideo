@@ -11,6 +11,9 @@ import SnapKit
 
 class VideoPlayVC: BBViewController {
 
+    
+    let testStr = ["第一层，一般情况下是杀死就好了，不会“给猴看”；第二层就很严重了，一般情况下会是规模性封杀（参考17年6月份的娱乐账号），但是也不会告诉你为什么，让大家去猜、去找红线，这样才能起到足够的震慑力。"," 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？", " 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？"," 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？"]
+    
     var image : UIImage!
     
     var videoPlayView : UIView!
@@ -37,9 +40,11 @@ class VideoPlayVC: BBViewController {
 //        imageView.image = image
 //        view.addSubview(imageView)
         
+        self.navigationController?.isNavigationBarHidden = true
+        
         setupTopView()
         
-        setupBottomScrollView()
+//        setupBottomScrollView()
         
         setupTableView()
         
@@ -54,22 +59,23 @@ class VideoPlayVC: BBViewController {
         addWatchView = UIView(frame: CGRect(x: 0, y: videoPlayView.maxY, width: Common.screenWidth, height: 40))
         addWatchView.backgroundColor = UIColor.white
         view.addSubview(addWatchView)
-        addWatchView.layer.shadowColor = UIColor.black.cgColor
-        addWatchView.layer.shadowOffset = CGSize.init(width: 2, height: 3)
-        addWatchView.layer.shadowOpacity = 0.8
-        addWatchView.layer.shadowRadius = 3
-     
+       
         
+        let layerView = UIView(frame: CGRect(x: 0, y: 0, width: Common.screenWidth, height: 40))
+        addWatchView.addSubview(layerView)
+        layerView.backgroundColor = UIColor.white
+        layerView.layer.shadowColor = UIColor.black.cgColor
+        layerView.layer.shadowOffset = CGSize.init(width: 2, height: 2)
+        layerView.layer.shadowOpacity = 0.05
+        layerView.layer.shadowRadius = 3
         
-        
-        columnLabel = UILabel(frame: CGRect(x: 16, y: 10, width: 300, height: 20))
+        columnLabel = UILabel(frame: CGRect(x: 16, y: 7, width: 300, height: 20))
         columnLabel.text = "栏目栏目"
         columnLabel.font = UIFont.systemFont(ofSize: 14, weight: .medium)
-        addWatchView.addSubview(columnLabel)
+        layerView.addSubview(columnLabel)
    
-        
         addWatchBtn = UIButton()
-        addWatchView.addSubview(addWatchBtn)
+        layerView.addSubview(addWatchBtn)
         addWatchBtn.snp.makeConstraints { (make) in
             make.right.equalToSuperview().offset(-10)
             make.width.equalTo(50)
@@ -85,42 +91,43 @@ class VideoPlayVC: BBViewController {
         addWatchBtn.layer.cornerRadius = 5
         addWatchBtn.layer.masksToBounds = true
         
-        
-        
-        
-        
     }
     
-    private func setupBottomScrollView(){
-        
-        view.addSubview(scrollView)
-        let scrollTopView = Bundle.main.loadNibNamed("VideoPlayTopView", owner: nil, options: nil)?.first as! VideoPlayTopView
-        scrollTopView.frame = CGRect(x: 0, y: 0, width: Common.screenWidth, height: 252)
-        scrollView.addSubview(scrollTopView)
-        
-        
-    }
+//    private func setupBottomScrollView(){
+//
+//        view.addSubview(scrollView)
+//        let scrollTopView = Bundle.main.loadNibNamed("VideoPlayTopView", owner: nil, options: nil)?.first as! VideoPlayTopView
+//        scrollTopView.frame = CGRect(x: 0, y: 0, width: Common.screenWidth, height: 252)
+//        scrollView.addSubview(scrollTopView)
+//
+//
+//    }
     
     private func setupTableView(){
         
-        commentTableView = UITableView(frame: CGRect(x: 0, y: 252 + 10, width: Common.screenWidth, height: 500 ))
+        commentTableView = UITableView(frame: CGRect(x: 0, y: 240, width: Common.screenWidth, height: Common.screenHeight - 240 ))
         commentTableView.delegate = self
         commentTableView.dataSource = self
-        commentTableView.rowHeight = 230
-        commentTableView.showsVerticalScrollIndicator = false
-        commentTableView.isScrollEnabled = false
-        commentTableView.register(UITableViewCell.classForCoder(),forCellReuseIdentifier: "cell")
-        
-        let grayView = UIView(frame: CGRect(x: 0, y: 0, width: Common.screenWidth, height: 22))
-        grayView.backgroundColor = UIColor.gray
-        commentTableView.tableHeaderView = grayView
-    
-        scrollView.addSubview(commentTableView)
-    
   
+        commentTableView.showsVerticalScrollIndicator = false
         
-        scrollView.contentSize = CGSize.init(width: Common.screenWidth, height: 1200)
+        commentTableView.register(UINib.init(nibName: "CommentCell", bundle: nil), forCellReuseIdentifier: "cell")
+        commentTableView.separatorStyle = .none
         
+//        commentTableView.rowHeight = UITableViewAutomaticDimension 
+        commentTableView.estimatedRowHeight = 200
+        
+//        let grayView = UIView(frame: CGRect(x: 0, y: 0, width: Common.screenWidth, height: 22))
+//        grayView.backgroundColor = UIColor.gray
+        
+        let tableTopView = Bundle.main.loadNibNamed("VideoPlayTopView", owner: nil, options: nil)?.first as! VideoPlayTopView
+        commentTableView.tableHeaderView = tableTopView
+        
+        view.addSubview(commentTableView)
+        view.bringSubview(toFront: addWatchView)
+        
+//        scrollView.addSubview(commentTableView)
+//        scrollView.contentSize = CGSize.init(width: Common.screenWidth, height: 1200)
         
     }
     
@@ -135,11 +142,12 @@ extension VideoPlayVC : UITableViewDataSource,UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         return 5
+         return testStr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CommentCell
+        cell.contentTextLabel.attributedText = Common.getAttributeStringWithString(testStr[indexPath.row], lineSpace: 2)
         return cell
     }
     

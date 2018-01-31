@@ -23,6 +23,11 @@
 		52336B4920196843004F73F9 /* JPVideoPlayerDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336B4220196843004F73F9 /* JPVideoPlayerDemoCell.swift */; };
 		52336B4A20196843004F73F9 /* JPVideoPlayerDemoVC_home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336B4320196843004F73F9 /* JPVideoPlayerDemoVC_home.swift */; };
 		52336B4B20196843004F73F9 /* JPVideoPlayerDemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52336B4420196843004F73F9 /* JPVideoPlayerDemoCell.xib */; };
+		523672DA20215C9800D8CAAD /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523672D820215C9800D8CAAD /* CommentCell.swift */; };
+		523672DB20215C9800D8CAAD /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523672D920215C9800D8CAAD /* CommentCell.xib */; };
+		523672DD2021920800D8CAAD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523672DC2021920800D8CAAD /* DetailViewController.swift */; };
+		523672DF2021939E00D8CAAD /* DetailTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523672DE2021939E00D8CAAD /* DetailTopView.swift */; };
+		523672E1202193AA00D8CAAD /* DetailTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523672E0202193AA00D8CAAD /* DetailTopView.xib */; };
 		523B48312020466D00556868 /* VideoPlayTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523B48302020466D00556868 /* VideoPlayTopView.xib */; };
 		523B48332020555100556868 /* VideoPlayTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B48322020555100556868 /* VideoPlayTopView.swift */; };
 		5240397B201068D7003D94FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5240397A201068D7003D94FD /* Main.storyboard */; };
@@ -94,6 +99,11 @@
 		52336B4220196843004F73F9 /* JPVideoPlayerDemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoCell.swift; sourceTree = "<group>"; };
 		52336B4320196843004F73F9 /* JPVideoPlayerDemoVC_home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoVC_home.swift; sourceTree = "<group>"; };
 		52336B4420196843004F73F9 /* JPVideoPlayerDemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVideoPlayerDemoCell.xib; sourceTree = "<group>"; };
+		523672D820215C9800D8CAAD /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		523672D920215C9800D8CAAD /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		523672DC2021920800D8CAAD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		523672DE2021939E00D8CAAD /* DetailTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTopView.swift; sourceTree = "<group>"; };
+		523672E0202193AA00D8CAAD /* DetailTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTopView.xib; sourceTree = "<group>"; };
 		523B48302020466D00556868 /* VideoPlayTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayTopView.xib; sourceTree = "<group>"; };
 		523B48322020555100556868 /* VideoPlayTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayTopView.swift; sourceTree = "<group>"; };
 		5240397A201068D7003D94FD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -197,7 +207,6 @@
 				52DA5FB42016DBA10096B220 /* Math.swift */,
 				522682B92011940600FE1ED0 /* HJImageBrowser.swift */,
 				522682B120118F4B00FE1ED0 /* GlobalVariables.swift */,
-				52DA66B4200EE8AC00AB32E9 /* Common.swift */,
 				527294A820156DA500107AE7 /* BBAboutVideoViewController.swift */,
 			);
 			path = Common;
@@ -240,6 +249,7 @@
 		522B7048201AFC72002108F2 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				523672DC2021920800D8CAAD /* DetailViewController.swift */,
 				522B7049201AFCB8002108F2 /* SomeoneViewController.swift */,
 				5280DAE3201F0C2400175F68 /* SomeoneLikeViewController.swift */,
 			);
@@ -265,6 +275,10 @@
 		523B482D2020047800556868 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				523672DE2021939E00D8CAAD /* DetailTopView.swift */,
+				523672E0202193AA00D8CAAD /* DetailTopView.xib */,
+				523672D820215C9800D8CAAD /* CommentCell.swift */,
+				523672D920215C9800D8CAAD /* CommentCell.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -372,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				52DA66BC200EECAE00AB32E9 /* Podfile */,
+				52DA66B4200EE8AC00AB32E9 /* Common.swift */,
 				52336B3E20196829004F73F9 /* VideoPlayer */,
 				52DFD815200D99AB0047D9A9 /* StockVideo */,
 				52DFD814200D99AB0047D9A9 /* Products */,
@@ -516,6 +531,7 @@
 			files = (
 				523B48312020466D00556868 /* VideoPlayTopView.xib in Resources */,
 				52DA66BD200EECAE00AB32E9 /* Podfile in Resources */,
+				523672E1202193AA00D8CAAD /* DetailTopView.xib in Resources */,
 				522682AF20118E7900FE1ED0 /* TableViewCell.xib in Resources */,
 				52336B4620196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib in Resources */,
 				52DA5FAD2016C02D0096B220 /* HotView.xib in Resources */,
@@ -527,6 +543,7 @@
 				52DA66C2200F158300AB32E9 /* UpAndDownCell.xib in Resources */,
 				527294B22015B56900107AE7 /* CommonCell.xib in Resources */,
 				52DFD81E200D99AB0047D9A9 /* Assets.xcassets in Resources */,
+				523672DB20215C9800D8CAAD /* CommentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +633,7 @@
 				527294BA2015DC6800107AE7 /* GCDGroup.swift in Sources */,
 				527294BF2015E35400107AE7 /* TranformFadeView.swift in Sources */,
 				52336B4920196843004F73F9 /* JPVideoPlayerDemoCell.swift in Sources */,
+				523672DF2021939E00D8CAAD /* DetailTopView.swift in Sources */,
 				52DA5FAF2016C9110096B220 /* HeadView.swift in Sources */,
 				52DFD89C200DFAC10047D9A9 /* CHKLineChartStyle.swift in Sources */,
 				52DA66B5200EE8AC00AB32E9 /* Common.swift in Sources */,
@@ -623,6 +641,7 @@
 				52DFD89A200DFAC10047D9A9 /* CHExtension.swift in Sources */,
 				527294B12015B56900107AE7 /* CommonCell.swift in Sources */,
 				52DA66C0200F152600AB32E9 /* UpAndDownCell.swift in Sources */,
+				523672DD2021920800D8CAAD /* DetailViewController.swift in Sources */,
 				522682B8201191CC00FE1ED0 /* CircleTableViewController.swift in Sources */,
 				52DFD817200D99AB0047D9A9 /* AppDelegate.swift in Sources */,
 				527294BD2015DC6800107AE7 /* GCDTimer.swift in Sources */,
@@ -642,6 +661,7 @@
 				52DA5FB32016DA840096B220 /* ResetPageControl.swift in Sources */,
 				52DA5FB52016DBA10096B220 /* Math.swift in Sources */,
 				522682B220118F4C00FE1ED0 /* GlobalVariables.swift in Sources */,
+				523672DA20215C9800D8CAAD /* CommentCell.swift in Sources */,
 				52DFD8A0200DFDD70047D9A9 /* SwiftyJSON.swift in Sources */,
 				522682B52011910F00FE1ED0 /* BaseViewController.swift in Sources */,
 				52DA5FB72016DCBB0096B220 /* ParallaxImageView.swift in Sources */,
