@@ -21,9 +21,9 @@ class BBNavigationController: JPNavigationController {
         let navBar = UINavigationBar.appearance()
         navBar.isTranslucent = false
 //        navBar.barTintColor = Common.commonYellow 
-        //        navBar.tintColor = UIColor.white
+//        navBar.tintColor = UIColor.white
         
-        //        navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
         
     }
     

@@ -147,9 +147,21 @@ extension VideoPlayVC : UITableViewDataSource,UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CommentCell
+        
         cell.contentTextLabel.attributedText = Common.getAttributeStringWithString(testStr[indexPath.row], lineSpace: 2)
+        cell.delegate = self
+        
         return cell
     }
     
+    
+}
+
+extension VideoPlayVC : tapAvatarDelegate {
+    
+    func tapImg() {
+        let vc = SomeoneViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
 }

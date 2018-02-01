@@ -1,4 +1,4 @@
-//
+ //
 //  SomeoneViewController.swift
 //  StockVideo
 //
@@ -14,6 +14,12 @@ extension UINavigationController {
         navigationBar.isTranslucent = true
         navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationBar.shadowImage = UIImage()
+    }
+    
+    func cleanLine(){
+        
+        navigationBar.shadowImage = UIImage()
+        
     }
 }
 

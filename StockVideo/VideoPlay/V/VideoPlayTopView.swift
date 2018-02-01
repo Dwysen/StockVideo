@@ -35,9 +35,5 @@ class VideoPlayTopView: UIView {
             tagView.addSubview(label)
             
         }
-        
     }
-
-   
-
 }

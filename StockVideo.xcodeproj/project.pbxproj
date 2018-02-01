@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521DF3762022A58000D11388 /* EditMeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 521DF3742022A58000D11388 /* EditMeView.xib */; };
+		521DF3782022A90200D11388 /* EditMeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DF3772022A90200D11388 /* EditMeView.swift */; };
+		521DF37C2022B8CD00D11388 /* EditSelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DF37B2022B8CD00D11388 /* EditSelfViewController.swift */; };
+		521DF380202308F100D11388 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DF37E202308F100D11388 /* LoginViewController.swift */; };
+		521DF381202308F100D11388 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 521DF37F202308F100D11388 /* LoginViewController.xib */; };
 		522682AF20118E7900FE1ED0 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522682AD20118E7900FE1ED0 /* TableViewCell.xib */; };
 		522682B020118E7900FE1ED0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522682AE20118E7900FE1ED0 /* TableViewCell.swift */; };
 		522682B220118F4C00FE1ED0 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522682B120118F4B00FE1ED0 /* GlobalVariables.swift */; };
@@ -83,6 +88,11 @@
 
 /* Begin PBXFileReference section */
 		4B9D6062254F922EFB9B25E5 /* Pods_StockVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		521DF3742022A58000D11388 /* EditMeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditMeView.xib; sourceTree = "<group>"; };
+		521DF3772022A90200D11388 /* EditMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMeView.swift; sourceTree = "<group>"; };
+		521DF37B2022B8CD00D11388 /* EditSelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSelfViewController.swift; sourceTree = "<group>"; };
+		521DF37E202308F100D11388 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		521DF37F202308F100D11388 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		522682AD20118E7900FE1ED0 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		522682AE20118E7900FE1ED0 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		522682B120118F4B00FE1ED0 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
@@ -183,6 +193,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		521DF37D202308CC00D11388 /* Login&Register */ = {
+			isa = PBXGroup;
+			children = (
+				521DF37E202308F100D11388 /* LoginViewController.swift */,
+				521DF37F202308F100D11388 /* LoginViewController.xib */,
+			);
+			path = "Login&Register";
+			sourceTree = "<group>";
+		};
 		522682AB20118E4F00FE1ED0 /* CirCle */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +252,9 @@
 			children = (
 				522B7043201AD0D7002108F2 /* MeViewController.swift */,
 				522B7044201AD0D7002108F2 /* MeViewController.xib */,
+				521DF37B2022B8CD00D11388 /* EditSelfViewController.swift */,
+				521DF3772022A90200D11388 /* EditMeView.swift */,
+				521DF3742022A58000D11388 /* EditMeView.xib */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -406,13 +428,14 @@
 		52DFD815200D99AB0047D9A9 /* StockVideo */ = {
 			isa = PBXGroup;
 			children = (
+				521DF37D202308CC00D11388 /* Login&Register */,
+				52DFD816200D99AB0047D9A9 /* AppDelegate.swift */,
+				52DFD818200D99AB0047D9A9 /* ViewController.swift */,
 				523B482E202045FB00556868 /* VideoPlay */,
 				522B7047201AFC6B002108F2 /* Other */,
 				522B7041201AD001002108F2 /* Me */,
 				527294AA2015AE8900107AE7 /* Home */,
 				522682AB20118E4F00FE1ED0 /* CirCle */,
-				52DFD816200D99AB0047D9A9 /* AppDelegate.swift */,
-				52DFD818200D99AB0047D9A9 /* ViewController.swift */,
 				52DFD88E200DFAC10047D9A9 /* Classes */,
 				52DFD82E200DEE8E0047D9A9 /* Main */,
 				52DA66B8200EEB6800AB32E9 /* Market */,
@@ -529,6 +552,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521DF3762022A58000D11388 /* EditMeView.xib in Resources */,
 				523B48312020466D00556868 /* VideoPlayTopView.xib in Resources */,
 				52DA66BD200EECAE00AB32E9 /* Podfile in Resources */,
 				523672E1202193AA00D8CAAD /* DetailTopView.xib in Resources */,
@@ -536,6 +560,7 @@
 				52336B4620196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib in Resources */,
 				52DA5FAD2016C02D0096B220 /* HotView.xib in Resources */,
 				5240397B201068D7003D94FD /* Main.storyboard in Resources */,
+				521DF381202308F100D11388 /* LoginViewController.xib in Resources */,
 				52336B4B20196843004F73F9 /* JPVideoPlayerDemoCell.xib in Resources */,
 				522B7046201AD0D7002108F2 /* MeViewController.xib in Resources */,
 				52DFD821200D99AB0047D9A9 /* LaunchScreen.storyboard in Resources */,
@@ -634,12 +659,14 @@
 				527294BF2015E35400107AE7 /* TranformFadeView.swift in Sources */,
 				52336B4920196843004F73F9 /* JPVideoPlayerDemoCell.swift in Sources */,
 				523672DF2021939E00D8CAAD /* DetailTopView.swift in Sources */,
+				521DF3782022A90200D11388 /* EditMeView.swift in Sources */,
 				52DA5FAF2016C9110096B220 /* HeadView.swift in Sources */,
 				52DFD89C200DFAC10047D9A9 /* CHKLineChartStyle.swift in Sources */,
 				52DA66B5200EE8AC00AB32E9 /* Common.swift in Sources */,
 				52DFD832200DF0E20047D9A9 /* BBViewController.swift in Sources */,
 				52DFD89A200DFAC10047D9A9 /* CHExtension.swift in Sources */,
 				527294B12015B56900107AE7 /* CommonCell.swift in Sources */,
+				521DF380202308F100D11388 /* LoginViewController.swift in Sources */,
 				52DA66C0200F152600AB32E9 /* UpAndDownCell.swift in Sources */,
 				523672DD2021920800D8CAAD /* DetailViewController.swift in Sources */,
 				522682B8201191CC00FE1ED0 /* CircleTableViewController.swift in Sources */,
@@ -655,6 +682,7 @@
 				52DFD89B200DFAC10047D9A9 /* CHKLineChart.swift in Sources */,
 				522B7045201AD0D7002108F2 /* MeViewController.swift in Sources */,
 				527294AD2015AF3C00107AE7 /* HomeViewController.swift in Sources */,
+				521DF37C2022B8CD00D11388 /* EditSelfViewController.swift in Sources */,
 				52DFD834200DF24F0047D9A9 /* KLineViewController.swift in Sources */,
 				52DA5FAB2016C0170096B220 /* HotView.swift in Sources */,
 				527294A920156DA600107AE7 /* BBAboutVideoViewController.swift in Sources */,

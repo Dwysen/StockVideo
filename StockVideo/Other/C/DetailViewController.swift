@@ -84,6 +84,12 @@ class DetailViewController: UIViewController {
             
             let imgView = UIImageView.init(frame: CGRect(x: 15, y: CGFloat(i) * ( imgHeight + imgMargin ), width: Common.screenWidth - 30, height: imgHeight))
             imgView.kf.setImage(with: URL.init(string: imgArr[i]))
+            imgView.isUserInteractionEnabled = true
+            imgView.tag = i + 1000
+            
+            let tap = UITapGestureRecognizer(target: self, action: #selector(tapImage(sender:)))
+            
+            imgView.addGestureRecognizer(tap)
             
             imgBgView.addSubview(imgView)
             
@@ -112,6 +118,52 @@ class DetailViewController: UIViewController {
         
     }
     
+    @objc private func tapImage(sender:UITapGestureRecognizer){
+        
+        print(sender.view!.tag)
+        
+        let bview = HJImageBrowser()
+        
+        bview.delegate = self
+        
+        //            bottomView 这个一定要填写你点击的imageView的直接父视图
+        //            cell.viewWithTag(10086) 这个就是cell类里面的那个images（UIView）我在Xib里面设置的
+        bview.bottomView = imgBgView
+        
+        //            当前点击的图片在该数组中的位置。
+        bview.indexImage = sender.view!.tag - 1000
+        
+        bview.defaultImage = UIImage.init(named: "test")
+        
+        bview.arrayImage = imgArr
+        
+        bview.show()
+        
+        
+    }
+    
+}
+
+extension DetailViewController : HJImageBrowserDelegate {
+    
+    func getTheThumbnailImage(_ indexRow: Int) -> UIImage {
+        
+        print(indexRow)
+        
+        let selectetView = imgBgView.viewWithTag(indexRow + 1000) as! ImageView
+        
+        if selectetView.image != nil {
+            
+            return selectetView.image!
+            
+        } else {
+            
+            return UIImage.init(named: "test")!
+            
+        }
+        
+    }
+    
 }
 
 extension DetailViewController : UITableViewDelegate,UITableViewDataSource {
@@ -124,10 +176,5 @@ extension DetailViewController : UITableViewDelegate,UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CommentCell
         return cell
     }
-    
-    
-    
-    
-    
-    
+
 }

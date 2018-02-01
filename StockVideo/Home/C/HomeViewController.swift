@@ -376,7 +376,8 @@ class HomeViewController: BaseViewController {
     
     @objc fileprivate func tapHot(sender:UITapGestureRecognizer){
         
-        let vc = VideoPlayVC()
+        
+        let vc = EditSelfViewController()
         vc.title = "\(sender.view?.tag)"
         navigationController?.pushViewController(vc, animated: true)
         

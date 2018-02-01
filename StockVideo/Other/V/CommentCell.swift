@@ -13,18 +13,32 @@ class CommentCell: UITableViewCell {
     @IBOutlet weak var contentTextLabel: UILabel!
     @IBOutlet weak var avatarImgView: UIImageView!
     
+    var delegate:tapAvatarDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         setupUI()
-        
+
     }
     
     private func setupUI(){
         
+        selectionStyle = .none
+        
+        avatarImgView.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapAvatar))
+        
+        avatarImgView.addGestureRecognizer(tap)
+        
+        
         avatarImgView.layer.cornerRadius = 16.5
         avatarImgView.layer.masksToBounds = true
-
+    }
+    
+    @objc private func tapAvatar(){
+        
+        delegate?.tapImg()
         
     }
 

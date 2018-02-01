@@ -12,6 +12,8 @@ class MeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var avatarImgView: UIImageView!
+    
     private var titleText = ["我的消息","我的积分","观看记录","意见反馈"]
     
     override func viewDidLoad() {
@@ -24,6 +26,17 @@ class MeViewController: UIViewController {
  
 //        self.navigationController!.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .add, target: self, action: #selector(rightBarButtonClick))
         setupTableView()
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapAvatar))
+        avatarImgView.isUserInteractionEnabled = true
+        avatarImgView.addGestureRecognizer(tap)
+    }
+    
+    @objc private func tapAvatar(){
+        
+        let vc = LoginViewController()
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
     
     private func setupTableView(){
@@ -60,7 +73,7 @@ extension MeViewController : UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell")
         cell.selectionStyle = .none
-        cell.textLabel?.frame = CGRect.init(x: 50, y: 30, width: 200, height: 20)
+        cell.textLabel?.x = 100
         cell.textLabel?.text = titleText[indexPath.row]
         return cell
     }
