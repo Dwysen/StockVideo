@@ -8,6 +8,19 @@
 
 import UIKit
 
+extension UITextField {
+    
+    func addLeftView(){
+        
+        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: self.height))
+        self.leftViewMode = .always
+    
+    }
+    
+    
+}
+
+
 extension UIView {
     
     // x

@@ -18,6 +18,8 @@ class BBNavigationController: JPNavigationController {
         
 //        setTitleView() 
         
+        
+        
         let navBar = UINavigationBar.appearance()
         navBar.isTranslucent = false
 //        navBar.barTintColor = Common.commonYellow 

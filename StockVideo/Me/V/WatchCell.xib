@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="KGk-i7-Jjw" customClass="WatchCell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="V9o-x6-ddE">
+                        <rect key="frame" x="31" y="10" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="5PT-FP-4L1"/>
+                            <constraint firstAttribute="width" constant="36" id="Zj2-ZQ-HAo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="疯狂的傻狍子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhE-PT-Rwp">
+                        <rect key="frame" x="77" y="10" width="233" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Zqb-Br-QWi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="疯狂的傻狍子，疯狂的傻狍子，疯傻狍子。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbS-dA-G0k">
+                        <rect key="frame" x="77" y="30" width="233" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YhE-PT-Rwp" firstAttribute="leading" secondItem="V9o-x6-ddE" secondAttribute="trailing" constant="10" id="0sf-d7-dV1"/>
+                    <constraint firstItem="WbS-dA-G0k" firstAttribute="trailing" secondItem="YhE-PT-Rwp" secondAttribute="trailing" id="6Zc-Sn-h92"/>
+                    <constraint firstItem="V9o-x6-ddE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="8Nw-uN-NlY"/>
+                    <constraint firstItem="V9o-x6-ddE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Tfy-7D-I5s"/>
+                    <constraint firstAttribute="trailing" secondItem="YhE-PT-Rwp" secondAttribute="trailing" constant="10" id="auI-Kh-Nzc"/>
+                    <constraint firstItem="WbS-dA-G0k" firstAttribute="top" secondItem="YhE-PT-Rwp" secondAttribute="bottom" constant="5" id="c17-vc-g1H"/>
+                    <constraint firstItem="YhE-PT-Rwp" firstAttribute="top" secondItem="V9o-x6-ddE" secondAttribute="top" id="gRN-v4-PMg"/>
+                    <constraint firstItem="WbS-dA-G0k" firstAttribute="leading" secondItem="YhE-PT-Rwp" secondAttribute="leading" id="saB-2R-28F"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="introduceLabel" destination="WbS-dA-G0k" id="LHs-be-l0I"/>
+                <outlet property="nickLabel" destination="YhE-PT-Rwp" id="TfT-Vv-NUF"/>
+            </connections>
+            <point key="canvasLocation" x="61" y="73"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="test" width="22" height="22"/>
+    </resources>
+</document>

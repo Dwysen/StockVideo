@@ -17,6 +17,7 @@ struct Common {
      static let testStr = ["第一层，一般情况下是杀死就好了，不会“给猴看”；第二层就很严重了，一般情况下会是规模性封杀（参考17年6月份的娱乐账号），但是也不会告诉你为什么，让大家去猜、去找红线，这样才能起到足够的震慑力。"," 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？", " 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？"," 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？"]
     
     static let commonYellow = UIColor.init(red: 255/255, green: 214/255, blue: 0, alpha: 1)
+    static let textFieldBGColor = UIColor.init(red: 242/255, green: 242/255, blue: 242/255, alpha: 1)
     
     static let screenWidth = UIScreen.main.bounds.size.width
     static let screenHeight = UIScreen.main.bounds.size.height
@@ -39,7 +40,7 @@ struct Common {
     static func clipCorner(view:UIView,cornerRadius:CGFloat) {
         
         view.layer.cornerRadius = cornerRadius
-        view.layer.masksToBounds = true
+        view.layer.masksToBounds = true  
      
     }
     
@@ -50,6 +51,13 @@ struct Common {
         blackView.alpha = Common.backViewAlaph
         return blackView
 
+    }
+    
+    static func isPhone(phone:String) -> Bool {
+        let phonee = phone.trimmingCharacters(in: .whitespaces)
+        let scan: Scanner = Scanner(string: phonee)
+        var val:Int = 0
+        return scan.scanInt(&val) && scan.isAtEnd  && phonee.count == 11
     }
     
     static func getBBlackView(frame:CGRect) -> UIView {

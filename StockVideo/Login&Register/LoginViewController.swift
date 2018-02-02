@@ -31,18 +31,34 @@ class LoginViewController: UIViewController {
         passwordTextField.backgroundColor = UIColor.init(red: 242/255, green: 242/255, blue: 242/255, alpha: 1)
         loginBtn.backgroundColor = Common.commonYellow
         
-        phoneTextField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: phoneTextField.height))
-        phoneTextField.leftViewMode = .always
-        passwordTextField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: passwordTextField.height))
-        passwordTextField.leftViewMode = .always
+        phoneTextField.addLeftView()
+        passwordTextField.addLeftView()
         
         Common.clipCorner(view: phoneTextField, cornerRadius: 5)
         Common.clipCorner(view: passwordTextField, cornerRadius: 5)
         Common.clipCorner(view: loginBtn, cornerRadius: 5)
         
+        forgetPasswordBtn.addTarget(self, action: #selector(forgetPasswordBtnClick), for: .touchUpInside)
+        
+        registerBtn.addTarget(self, action: #selector(registerBtnClick), for: .touchUpInside)
+        
         
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc private func forgetPasswordBtnClick(){
+        
+        let vc = LoginGetPhoneVC()
+        vc.isForget = true
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func registerBtnClick(){
+        
+        let vc = LoginGetPhoneVC()
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
 
     
