@@ -14,6 +14,8 @@ class BBTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        UIApplication.shared.setStatusBarStyle(.lightContent, animated: true) 
+        
 //        view.backgroundColor = UIColor.white
 //        tabBar.barTintColor = UIColor.white
         

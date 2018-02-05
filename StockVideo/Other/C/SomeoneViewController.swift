@@ -63,6 +63,12 @@ class SomeoneViewController: UIViewController {
     
     var likeCollectionView : UIView!
     
+    override var prefersStatusBarHidden: Bool{
+        
+        return true
+        
+    }
+    
     
     private let singleCellHeight =  ( Common.screenWidth - 2 * 5 - 2 * 3 ) / 3
     
@@ -72,10 +78,18 @@ class SomeoneViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         setupUI()
         
     }
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        UIApplication.shared.setStatusBarHidden(true, with: .slide)
+//    }
+//
+//    override func viewWillDisappear(_ animated: Bool) {
+//        UIApplication.shared.setStatusBarHidden(false, with: .slide)
+//    }
     
     private func setupUI(){
         
@@ -85,7 +99,7 @@ class SomeoneViewController: UIViewController {
         
         view.addSubview(scrollView)
         
-        headBackImgView = UIImageView(frame: CGRect(x: 0, y: -20, width: Common.screenWidth, height: 200))
+        headBackImgView = UIImageView(frame: CGRect(x: 0, y: 0, width: Common.screenWidth, height: 200))
         // 否则子控件返回按钮不响应
         headBackImgView.isUserInteractionEnabled = true
         headBackImgView.contentMode = .scaleAspectFill
@@ -111,12 +125,13 @@ class SomeoneViewController: UIViewController {
         avatarImgView.layer.masksToBounds = true
         avatarImgView.layer.borderColor = UIColor.white.cgColor
         avatarImgView.layer.borderWidth = 2
+        avatarImgView.image = UIImage(named: "test")
         headBackImgView.addSubview(avatarImgView)
         // 设置特定圆角
         
         nameLabel = UILabel()
         headBackImgView.addSubview(nameLabel)
-        nameLabel.text = "aaaaaaaaaaaaaaaa"
+        nameLabel.text = "股民老张"
         nameLabel.textColor = UIColor.white
         nameLabel.snp.makeConstraints { (make) in
             make.left.equalTo(avatarImgView.snp.right).offset(20)
@@ -128,7 +143,7 @@ class SomeoneViewController: UIViewController {
         
         introduceLabel = UILabel()
         headBackImgView.addSubview(introduceLabel)
-        introduceLabel.text = "aaaaaaaaaaaaaaaa"
+        introduceLabel.text = "股民老张"
         introduceLabel.textColor = UIColor.init(red: 136/255, green: 136/255, blue: 136/255, alpha: 1)
         introduceLabel.snp.makeConstraints { (make) in
             make.left.equalTo(avatarImgView.snp.right).offset(20)
@@ -325,6 +340,17 @@ class SomeoneViewController: UIViewController {
             
         } else {
             
+            if self.likeCollectionView == nil {
+                
+                let vc = SomeoneLikeViewController()
+                self.addChildViewController(vc)
+                self.likeCollectionView = vc.view
+                self.likeCollectionView?.frame = CGRect(x: 0, y: 200 + 50 - 13, width: Common.screenWidth, height: 5 * 230)
+                self.likeCollectionView.alpha = 0
+                self.scrollView.addSubview(self.likeCollectionView!)
+                self.scrollView.mj_footer = self.likeViewFooter
+              
+            }
             
             UIView.animate(withDuration: 0.25, animations: {
                 
@@ -332,18 +358,7 @@ class SomeoneViewController: UIViewController {
                 self.collectionView.alpha = 0
                 self.footer.alpha = 0
            
-                if self.likeCollectionView == nil {
-                    let vc = SomeoneLikeViewController()
-                    self.addChildViewController(vc)
-                    self.likeCollectionView = vc.view
-                    self.likeCollectionView?.frame = CGRect(x: 0, y: 200 + 50 - 13, width: Common.screenWidth, height: 5 * 230)
-                    self.scrollView.addSubview(self.likeCollectionView!)
-                    self.scrollView.mj_footer = self.likeViewFooter
-                    
-                } else {
-                    self.likeCollectionView.alpha = 1
-                    self.scrollView.mj_footer = self.likeViewFooter
-                }
+                self.likeCollectionView.alpha = 1
                 
                 print(self.likeCollectionView.maxY)
                 

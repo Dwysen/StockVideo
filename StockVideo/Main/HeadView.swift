@@ -17,6 +17,20 @@ class HeadView: UIView {
         
     }
     
+    convenience init(frame:CGRect,imgName:String) {
+        self.init(frame: frame)
+        
+        let imgView = UIImageView()
+        addSubview(imgView)
+        imgView.snp.makeConstraints { (make) in
+            make.width.equalTo(100)
+            make.height.equalTo(50)
+            make.center.equalToSuperview()
+
+        }
+        imgView.image = UIImage(named: imgName)
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

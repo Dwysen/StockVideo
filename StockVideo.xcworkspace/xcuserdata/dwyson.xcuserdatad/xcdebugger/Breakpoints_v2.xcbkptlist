@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Home/C/HomeViewController.swift"
-            timestampString = "539171095.172793"
+            timestampString = "539509165.215795"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "436"
-            endingLineNumber = "436"
+            startingLineNumber = "439"
+            endingLineNumber = "439"
             landmarkName = "scrollViewDidEndDecelerating(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Home/C/HomeViewController.swift"
-            timestampString = "539171095.172852"
+            timestampString = "539509165.21586"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "442"
-            endingLineNumber = "442"
+            startingLineNumber = "445"
+            endingLineNumber = "445"
             landmarkName = "scrollViewDidEndDecelerating(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JPVideoPlayerDemoVC_home.swift"
-            timestampString = "538651061.644612"
+            timestampString = "539509165.215955"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Other/C/SomeoneViewController.swift"
-            timestampString = "539249097.617411"
+            timestampString = "539509165.216233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "352"
-            endingLineNumber = "352"
+            startingLineNumber = "367"
+            endingLineNumber = "367"
             landmarkName = "titleBtnClick(sender:)"
             landmarkType = "7">
             <Locations>
@@ -250,12 +250,12 @@
                   moduleName = "StockVideo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dwyson/Documents/StockVideo%202/StockVideo/Other/C/SomeoneViewController.swift"
-                  timestampString = "539244705.865967"
+                  timestampString = "539502611.735551"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "354"
-                  endingLineNumber = "354"
-                  offsetFromSymbolStart = "604">
+                  startingLineNumber = "369"
+                  endingLineNumber = "369"
+                  offsetFromSymbolStart = "1676">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -265,12 +265,12 @@
                   moduleName = "StockVideo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dwyson/Documents/StockVideo%202/StockVideo/Other/C/SomeoneViewController.swift"
-                  timestampString = "539244705.8677109"
+                  timestampString = "539502611.7373199"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "354"
-                  endingLineNumber = "354"
-                  offsetFromSymbolStart = "2464">
+                  startingLineNumber = "369"
+                  endingLineNumber = "369"
+                  offsetFromSymbolStart = "1416">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -281,60 +281,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StockVideo/Other/C/SomeoneViewController.swift"
-            timestampString = "539249097.6174639"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "422"
-            endingLineNumber = "422"
-            landmarkName = "collectionView(_:didSelectItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StockVideo/Other/C/SomeoneViewController.swift"
-            timestampString = "539249097.617503"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "423"
-            endingLineNumber = "423"
-            landmarkName = "collectionView(_:didSelectItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StockVideo/Other/C/SomeoneViewController.swift"
-            timestampString = "539249097.617539"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "424"
-            endingLineNumber = "424"
-            landmarkName = "collectionView(_:didSelectItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "StockVideo/Other/C/DetailViewController.swift"
-            timestampString = "539171095.173143"
+            timestampString = "539509165.21628"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "getTheThumbnailImage(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -362,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Home/C/HomeViewController.swift"
-            timestampString = "539171095.17321"
+            timestampString = "539509165.21636"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "380"
-            endingLineNumber = "380"
+            startingLineNumber = "383"
+            endingLineNumber = "383"
             landmarkName = "tapHot(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -378,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Home/C/HomeViewController.swift"
-            timestampString = "539171095.173255"
+            timestampString = "539509165.2164119"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "381"
-            endingLineNumber = "381"
+            startingLineNumber = "384"
+            endingLineNumber = "384"
             landmarkName = "tapHot(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -394,11 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Home/C/HomeViewController.swift"
-            timestampString = "539171095.173297"
+            timestampString = "539509165.216459"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "382"
-            endingLineNumber = "382"
+            startingLineNumber = "385"
+            endingLineNumber = "385"
             landmarkName = "tapHot(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -410,7 +362,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Me/C/EditSelfViewController.swift"
-            timestampString = "539234396.023708"
+            timestampString = "539486528.206485"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
@@ -426,7 +378,7 @@
                   moduleName = "StockVideo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dwyson/Documents/StockVideo%202/StockVideo/Me/C/EditSelfViewController.swift"
-                  timestampString = "539244705.895546"
+                  timestampString = "539502611.756074"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
@@ -441,7 +393,7 @@
                   moduleName = "StockVideo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dwyson/Documents/StockVideo%202/StockVideo/Me/C/EditSelfViewController.swift"
-                  timestampString = "539244705.897212"
+                  timestampString = "539502611.757897"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
@@ -458,7 +410,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Me/C/EditSelfViewController.swift"
-            timestampString = "539234396.02376"
+            timestampString = "539486528.2065279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -474,7 +426,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Me/C/EditSelfViewController.swift"
-            timestampString = "539234396.0237989"
+            timestampString = "539486528.206566"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
@@ -490,7 +442,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Me/C/EditSelfViewController.swift"
-            timestampString = "539234396.023836"
+            timestampString = "539486528.206601"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"

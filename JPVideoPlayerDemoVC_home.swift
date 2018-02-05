@@ -38,9 +38,7 @@ class JPVideoPlayerDemoVC_home: UITableViewController {
         super.viewDidLoad()
         
         setup()
-        
-        
-        
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -109,11 +107,13 @@ class JPVideoPlayerDemoVC_home: UITableViewController {
             // To simulate the cell have no video to play.
             // "",
             "http://120.25.226.186:32812/resources/videos/minion_10.mp4",
-            "http://120.25.226.186:32812/resources/videos/minion_11.mp4",
-            "http://lavaweb-10015286.video.myqcloud.com/%E5%B0%BD%E6%83%85LAVA.mp4",
-            "http://lavaweb-10015286.video.myqcloud.com/lava-guitar-creation-2.mp4",
-            "http://lavaweb-10015286.video.myqcloud.com/hong-song-mei-gui-mu-2.mp4",
-            "http://lavaweb-10015286.video.myqcloud.com/ideal-pick-2.mp4"]
+            "http://120.25.226.186:32812/resources/videos/minion_11.mp4"
+            
+//            "http://lavaweb-10015286.video.myqcloud.com/%E5%B0%BD%E6%83%85LAVA.mp4",
+//            "http://lavaweb-10015286.video.myqcloud.com/lava-guitar-creation-2.mp4",
+//            "http://lavaweb-10015286.video.myqcloud.com/hong-song-mei-gui-mu-2.mp4",
+//            "http://lavaweb-10015286.video.myqcloud.com/ideal-pick-2.mp4"
+        ]
     }()
     
     // The cell of playing video.
@@ -199,11 +199,16 @@ extension JPVideoPlayerDemoVC_home {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let pushVC = JPVideoPlayerDemoVC_push()
-        pushVC.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(pushVC, animated: true)
-        let cell = tableView.cellForRow(at: indexPath) as! JPVideoPlayerDemoCell
-        pushVC.videoPath = cell.videoPath
+//        let pushVC = JPVideoPlayerDemoVC_push()
+//        pushVC.hidesBottomBarWhenPushed = true
+//        self.navigationController?.pushViewController(pushVC, animated: true)
+//        let cell = tableView.cellForRow(at: indexPath) as! JPVideoPlayerDemoCell
+//        pushVC.videoPath = cell.videoPath
+        
+        let vc = VideoPlayVC()
+        navigationController?.pushViewController(vc, animated: true)
+        
+        
     }
     
     override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
@@ -231,7 +236,7 @@ extension JPVideoPlayerDemoVC_home {
     func setup() {
 //        setupNavBar()
         setupTableView()
-//        displayTableViewRange()
+        displayTableViewRange() 
     
         self.navigationController?.navigationBar.isTranslucent = true
         self.title = "Test"
@@ -327,7 +332,7 @@ extension JPVideoPlayerDemoVC_home {
         playingCell = videoCell
         
         // 调亮第一个Cell
-        videoCell.blackView.alpha = 0
+//        videoCell.blackView.alpha = 0
         
         // display status view.
         videoCell.videoImv.jp_playVideo(with: URL(string: videoCell.videoPath))
@@ -413,6 +418,8 @@ extension JPVideoPlayerDemoVC_home{
         let visiableCells : [JPVideoPlayerDemoCell] = tableView.visibleCells as! [JPVideoPlayerDemoCell];
         var gap : CGFloat = CGFloat(MAXFLOAT)
         for cell in visiableCells {
+            
+            cell.blackView.alpha = 0.8
             
             if cell.videoPath.characters.count>0 { // If need to play video, 如果这个cell有视频
                 

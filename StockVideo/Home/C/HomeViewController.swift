@@ -194,7 +194,7 @@ class HomeViewController: BaseViewController {
         tableView.separatorStyle = .none
         
         
-        let headView = HeadView.init(frame: CGRect.init(x: 0, y: 0, width: Common.screenWidth, height: 60))
+        let headView = HeadView.init(frame: CGRect.init(x: 0, y: 0, width: Common.screenWidth, height: 60),imgName:"titleNew")
         tableView.tableHeaderView =  headView
         
         tableView.register(UINib.init(nibName: "CommonCell", bundle: nil), forCellReuseIdentifier: "cell")
@@ -209,7 +209,7 @@ class HomeViewController: BaseViewController {
         let backView = UIView.init(frame: CGRect(x: 0, y: Common.newSectionHeight + Common.bannerHeight , width: Common.screenWidth, height: Common.headViewHeight + Common.singleBlockHeight * 2))
         scrollView.addSubview(backView)
         
-        let headView = HeadView.init(frame: CGRect.init(x: 0, y: 0, width: Common.screenWidth, height: Common.headViewHeight))
+        let headView = HeadView.init(frame: CGRect.init(x: 0, y: 0, width: Common.screenWidth, height: Common.headViewHeight), imgName: "titleHot")
         backView.addSubview(headView)
         
         let hotView = HotView.newInstance()
@@ -247,10 +247,7 @@ class HomeViewController: BaseViewController {
         
         onceLinearEquation = Math((x : 0,                  imageViewX : -50),
                                   (x : view!.width, imageViewX : 270 - 80))
-        
-        let headView = HeadView.init(frame: CGRect.init(x: 0, y: Common.likeViewY, width: Common.screenWidth, height: Common.headViewHeight))
-        scrollView.addSubview(headView)
-        
+
         likeScrollView                                = UIScrollView(frame: CGRect.init(x: 0, y: Common.likeViewY + Common.headViewHeight, width: Common.screenWidth, height: Common.singleBlockHeight))
         likeScrollView.delegate                       = self
         likeScrollView.isPagingEnabled                = true
@@ -260,7 +257,9 @@ class HomeViewController: BaseViewController {
         likeScrollView.contentSize                    = CGSize(width:  CGFloat(imgArr.count) * Common.screenWidth, height:Common.singleBlockHeight )
         scrollView.addSubview(likeScrollView)
         
+        let headView = HeadView.init(frame: CGRect.init(x: 0, y: Common.likeViewY, width: Common.screenWidth, height: Common.headViewHeight), imgName: "titleLike")
         
+        scrollView.addSubview(headView)
         
         for (i, str) in imgArr.enumerated() {
             
@@ -364,10 +363,14 @@ class HomeViewController: BaseViewController {
     }
     
     @objc fileprivate func tapImage(sender:UITapGestureRecognizer){
-        
-        let vc = VideoPlayVC()
-        vc.image = currentImg
+
+        let vc = JPVideoPlayerDemoVC_home()
         navigationController?.pushViewController(vc, animated: true)
+        
+        
+//        let vc = VideoPlayVC()
+//        vc.image = currentImg
+//        navigationController?.pushViewController(vc, animated: true)
         
         // gcdTimer.destroy()
         // setTimer(delay: 6)
