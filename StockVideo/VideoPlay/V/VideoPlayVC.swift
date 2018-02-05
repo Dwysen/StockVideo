@@ -8,9 +8,11 @@
 
 import UIKit
 import SnapKit
+import JPVideoPlayer
 
 class VideoPlayVC: BBViewController {
 
+    var playUrl : String!
     
     let testStr = ["第一层，一般情况下是杀死就好了，不会“给猴看”；第二层就很严重了，一般情况下会是规模性封杀（参考17年6月份的娱乐账号），但是也不会告诉你为什么，让大家去猜、去找红线，这样才能起到足够的震慑力。"," 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？", " 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？"," 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？"]
     
@@ -32,6 +34,8 @@ class VideoPlayVC: BBViewController {
         return scrollView
     }()
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        let imageView = UIImageView.init(frame: view.bounds)
@@ -41,12 +45,49 @@ class VideoPlayVC: BBViewController {
 //        view.addSubview(imageView)
         
         self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.jp_useCustomPopAnimationForCurrentViewController = true
         
         setupTopView()
         
 //        setupBottomScrollView()
         
         setupTableView()
+        
+        setupPlayView()
+        
+        setupTouchEvents()
+        
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        print("2")
+
+        videoPlayView.jp_stopPlay()
+    }
+    
+    private func setupPlayView(){
+        
+//            videoPlayView = UIView()
+//            let screenWidth = UIScreen.main.bounds.size.width
+//            videoContainer.frame = CGRect(x: 0, y: 100, width: screenWidth, height: screenWidth * 9.0 / 16.0)
+//            self.view.addSubview(videoContainer)
+//            videoContainer.jp_videoPlayerDelegate = self
+//            guard let path = videoPath else {
+//                return
+//            }
+        
+        guard playUrl != nil else {
+            
+            print("playUrl is nil")
+            
+            return
+            
+        }
+        
+            videoPlayView.jp_playVideo(with: URL(string: playUrl))
+    
         
     }
     
@@ -102,6 +143,27 @@ class VideoPlayVC: BBViewController {
 //
 //
 //    }
+    
+    func setupTouchEvents() {
+        let tapGestureRecognize = UITapGestureRecognizer(target: self, action: #selector(self.didTapVideoView(gestureRecognizer:)))
+        tapGestureRecognize.numberOfTapsRequired = 2
+        videoPlayView.isUserInteractionEnabled = true
+        videoPlayView.addGestureRecognizer(tapGestureRecognize)
+    }
+    
+    @objc func didTapVideoView(gestureRecognizer : UITapGestureRecognizer) {
+        
+        print("1111")
+        
+        if gestureRecognizer.state == UIGestureRecognizerState.ended {
+            if videoPlayView.viewStatus == JPVideoPlayerVideoViewStatus.portrait {
+                videoPlayView.jp_gotoLandscape(animated: true, completion: nil)
+            }
+            else if (videoPlayView.viewStatus == JPVideoPlayerVideoViewStatus.landscape){
+                videoPlayView.jp_gotoPortrait(animated: true, completion: nil)
+            }
+        }
+    }
     
     private func setupTableView(){
         

@@ -36,9 +36,9 @@ class BBTabBarController: UITabBarController {
     
     private func addChildViewControllers() {
         
-        addChildViewController(childController: HomeViewController(), title: "视频", imageName: "home")
+        addChildViewController(childController: HomeViewController(), title: "视频", imageName: "tabHome")
         
-        addChildViewController(childController: MeViewController(), title: "我的", imageName: "home")
+        addChildViewController(childController: MeViewController(), title: "我的", imageName: "tabMe")
         
 //        addChildViewController(childController: MarketViewController(), title: "行情", imageName: "openClass")
 //
@@ -48,8 +48,8 @@ class BBTabBarController: UITabBarController {
     }
     
     private func addChildViewController(childController: UIViewController, title: String, imageName: String) {
-        //        childController.tabBarItem.image = UIImage(named: imageName)
-        //        childController.tabBarItem.selectedImage = UIImage(named: imageName + "selected")
+            childController.tabBarItem.image = UIImage(named: imageName)
+            childController.tabBarItem.selectedImage = UIImage(named: imageName + "Select")
         
         let navC = BBNavigationController(rootViewController: childController)
         

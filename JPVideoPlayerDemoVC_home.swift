@@ -206,6 +206,7 @@ extension JPVideoPlayerDemoVC_home {
 //        pushVC.videoPath = cell.videoPath
         
         let vc = VideoPlayVC()
+        vc.playUrl = videoPathStrings[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
         
         
@@ -332,7 +333,7 @@ extension JPVideoPlayerDemoVC_home {
         playingCell = videoCell
         
         // 调亮第一个Cell
-//        videoCell.blackView.alpha = 0
+        videoCell.blackView.alpha = 0
         
         // display status view.
         videoCell.videoImv.jp_playVideo(with: URL(string: videoCell.videoPath))
@@ -393,7 +394,7 @@ extension JPVideoPlayerDemoVC_home {
     
     func stopPlay() {
         playingCell?.videoImv.jp_stopPlay()
-        
+        playingCell?.blackView.alpha = 0.8
         playingCell = nil
     }
     
@@ -418,8 +419,6 @@ extension JPVideoPlayerDemoVC_home{
         let visiableCells : [JPVideoPlayerDemoCell] = tableView.visibleCells as! [JPVideoPlayerDemoCell];
         var gap : CGFloat = CGFloat(MAXFLOAT)
         for cell in visiableCells {
-            
-            cell.blackView.alpha = 0.8
             
             if cell.videoPath.characters.count>0 { // If need to play video, 如果这个cell有视频
                 

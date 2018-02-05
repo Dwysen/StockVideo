@@ -86,7 +86,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <inset key="titleEdgeInsets" minX="-22" minY="25" maxX="0.0" maxY="0.0"/>
                     <inset key="imageEdgeInsets" minX="24" minY="-20" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="哈哈" image="test">
+                    <state key="normal" title="点赞" image="staron">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
@@ -95,7 +95,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <inset key="titleEdgeInsets" minX="-22" minY="25" maxX="0.0" maxY="0.0"/>
                     <inset key="imageEdgeInsets" minX="24" minY="-20" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="哈哈" image="test">
+                    <state key="normal" title="评论" image="commenton">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
@@ -104,7 +104,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <inset key="titleEdgeInsets" minX="-22" minY="25" maxX="0.0" maxY="0.0"/>
                     <inset key="imageEdgeInsets" minX="24" minY="-20" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="哈哈" image="test">
+                    <state key="normal" title="分享" image="shareon">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
@@ -176,6 +176,8 @@
         </view>
     </objects>
     <resources>
-        <image name="test" width="22" height="22"/>
+        <image name="commenton" width="18" height="18"/>
+        <image name="shareon" width="18" height="17"/>
+        <image name="staron" width="20" height="17"/>
     </resources>
 </document>

@@ -22,11 +22,11 @@ public enum kJPPlayUnreachCellStyle : Int {
 
 class JPVideoPlayerDemoCell: UITableViewCell {
     
-    lazy var blackView : UIView = {
-        
-        return Common.getBBlackView(frame: bounds)
-        
-    }()
+//    lazy var blackView : UIView = {
+//
+//        return Common.getBBlackView(frame: bounds)
+//
+//    }()
     public var videoPath = String()
     
     public var indexPath: IndexPath {
@@ -37,14 +37,15 @@ class JPVideoPlayerDemoCell: UITableViewCell {
             
             let placeholderName = newValue.row % 2 == 0 ? "four" : "st"
             videoImv.image = UIImage(named: placeholderName)
-//            videoImv.alpha = 0.1
-            videoImv.backgroundColor = UIColor.black
+//            videoImv.alpha = 0.2
+//            videoImv.backgroundColor = UIColor.black 
             
-            videoImv.addSubview(blackView)
+//            videoImv.addSubview(blackView) 
         }
     }
     
     public var cellStyle : kJPPlayUnreachCellStyle? // cell类型
     
+    @IBOutlet weak var blackView: UIView!
     @IBOutlet weak var videoImv: UIImageView!
 }

@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Home/C/HomeViewController.swift"
-            timestampString = "539509165.215795"
+            timestampString = "539514581.178818"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "439"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Home/C/HomeViewController.swift"
-            timestampString = "539509165.21586"
+            timestampString = "539514581.178882"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "445"
@@ -202,7 +202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JPVideoPlayerDemoVC_push.swift"
-            timestampString = "538651061.644569"
+            timestampString = "539514581.178973"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -217,24 +217,8 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JPVideoPlayerDemoVC_home.swift"
-            timestampString = "539509165.215955"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "StockVideo/Other/C/SomeoneViewController.swift"
-            timestampString = "539509165.216233"
+            timestampString = "539514581.179018"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "367"
@@ -250,7 +234,7 @@
                   moduleName = "StockVideo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dwyson/Documents/StockVideo%202/StockVideo/Other/C/SomeoneViewController.swift"
-                  timestampString = "539502611.735551"
+                  timestampString = "539514259.518573"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "369"
@@ -265,7 +249,7 @@
                   moduleName = "StockVideo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dwyson/Documents/StockVideo%202/StockVideo/Other/C/SomeoneViewController.swift"
-                  timestampString = "539502611.7373199"
+                  timestampString = "539514259.520277"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "369"
@@ -282,7 +266,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Other/C/DetailViewController.swift"
-            timestampString = "539509165.21628"
+            timestampString = "539514581.17906"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "170"
@@ -314,7 +298,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Home/C/HomeViewController.swift"
-            timestampString = "539509165.21636"
+            timestampString = "539514581.179131"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "383"
@@ -330,7 +314,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Home/C/HomeViewController.swift"
-            timestampString = "539509165.2164119"
+            timestampString = "539514581.179178"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "384"
@@ -346,7 +330,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockVideo/Home/C/HomeViewController.swift"
-            timestampString = "539509165.216459"
+            timestampString = "539514581.179224"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "385"
@@ -378,7 +362,7 @@
                   moduleName = "StockVideo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dwyson/Documents/StockVideo%202/StockVideo/Me/C/EditSelfViewController.swift"
-                  timestampString = "539502611.756074"
+                  timestampString = "539514259.538221"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
@@ -393,7 +377,7 @@
                   moduleName = "StockVideo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dwyson/Documents/StockVideo%202/StockVideo/Me/C/EditSelfViewController.swift"
-                  timestampString = "539502611.757897"
+                  timestampString = "539514259.539941"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
@@ -496,6 +480,102 @@
             startingLineNumber = "41"
             endingLineNumber = "41"
             landmarkName = "tapAvatar()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JPVideoPlayerDemoVC_push.swift"
+            timestampString = "539514581.179399"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidDisappear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockVideo/VideoPlay/V/VideoPlayVC.swift"
+            timestampString = "539514581.179444"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "didTapVideoView(gestureRecognizer:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockVideo/VideoPlay/V/VideoPlayVC.swift"
+            timestampString = "539514581.179745"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "didTapVideoView(gestureRecognizer:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockVideo/VideoPlay/V/VideoPlayVC.swift"
+            timestampString = "539514581.179938"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "didTapVideoView(gestureRecognizer:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockVideo/VideoPlay/V/VideoPlayVC.swift"
+            timestampString = "539514581.180125"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
+            landmarkName = "didTapVideoView(gestureRecognizer:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockVideo/VideoPlay/V/VideoPlayVC.swift"
+            timestampString = "539514581.18031"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "didTapVideoView(gestureRecognizer:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

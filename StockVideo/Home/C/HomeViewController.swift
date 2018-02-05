@@ -364,13 +364,13 @@ class HomeViewController: BaseViewController {
     
     @objc fileprivate func tapImage(sender:UITapGestureRecognizer){
 
-        let vc = JPVideoPlayerDemoVC_home()
-        navigationController?.pushViewController(vc, animated: true)
-        
-        
-//        let vc = VideoPlayVC()
-//        vc.image = currentImg
+//        let vc = JPVideoPlayerDemoVC_home()
 //        navigationController?.pushViewController(vc, animated: true)
+        
+        
+        let vc = VideoPlayVC()
+        vc.image = currentImg
+        navigationController?.pushViewController(vc, animated: true)
         
         // gcdTimer.destroy()
         // setTimer(delay: 6)

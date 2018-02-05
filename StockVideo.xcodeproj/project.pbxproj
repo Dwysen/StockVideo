@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5209B63920284547003659DF /* JPVideoPlayerDemoVC_homeee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209B63820284547003659DF /* JPVideoPlayerDemoVC_homeee.swift */; };
 		521DF3762022A58000D11388 /* EditMeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 521DF3742022A58000D11388 /* EditMeView.xib */; };
 		521DF3782022A90200D11388 /* EditMeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DF3772022A90200D11388 /* EditMeView.swift */; };
 		521DF37C2022B8CD00D11388 /* EditSelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DF37B2022B8CD00D11388 /* EditSelfViewController.swift */; };
@@ -101,6 +102,7 @@
 
 /* Begin PBXFileReference section */
 		4B9D6062254F922EFB9B25E5 /* Pods_StockVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5209B63820284547003659DF /* JPVideoPlayerDemoVC_homeee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoVC_homeee.swift; sourceTree = "<group>"; };
 		521DF3742022A58000D11388 /* EditMeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditMeView.xib; sourceTree = "<group>"; };
 		521DF3772022A90200D11388 /* EditMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMeView.swift; sourceTree = "<group>"; };
 		521DF37B2022B8CD00D11388 /* EditSelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSelfViewController.swift; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 				52336B4220196843004F73F9 /* JPVideoPlayerDemoCell.swift */,
 				52336B4420196843004F73F9 /* JPVideoPlayerDemoCell.xib */,
 				52336B4320196843004F73F9 /* JPVideoPlayerDemoVC_home.swift */,
+				5209B63820284547003659DF /* JPVideoPlayerDemoVC_homeee.swift */,
 				522B703D201ABA19002108F2 /* JPVideoPlayerDemoVC_push.swift */,
 				522B703E201ABA1A002108F2 /* JPVideoPlayerDemoVC_push.xib */,
 				52336B4020196843004F73F9 /* JPVideoPlayerDemoVC_Setting.swift */,
@@ -714,6 +717,7 @@
 				52DFD897200DFAC10047D9A9 /* CHAxisModel.swift in Sources */,
 				52DA5FB12016CDE50096B220 /* LikeView.swift in Sources */,
 				52A8A22920182E6200710054 /* ColumnCollectionCell.swift in Sources */,
+				5209B63920284547003659DF /* JPVideoPlayerDemoVC_homeee.swift in Sources */,
 				5280DAE4201F0C2400175F68 /* SomeoneLikeViewController.swift in Sources */,
 				52DA66BB200EEBCA00AB32E9 /* BBShare.swift in Sources */,
 				523B48332020555100556868 /* VideoPlayTopView.swift in Sources */,
