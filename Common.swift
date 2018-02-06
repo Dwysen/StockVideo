@@ -10,6 +10,8 @@ import UIKit
 
 protocol tapAvatarDelegate {
     func tapImg()
+    func tapCell()
+    
 }
 
 struct Common {
@@ -90,7 +92,4 @@ struct Common {
         return attributedString
         
     }
-    
-
- 
 }

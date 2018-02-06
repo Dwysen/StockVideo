@@ -35,11 +35,15 @@ class DetailViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
+        self.navigationController?.jp_useCustomPopAnimationForCurrentViewController = true
+        
         setupTableView()
         
         setupHeadView()
         
         setupImgView()
+        
+      
         
     }
     

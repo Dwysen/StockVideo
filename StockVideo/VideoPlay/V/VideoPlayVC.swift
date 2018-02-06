@@ -219,11 +219,28 @@ extension VideoPlayVC : UITableViewDataSource,UITableViewDelegate {
     
 }
 
-extension VideoPlayVC : tapAvatarDelegate {
+extension VideoPlayVC : tapAvatarDelegate,ActionSheetViewDelegate {
+    
+    func actionSheetAndClickButtonAtIndex(actionSheet: ActionSheetView, buttonIndex: NSInteger) {
+        print(buttonIndex)
+    }
     
     func tapImg() {
         let vc = SomeoneViewController()
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func tapCell(){
+        
+        let array = ["举报","回复"]
+        let ActionSheet = ActionSheetView()
+        ActionSheet.initWithTitleArrayAndShowCancel(titleArr: array, show: false)
+        ActionSheet.frame = UIScreen.main.bounds
+        ActionSheet.delegate = self
+        view.addSubview(ActionSheet)
+        
+        
+        
     }
     
 }

@@ -97,6 +97,13 @@
 		52DFD89D200DFAC10047D9A9 /* CHSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DFD895200DFAC10047D9A9 /* CHSection.swift */; };
 		52DFD89E200DFAC10047D9A9 /* CHSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DFD896200DFAC10047D9A9 /* CHSeries.swift */; };
 		52DFD8A0200DFDD70047D9A9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DFD89F200DFDD70047D9A9 /* SwiftyJSON.swift */; };
+		52F46E8A2029369C00F837BB /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F46E882029369C00F837BB /* MessageCell.swift */; };
+		52F46E8B2029369C00F837BB /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F46E892029369C00F837BB /* MessageCell.xib */; };
+		52F46E8D20293EC200F837BB /* StarFromOtherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F46E8C20293EC200F837BB /* StarFromOtherVC.swift */; };
+		52F46E8F20293EDE00F837BB /* CommentFromOtherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F46E8E20293EDE00F837BB /* CommentFromOtherVC.swift */; };
+		52F46E9120297E7500F837BB /* ActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F46E9020297E7400F837BB /* ActionSheetView.swift */; };
+		52F46E94202997DA00F837BB /* StarFromOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F46E92202997DA00F837BB /* StarFromOtherCell.swift */; };
+		52F46E95202997DA00F837BB /* StarFromOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F46E93202997DA00F837BB /* StarFromOtherCell.xib */; };
 		AEB76552D12FE48DE585B99F /* Pods_StockVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9D6062254F922EFB9B25E5 /* Pods_StockVideo.framework */; };
 /* End PBXBuildFile section */
 
@@ -196,6 +203,13 @@
 		52DFD895200DFAC10047D9A9 /* CHSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSection.swift; sourceTree = "<group>"; };
 		52DFD896200DFAC10047D9A9 /* CHSeries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSeries.swift; sourceTree = "<group>"; };
 		52DFD89F200DFDD70047D9A9 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		52F46E882029369C00F837BB /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		52F46E892029369C00F837BB /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		52F46E8C20293EC200F837BB /* StarFromOtherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarFromOtherVC.swift; sourceTree = "<group>"; };
+		52F46E8E20293EDE00F837BB /* CommentFromOtherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentFromOtherVC.swift; sourceTree = "<group>"; };
+		52F46E9020297E7400F837BB /* ActionSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetView.swift; sourceTree = "<group>"; };
+		52F46E92202997DA00F837BB /* StarFromOtherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarFromOtherCell.swift; sourceTree = "<group>"; };
+		52F46E93202997DA00F837BB /* StarFromOtherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarFromOtherCell.xib; sourceTree = "<group>"; };
 		E6F4A6274A83C449018DDE38 /* Pods-StockVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockVideo/Pods-StockVideo.debug.xcconfig"; sourceTree = "<group>"; };
 		EC870CDD02000FE6B774C444 /* Pods-StockVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockVideo/Pods-StockVideo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -257,6 +271,7 @@
 		522682B320118F6800FE1ED0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				52F46E9020297E7400F837BB /* ActionSheetView.swift */,
 				52DA5FB42016DBA10096B220 /* Math.swift */,
 				522682B92011940600FE1ED0 /* HJImageBrowser.swift */,
 				522682B120118F4B00FE1ED0 /* GlobalVariables.swift */,
@@ -285,9 +300,11 @@
 		522B7042201AD00A002108F2 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				523E65C4202441DA00E49750 /* MessageViewController.swift */,
+				52F46E8C20293EC200F837BB /* StarFromOtherVC.swift */,
+				52F46E8E20293EDE00F837BB /* CommentFromOtherVC.swift */,
 				522B7043201AD0D7002108F2 /* MeViewController.swift */,
 				522B7044201AD0D7002108F2 /* MeViewController.xib */,
-				523E65C4202441DA00E49750 /* MessageViewController.swift */,
 				521DF37B2022B8CD00D11388 /* EditSelfViewController.swift */,
 				523E65B5202435BB00E49750 /* MyWatchController.swift */,
 			);
@@ -376,6 +393,10 @@
 				521DF3742022A58000D11388 /* EditMeView.xib */,
 				523E65C020243BEB00E49750 /* WatchCell.swift */,
 				523E65C120243BEB00E49750 /* WatchCell.xib */,
+				52F46E882029369C00F837BB /* MessageCell.swift */,
+				52F46E892029369C00F837BB /* MessageCell.xib */,
+				52F46E92202997DA00F837BB /* StarFromOtherCell.swift */,
+				52F46E93202997DA00F837BB /* StarFromOtherCell.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -625,8 +646,10 @@
 				522B7040201ABA1A002108F2 /* JPVideoPlayerDemoVC_push.xib in Resources */,
 				52DA66C2200F158300AB32E9 /* UpAndDownCell.xib in Resources */,
 				523E65A52023F42A00E49750 /* LoginGetPhoneVC.xib in Resources */,
+				52F46E8B2029369C00F837BB /* MessageCell.xib in Resources */,
 				523E65AD2024112F00E49750 /* ResetPasswordVC.xib in Resources */,
 				523E65C320243BEB00E49750 /* WatchCell.xib in Resources */,
+				52F46E95202997DA00F837BB /* StarFromOtherCell.xib in Resources */,
 				527294B22015B56900107AE7 /* CommonCell.xib in Resources */,
 				523E65A92023F5DF00E49750 /* RegisterViewController.xib in Resources */,
 				52DFD81E200D99AB0047D9A9 /* Assets.xcassets in Resources */,
@@ -713,6 +736,7 @@
 				523E65C220243BEB00E49750 /* WatchCell.swift in Sources */,
 				523E65AC2024112F00E49750 /* ResetPasswordVC.swift in Sources */,
 				522B704B201AFCB8002108F2 /* SomeoneViewController.swift in Sources */,
+				52F46E8D20293EC200F837BB /* StarFromOtherVC.swift in Sources */,
 				523E65B420242ABB00E49750 /* LKBubbleView.swift in Sources */,
 				52DFD897200DFAC10047D9A9 /* CHAxisModel.swift in Sources */,
 				52DA5FB12016CDE50096B220 /* LikeView.swift in Sources */,
@@ -733,8 +757,10 @@
 				52DA66B5200EE8AC00AB32E9 /* Common.swift in Sources */,
 				52DFD832200DF0E20047D9A9 /* BBViewController.swift in Sources */,
 				52DFD89A200DFAC10047D9A9 /* CHExtension.swift in Sources */,
+				52F46E8F20293EDE00F837BB /* CommentFromOtherVC.swift in Sources */,
 				527294B12015B56900107AE7 /* CommonCell.swift in Sources */,
 				521DF380202308F100D11388 /* LoginViewController.swift in Sources */,
+				52F46E9120297E7500F837BB /* ActionSheetView.swift in Sources */,
 				523E65B220242ABB00E49750 /* LKBubbleInfo.swift in Sources */,
 				523E65C5202441DA00E49750 /* MessageViewController.swift in Sources */,
 				52DA66C0200F152600AB32E9 /* UpAndDownCell.swift in Sources */,
@@ -744,8 +770,10 @@
 				527294BD2015DC6800107AE7 /* GCDTimer.swift in Sources */,
 				52DFD829200D9A950047D9A9 /* BBTabBarController.swift in Sources */,
 				523E65B6202435BB00E49750 /* MyWatchController.swift in Sources */,
+				52F46E94202997DA00F837BB /* StarFromOtherCell.swift in Sources */,
 				52DFD82D200D9BA10047D9A9 /* BBNavigationController.swift in Sources */,
 				52DFD89D200DFAC10047D9A9 /* CHSection.swift in Sources */,
+				52F46E8A2029369C00F837BB /* MessageCell.swift in Sources */,
 				52DFD899200DFAC10047D9A9 /* CHChartModel.swift in Sources */,
 				52DA66C4200F4A4E00AB32E9 /* ExtensionUIVIew.swift in Sources */,
 				52DFD830200DF0CF0047D9A9 /* MarketViewController.swift in Sources */,

@@ -24,7 +24,7 @@ class MeViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         
         self.title = "我的"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .add, target: self, action: #selector(rightBarButtonClick))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .bookmarks, target: self, action: #selector(rightBarButtonClick))
         
         self.navigationController?.navigationBar.barTintColor = UIColor.white
  
@@ -72,7 +72,8 @@ class MeViewController: UIViewController {
     
     @objc private func rightBarButtonClick(){
         
-        print("1")
+        let vc = MessageViewController()
+        navigationController?.pushViewController(vc, animated: true)
         
     }
     

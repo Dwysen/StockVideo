@@ -88,6 +88,8 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+   
+        
         setupTitleView()
         
         view.addSubview(contentScrollView)
@@ -103,6 +105,8 @@ class HomeViewController: BaseViewController {
         setupLikeSection()
         
         setupColumnController()
+        
+        self.tabBarController?.tabBarItem.image = UIImage.init(named: "home")
         
         //        scrollView.contentSize = CGSize.init(width: Common.screenWidth, height: Common.bannerHeight + Common.newSectionHeight)
         

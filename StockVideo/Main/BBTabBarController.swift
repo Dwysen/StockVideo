@@ -19,14 +19,17 @@ class BBTabBarController: UITabBarController {
 //        view.backgroundColor = UIColor.white
 //        tabBar.barTintColor = UIColor.white
         
-        tabBar.shadowImage = UIImage()
-        tabBar.backgroundImage = UIImage()
+//        tabBar.shadowImage = UIImage()
+//        tabBar.backgroundImage = UIImage()
         
    
 //        tabBar.layer.shadowColor = UIColor.black.cgColor
 //        tabBar.layer.shadowOffset = CGSize.init(width: 2, height: 2)
 //        tabBar.layer.shadowOpacity = 0.05
 //        tabBar.layer.shadowRadius = 3
+        
+        tabBar.tintColor = Common.commonYellow
+        
         
         addChildViewControllers()
         
@@ -48,13 +51,12 @@ class BBTabBarController: UITabBarController {
     }
     
     private func addChildViewController(childController: UIViewController, title: String, imageName: String) {
-            childController.tabBarItem.image = UIImage(named: imageName)
-            childController.tabBarItem.selectedImage = UIImage(named: imageName + "Select")
-        
+    
         let navC = BBNavigationController(rootViewController: childController)
         
-                navC.title = title
-//        childController.title = title
+        navC.title = title
+        navC.tabBarItem.image = UIImage.init(named: imageName)
+        navC.tabBarItem.selectedImage = UIImage.init(named: imageName + "Select")
         
         addChildViewController(navC)
     }
@@ -63,8 +65,4 @@ class BBTabBarController: UITabBarController {
         super.didReceiveMemoryWarning()
         
     }
-    
-    
-    
-    
 }

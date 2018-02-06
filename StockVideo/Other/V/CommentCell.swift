@@ -19,9 +19,12 @@ class CommentCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         setupUI()
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapCell))
+        addGestureRecognizer(tap)
 
     }
-    
+
     private func setupUI(){
         
         selectionStyle = .none
@@ -30,10 +33,14 @@ class CommentCell: UITableViewCell {
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapAvatar))
         
         avatarImgView.addGestureRecognizer(tap)
-        
-        
         avatarImgView.layer.cornerRadius = 16.5
         avatarImgView.layer.masksToBounds = true
+    }
+    
+    @objc private func tapCell(){
+    
+        delegate?.tapCell()
+     
     }
     
     @objc private func tapAvatar(){
