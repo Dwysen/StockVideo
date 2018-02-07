@@ -341,9 +341,7 @@ class HomeViewController: BaseViewController {
     }
     
     fileprivate func change(){
-        
-        print("change")
-        
+    
         weak var weakSelf = self
         
         if weakSelf?.type == .typeOne {

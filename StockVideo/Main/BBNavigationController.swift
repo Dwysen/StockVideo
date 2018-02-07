@@ -13,19 +13,12 @@ class BBNavigationController: JPNavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //        self.navigationBar.setBackgroundImage(UIImage.init(named: "e51c24"), for: .default)
-        
-//        setTitleView() 
-        
-        
-        
+    
         let navBar = UINavigationBar.appearance()
         navBar.isTranslucent = false
-//        navBar.barTintColor = Common.commonYellow 
+//        navBar.barTintColor = Common.commonYellow
 //        navBar.tintColor = UIColor.white
-        
-        navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.black]
         
     }
     
@@ -45,23 +38,20 @@ class BBNavigationController: JPNavigationController {
         if viewControllers.count > 0 {
             // push 后隐藏 tabbar
             viewController.hidesBottomBarWhenPushed = true
-            //            viewController.tabBarController?.tabBar.isHidden = true
-//            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(navigationBackClick))
-//            viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(navigationBackClick))
         }
         super.pushViewController(viewController, animated: true)
-        
+
     }
-    /// 返回按钮
-    @objc func navigationBackClick() {
-        
-        print("1")
-        
-        if UIApplication.shared.isNetworkActivityIndicatorVisible {
-            UIApplication.shared.isNetworkActivityIndicatorVisible = false
-        }
-        popViewController(animated: true)
-    }
+//    /// 返回按钮
+//    @objc func navigationBackClick() {
+//
+//        print("1")
+//
+//        if UIApplication.shared.isNetworkActivityIndicatorVisible {
+//            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+//        }
+//        popViewController(animated: true)
+//    }
     
     
 }

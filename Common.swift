@@ -8,10 +8,32 @@
 
 import UIKit
 
-protocol tapAvatarDelegate {
-    func tapImg()
-    func tapCell()
+extension String {
     
+    func nsRange(from range: Range<String.Index>) -> NSRange? {
+        
+        let utf16view = self.utf16
+        
+        if let from = range.lowerBound.samePosition(in: utf16view), let to = range.upperBound.samePosition(in: utf16view) {
+            
+            return NSMakeRange(utf16view.distance(from: utf16view.startIndex, to: from), utf16view.distance(from: from, to: to))
+            
+        }
+        
+        return nil
+        
+    }
+    
+}
+
+@objc protocol tapAvatarDelegate {
+    func tapImg()
+    func tapCell(name:String)
+    
+}
+
+@objc protocol sendBtnClickDelegate {
+    func btnClick(text:String)
 }
 
 struct Common {
@@ -19,6 +41,8 @@ struct Common {
      static let testStr = ["第一层，一般情况下是杀死就好了，不会“给猴看”；第二层就很严重了，一般情况下会是规模性封杀（参考17年6月份的娱乐账号），但是也不会告诉你为什么，让大家去猜、去找红线，这样才能起到足够的震慑力。"," 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？", " 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？"," 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？ 所以头脑王者是触碰了哪个红线或者在引导什么样的趋势呢？"]
     
     static let commonYellow = UIColor.init(red: 255/255, green: 214/255, blue: 0, alpha: 1)
+    static let bgGray = UIColor.init(red: 247/255, green: 247/255, blue: 247/255, alpha: 1)
+    static let subTitleGray = UIColor.init(red: 178/255, green: 178/255, blue: 178/255, alpha: 1)
     static let textFieldBGColor = UIColor.init(red: 242/255, green: 242/255, blue: 242/255, alpha: 1)
     
     static let screenWidth = UIScreen.main.bounds.size.width
@@ -31,7 +55,7 @@ struct Common {
     
     static let bannerHeight : CGFloat = 200
     
-    static let backViewAlaph : CGFloat = 0.3
+    static let backViewAlaph : CGFloat = 0.22
     
     static let likeViewY : CGFloat = Common.bannerHeight + Common.newSectionHeight + Common.hotSectionHeight
     

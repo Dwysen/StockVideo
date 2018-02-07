@@ -14,6 +14,9 @@ class StarFromOtherVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "赞"
+        
         tableView = UITableView(frame: CGRect(x: 0, y: 0, width: Common.screenWidth, height: Common.screenHeight - 64))
         tableView.delegate = self
         tableView.dataSource = self

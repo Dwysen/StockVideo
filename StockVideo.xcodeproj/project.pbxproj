@@ -24,6 +24,11 @@
 		522B7045201AD0D7002108F2 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B7043201AD0D7002108F2 /* MeViewController.swift */; };
 		522B7046201AD0D7002108F2 /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522B7044201AD0D7002108F2 /* MeViewController.xib */; };
 		522B704B201AFCB8002108F2 /* SomeoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B7049201AFCB8002108F2 /* SomeoneViewController.swift */; };
+		522F6816202A856200A96A93 /* CommentFromOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F6814202A856200A96A93 /* CommentFromOtherCell.swift */; };
+		522F6817202A856200A96A93 /* CommentFromOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522F6815202A856200A96A93 /* CommentFromOtherCell.xib */; };
+		522F6819202A918D00A96A93 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F6818202A918D00A96A93 /* SettingViewController.swift */; };
+		522F681B202AEC2C00A96A93 /* inTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F681A202AEC2C00A96A93 /* inTF.swift */; };
+		522F681D202AEC3E00A96A93 /* inTF.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522F681C202AEC3E00A96A93 /* inTF.xib */; };
 		52336B4620196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52336B3F20196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib */; };
 		52336B4720196843004F73F9 /* JPVideoPlayerDemoVC_Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336B4020196843004F73F9 /* JPVideoPlayerDemoVC_Setting.swift */; };
 		52336B4920196843004F73F9 /* JPVideoPlayerDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336B4220196843004F73F9 /* JPVideoPlayerDemoCell.swift */; };
@@ -126,6 +131,11 @@
 		522B7043201AD0D7002108F2 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		522B7044201AD0D7002108F2 /* MeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
 		522B7049201AFCB8002108F2 /* SomeoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeoneViewController.swift; sourceTree = "<group>"; };
+		522F6814202A856200A96A93 /* CommentFromOtherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentFromOtherCell.swift; sourceTree = "<group>"; };
+		522F6815202A856200A96A93 /* CommentFromOtherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentFromOtherCell.xib; sourceTree = "<group>"; };
+		522F6818202A918D00A96A93 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		522F681A202AEC2C00A96A93 /* inTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inTF.swift; sourceTree = "<group>"; };
+		522F681C202AEC3E00A96A93 /* inTF.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = inTF.xib; sourceTree = "<group>"; };
 		52336B3F20196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVideoPlayerDemoVC_Setting.xib; sourceTree = "<group>"; };
 		52336B4020196843004F73F9 /* JPVideoPlayerDemoVC_Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoVC_Setting.swift; sourceTree = "<group>"; };
 		52336B4220196843004F73F9 /* JPVideoPlayerDemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoCell.swift; sourceTree = "<group>"; };
@@ -307,6 +317,7 @@
 				522B7044201AD0D7002108F2 /* MeViewController.xib */,
 				521DF37B2022B8CD00D11388 /* EditSelfViewController.swift */,
 				523E65B5202435BB00E49750 /* MyWatchController.swift */,
+				522F6818202A918D00A96A93 /* SettingViewController.swift */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -350,6 +361,8 @@
 		523B482D2020047800556868 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				522F681A202AEC2C00A96A93 /* inTF.swift */,
+				522F681C202AEC3E00A96A93 /* inTF.xib */,
 				523672DE2021939E00D8CAAD /* DetailTopView.swift */,
 				523672E0202193AA00D8CAAD /* DetailTopView.xib */,
 				523672D820215C9800D8CAAD /* CommentCell.swift */,
@@ -397,6 +410,8 @@
 				52F46E892029369C00F837BB /* MessageCell.xib */,
 				52F46E92202997DA00F837BB /* StarFromOtherCell.swift */,
 				52F46E93202997DA00F837BB /* StarFromOtherCell.xib */,
+				522F6814202A856200A96A93 /* CommentFromOtherCell.swift */,
+				522F6815202A856200A96A93 /* CommentFromOtherCell.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -641,6 +656,7 @@
 				5240397B201068D7003D94FD /* Main.storyboard in Resources */,
 				521DF381202308F100D11388 /* LoginViewController.xib in Resources */,
 				52336B4B20196843004F73F9 /* JPVideoPlayerDemoCell.xib in Resources */,
+				522F681D202AEC3E00A96A93 /* inTF.xib in Resources */,
 				522B7046201AD0D7002108F2 /* MeViewController.xib in Resources */,
 				52DFD821200D99AB0047D9A9 /* LaunchScreen.storyboard in Resources */,
 				522B7040201ABA1A002108F2 /* JPVideoPlayerDemoVC_push.xib in Resources */,
@@ -649,6 +665,7 @@
 				52F46E8B2029369C00F837BB /* MessageCell.xib in Resources */,
 				523E65AD2024112F00E49750 /* ResetPasswordVC.xib in Resources */,
 				523E65C320243BEB00E49750 /* WatchCell.xib in Resources */,
+				522F6817202A856200A96A93 /* CommentFromOtherCell.xib in Resources */,
 				52F46E95202997DA00F837BB /* StarFromOtherCell.xib in Resources */,
 				527294B22015B56900107AE7 /* CommonCell.xib in Resources */,
 				523E65A92023F5DF00E49750 /* RegisterViewController.xib in Resources */,
@@ -728,6 +745,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522F681B202AEC2C00A96A93 /* inTF.swift in Sources */,
 				52A8A22720182B4600710054 /* ColumnViewController.swift in Sources */,
 				523E65A82023F5DF00E49750 /* RegisterViewController.swift in Sources */,
 				52DFD819200D99AB0047D9A9 /* ViewController.swift in Sources */,
@@ -763,6 +781,7 @@
 				52F46E9120297E7500F837BB /* ActionSheetView.swift in Sources */,
 				523E65B220242ABB00E49750 /* LKBubbleInfo.swift in Sources */,
 				523E65C5202441DA00E49750 /* MessageViewController.swift in Sources */,
+				522F6819202A918D00A96A93 /* SettingViewController.swift in Sources */,
 				52DA66C0200F152600AB32E9 /* UpAndDownCell.swift in Sources */,
 				523672DD2021920800D8CAAD /* DetailViewController.swift in Sources */,
 				522682B8201191CC00FE1ED0 /* CircleTableViewController.swift in Sources */,
@@ -786,6 +805,7 @@
 				52DFD834200DF24F0047D9A9 /* KLineViewController.swift in Sources */,
 				52DA5FAB2016C0170096B220 /* HotView.swift in Sources */,
 				527294A920156DA600107AE7 /* BBAboutVideoViewController.swift in Sources */,
+				522F6816202A856200A96A93 /* CommentFromOtherCell.swift in Sources */,
 				52DA5FB32016DA840096B220 /* ResetPageControl.swift in Sources */,
 				52DA5FB52016DBA10096B220 /* Math.swift in Sources */,
 				522682B220118F4C00FE1ED0 /* GlobalVariables.swift in Sources */,

@@ -33,7 +33,7 @@
 
 @end
 
-static NSString *const kJPWarpNavigationControllerBackImageName = @"backImage";
+static NSString *const kJPWarpNavigationControllerBackImageName = @"backArrow";
 
 @implementation JPWarpNavigationController
 
@@ -212,9 +212,10 @@ static NSString *const kJPWarpNavigationControllerBackImageName = @"backImage";
     // call pushViewController:animated:.
     viewController.jp_rootNavigationController = rootNavigationController;
 
+//    返回按钮
     UIImage *backImg = [[UIImage imageNamed:kJPWarpNavigationControllerBackImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:backImg style:UIBarButtonItemStylePlain target:self action:@selector(didTapBackButton)];
-
+   
     JPWarpViewController *warpViewController = [[JPWarpViewController alloc]initWithRootViewController:viewController rootNavigationController:_rootNavigationController];
     
     // capture screen for custom pop if need.

@@ -14,25 +14,22 @@ class BBTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        UIApplication.shared.setStatusBarStyle(.lightContent, animated: true) 
+        //        UIApplication.shared.setStatusBarStyle(.lightContent, animated: true)
+        //        view.backgroundColor = UIColor.white
+        //        tabBar.barTintColor = UIColor.white
         
-//        view.backgroundColor = UIColor.white
-//        tabBar.barTintColor = UIColor.white
+        tabBar.shadowImage = UIImage()
+        tabBar.backgroundImage = UIImage()
         
-//        tabBar.shadowImage = UIImage()
-//        tabBar.backgroundImage = UIImage()
         
-   
-//        tabBar.layer.shadowColor = UIColor.black.cgColor
-//        tabBar.layer.shadowOffset = CGSize.init(width: 2, height: 2)
-//        tabBar.layer.shadowOpacity = 0.05
-//        tabBar.layer.shadowRadius = 3
+        //        tabBar.layer.shadowColor = UIColor.black.cgColor
+        //        tabBar.layer.shadowOffset = CGSize.init(width: 2, height: 2)
+        //        tabBar.layer.shadowOpacity = 0.05
+        //        tabBar.layer.shadowRadius = 3
         
         tabBar.tintColor = Common.commonYellow
         
-        
         addChildViewControllers()
-        
         
         // Do any additional setup after loading the view.
     }
@@ -43,15 +40,14 @@ class BBTabBarController: UITabBarController {
         
         addChildViewController(childController: MeViewController(), title: "我的", imageName: "tabMe")
         
-//        addChildViewController(childController: MarketViewController(), title: "行情", imageName: "openClass")
-//
-//        addChildViewController(childController: CircleTableViewController(), title: "圈子", imageName: "highClass")
-        
+        //        addChildViewController(childController: MarketViewController(), title: "行情", imageName: "openClass")
+        //
+        //        addChildViewController(childController: CircleTableViewController(), title: "圈子", imageName: "highClass")
         
     }
     
     private func addChildViewController(childController: UIViewController, title: String, imageName: String) {
-    
+        
         let navC = BBNavigationController(rootViewController: childController)
         
         navC.title = title

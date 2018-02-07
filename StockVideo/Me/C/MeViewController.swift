@@ -19,16 +19,9 @@ class MeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        
-        self.title = "我的"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .bookmarks, target: self, action: #selector(rightBarButtonClick))
-        
-        self.navigationController?.navigationBar.barTintColor = UIColor.white
- 
-//        self.navigationController!.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .add, target: self, action: #selector(rightBarButtonClick))
+
+        setupNav()
+
         setupTableView()
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapAvatar))
@@ -38,6 +31,17 @@ class MeViewController: UIViewController {
         let tapWatchView = UITapGestureRecognizer(target: self, action: #selector(tapWatch))
         myWatchView.isUserInteractionEnabled = true
         myWatchView.addGestureRecognizer(tapWatchView)
+    }
+    
+    private func setupNav(){
+    
+        title = "我的"
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "setting"), style: .plain, target: self, action: #selector(rightBarButtonClick))
+        navigationController?.navigationBar.tintColor = UIColor.black
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        
     }
     
     @objc private func tapAvatar(){
@@ -72,7 +76,7 @@ class MeViewController: UIViewController {
     
     @objc private func rightBarButtonClick(){
         
-        let vc = MessageViewController()
+        let vc = SettingViewController()
         navigationController?.pushViewController(vc, animated: true)
         
     }

@@ -58,13 +58,13 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTy-Xj-xON">
-                    <rect key="frame" x="255" y="16.5" width="60" height="30"/>
+                    <rect key="frame" x="245" y="16.5" width="60" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="HIS-aY-dY0"/>
                         <constraint firstAttribute="width" constant="60" id="ee7-Po-HIx"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="关注" image="test">
+                    <state key="normal" title="+关注">
                         <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
@@ -91,18 +91,20 @@
                 <constraint firstItem="ccg-zo-itz" firstAttribute="centerY" secondItem="EbB-t5-2lO" secondAttribute="centerY" id="PJo-xP-i31"/>
                 <constraint firstItem="LTy-Xj-xON" firstAttribute="centerY" secondItem="5Hh-NW-6Ri" secondAttribute="centerY" id="QeO-Vb-PJs"/>
                 <constraint firstItem="5Hh-NW-6Ri" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="Zlw-pR-wP3"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LTy-Xj-xON" secondAttribute="trailing" constant="5" id="fEP-vN-ydS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LTy-Xj-xON" secondAttribute="trailing" constant="15" id="fEP-vN-ydS"/>
                 <constraint firstItem="85w-ft-CRl" firstAttribute="leading" secondItem="5Hh-NW-6Ri" secondAttribute="trailing" constant="12" id="hYG-zm-moI"/>
                 <constraint firstItem="ccg-zo-itz" firstAttribute="leading" secondItem="EbB-t5-2lO" secondAttribute="trailing" constant="8" id="iWL-Rx-WbU"/>
                 <constraint firstItem="EbB-t5-2lO" firstAttribute="leading" secondItem="85w-ft-CRl" secondAttribute="trailing" constant="8" id="yZM-TY-a9G"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="addWatchBtn" destination="LTy-Xj-xON" id="Zi5-ey-b9o"/>
+            </connections>
             <point key="canvasLocation" x="22" y="-0.5"/>
         </view>
     </objects>
     <resources>
         <image name="st" width="3510" height="1975"/>
-        <image name="test" width="22" height="22"/>
     </resources>
 </document>

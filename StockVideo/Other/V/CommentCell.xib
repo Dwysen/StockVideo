@@ -42,22 +42,22 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ful-EX-sni">
-                        <rect key="frame" x="71" y="53" width="10" height="10"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sex" translatesAutoresizingMaskIntoConstraints="NO" id="ful-EX-sni">
+                        <rect key="frame" x="71" y="53" width="16" height="16"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="10" id="udt-jn-EDy"/>
-                            <constraint firstAttribute="height" constant="10" id="vZu-gI-Wsd"/>
+                            <constraint firstAttribute="width" constant="16" id="udt-jn-EDy"/>
+                            <constraint firstAttribute="height" constant="16" id="vZu-gI-Wsd"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IVp-bG-Ith">
-                        <rect key="frame" x="89" y="49" width="36" height="18"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="level" translatesAutoresizingMaskIntoConstraints="NO" id="IVp-bG-Ith">
+                        <rect key="frame" x="95" y="52" width="36" height="18"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="36" id="0gY-eI-Nmb"/>
                             <constraint firstAttribute="height" constant="18" id="BOT-01-Dpw"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30天前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PN7-at-gSV">
-                        <rect key="frame" x="133" y="47.5" width="50" height="21"/>
+                        <rect key="frame" x="139" y="50.5" width="50" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="19T-6d-GiF"/>
                             <constraint firstAttribute="width" constant="50" id="pzV-yS-pMU"/>
@@ -67,7 +67,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阿斯蒂芬规划局快乐阿斯蒂芬规划局快乐阿斯蒂芬规划局快乐阿斯蒂芬规划局快乐阿斯蒂芬规划局快乐" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hA-11-wnj">
-                        <rect key="frame" x="71" y="79" width="219" height="109.5"/>
+                        <rect key="frame" x="71" y="82" width="219" height="106.5"/>
                         <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -111,7 +111,6 @@
                     <constraint firstItem="5I4-JN-6p2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="gqq-ws-9Vv"/>
                     <constraint firstItem="xDO-1s-8tR" firstAttribute="top" secondItem="QTs-Xy-8lQ" secondAttribute="top" id="ip0-oa-6Ga"/>
                     <constraint firstItem="PN7-at-gSV" firstAttribute="leading" secondItem="IVp-bG-Ith" secondAttribute="trailing" constant="8" id="jak-b2-Xb1"/>
-                    <constraint firstItem="IVp-bG-Ith" firstAttribute="top" secondItem="QTs-Xy-8lQ" secondAttribute="bottom" constant="6" id="pbQ-zZ-dcv"/>
                     <constraint firstItem="3hA-11-wnj" firstAttribute="leading" secondItem="ful-EX-sni" secondAttribute="leading" id="sXI-XF-wnn"/>
                     <constraint firstItem="3hA-11-wnj" firstAttribute="top" secondItem="IVp-bG-Ith" secondAttribute="bottom" constant="12" id="yNA-bq-vPi"/>
                 </constraints>
@@ -120,11 +119,14 @@
             <connections>
                 <outlet property="avatarImgView" destination="5I4-JN-6p2" id="i15-Uv-7Gk"/>
                 <outlet property="contentTextLabel" destination="3hA-11-wnj" id="lqJ-KW-Aib"/>
+                <outlet property="nicknameLabel" destination="QTs-Xy-8lQ" id="JLC-Mt-0cJ"/>
             </connections>
             <point key="canvasLocation" x="46" y="154"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="level" width="29" height="15"/>
+        <image name="sex" width="15" height="15"/>
         <image name="st" width="3510" height="1975"/>
         <image name="staron" width="20" height="17"/>
     </resources>

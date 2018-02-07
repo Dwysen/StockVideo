@@ -23,12 +23,14 @@ class HeadView: UIView {
         let imgView = UIImageView()
         addSubview(imgView)
         imgView.snp.makeConstraints { (make) in
-            make.width.equalTo(100)
+            make.width.equalTo(150)
             make.height.equalTo(50)
             make.center.equalToSuperview()
 
         }
         imgView.image = UIImage(named: imgName)
+        imgView.contentMode = .scaleAspectFill
+        imgView.layer.masksToBounds = true
     }
     
     required init?(coder aDecoder: NSCoder) {

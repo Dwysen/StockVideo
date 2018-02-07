@@ -10,10 +10,11 @@ import UIKit
 
 class CommentCell: UITableViewCell {
 
+    @IBOutlet weak var nicknameLabel: UILabel!
     @IBOutlet weak var contentTextLabel: UILabel!
     @IBOutlet weak var avatarImgView: UIImageView!
     
-    var delegate:tapAvatarDelegate?
+    weak var delegate:tapAvatarDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -39,7 +40,7 @@ class CommentCell: UITableViewCell {
     
     @objc private func tapCell(){
     
-        delegate?.tapCell()
+        delegate?.tapCell(name:nicknameLabel.text!)
      
     }
     

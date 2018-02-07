@@ -35,7 +35,9 @@ class DetailViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        self.navigationController?.jp_useCustomPopAnimationForCurrentViewController = true
+        title = "帖子详情"
+        
+        navigationController?.jp_useCustomPopAnimationForCurrentViewController = true
         
         setupTableView()
         

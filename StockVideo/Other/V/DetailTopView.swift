@@ -10,12 +10,17 @@ import UIKit
 
 class DetailTopView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @IBOutlet weak var addWatchBtn: UIButton!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        addWatchBtn.layer.cornerRadius = 5
+        addWatchBtn.layer.masksToBounds = true
+        addWatchBtn.layer.borderColor = UIColor.orange.cgColor
+        addWatchBtn.layer.borderWidth = 1
+        
+        
+        
     }
-    */
 
 }
