@@ -206,7 +206,7 @@ extension JPVideoPlayerDemoVC_home {
 //        pushVC.videoPath = cell.videoPath
         
         let vc = VideoPlayVC()
-//        vc.playUrl = videoPathStrings[indexPath.row]
+        vc.playUrl = videoPathStrings[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
         
         

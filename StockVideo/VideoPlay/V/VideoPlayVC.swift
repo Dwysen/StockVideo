@@ -19,6 +19,7 @@ class VideoPlayVC: BBViewController {
     var image : UIImage!
     
     var videoPlayView : UIView!
+//    var mhPlayer: MHAVPlayerSDK?
     
     var addWatchView : UIView!
     var columnLabel  : UILabel!
@@ -42,6 +43,40 @@ class VideoPlayVC: BBViewController {
     }()
     
     
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            
+            return .landscapeRight
+            
+        } else {
+            
+            return .portrait
+            
+        }
+        
+    }
+    
+    
+//        override var shouldAutorotate : Bool {
+//           return true
+//        }
+//
+//        override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+//            if UIDevice.current.userInterfaceIdiom == .pad {
+//                return .landscape
+//            }else {
+//                return .portrait
+//            }
+//        }
+//
+//        override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation{
+//            if UIDevice.current.userInterfaceIdiom == .pad {
+//                return .landscapeRight
+//            }else {
+//                return .portrait
+//            }
+//        }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,10 +137,28 @@ class VideoPlayVC: BBViewController {
             print("playUrl is nil")
             
             return
+        
+        
             
         }
         
-        videoPlayView.jp_playVideo(with: URL(string: playUrl))
+        MediaManager.sharedInstance.playEmbeddedVideo(url: URL.init(string: playUrl)!, embeddedContentView: self.videoPlayView)
+//        
+//        let player = EZPlayer.init(controlView: videoPlayView)
+//        player.fullScreenMode = .landscape
+//        player.playWithURL()
+       
+        
+//        videoPlayView.jp_playVideo(with: URL(string: playUrl))
+        
+//        mhPlayer = MHAVPlayerSDK(frame:videoPlayView.bounds)
+//        mhPlayer?.mhPlayerURL = "http://media.vtibet.com/masvod/public/2014/01/23/20140123_143bd4c1b14_r1_300k.mp4"
+//        mhPlayer?.mhPlayerTitle = "第一部"
+//        mhPlayer?.MHAVPlayerSDKDelegate = self
+//        mhPlayer?.mhLastTime = 50
+//        mhPlayer?.mhAutoOrient = true
+//        videoPlayView.addSubview(mhPlayer!)
+        
         
     }
     
@@ -210,7 +263,7 @@ class VideoPlayVC: BBViewController {
         
     }
     
-
+    
     deinit {
         //        NotificationCenter.default.removeObserver(self)
         
@@ -244,7 +297,7 @@ extension VideoPlayVC : UITableViewDataSource,UITableViewDelegate {
 }
 
 extension VideoPlayVC : tapAvatarDelegate,ActionSheetViewDelegate {
-   
+    
     
     
     func actionSheetAndClickButtonAtIndex(actionSheet: ActionSheetView, buttonIndex: NSInteger) {
@@ -253,7 +306,7 @@ extension VideoPlayVC : tapAvatarDelegate,ActionSheetViewDelegate {
         if inTF == nil {
             
             inTF = Bundle.main.loadNibNamed("inTF", owner: nil, options: nil)?.first as! inTF
-//
+            //
             inTF.delegate = self
             inTF.frame = CGRect.init(x: 0, y: Common.screenHeight, width: Common.screenWidth, height: 50)
             inTF.textF.placeholder = "回复" + currentName
@@ -287,12 +340,12 @@ extension VideoPlayVC : tapAvatarDelegate,ActionSheetViewDelegate {
 }
 
 extension VideoPlayVC : sendBtnClickDelegate {
-  
+    
     // 回复评论
     func btnClick(text: String) {
         
         let string = "我 回复 " + currentName + ":" + text
-
+        
         let attrstring:NSMutableAttributedString = NSMutableAttributedString(string:string)
         
         let range = attrstring.string.range(of: "回复")
@@ -300,26 +353,40 @@ extension VideoPlayVC : sendBtnClickDelegate {
         
         attrstring.addAttribute(.foregroundColor, value: UIColor.red, range: nsrange!)
         
-        testStr.append(att)
-        
-        
+        //        testStr.append(att)
         
         testStr.append("我 回复 " + currentName + ":" + text)
         commentTableView.reloadData()
-        
         showRightWithTitle(title: "发送成功", autoCloseTime: 0.5)
-        
         inTF.textF.resignFirstResponder()
     }
     
 }
 
-extension VideoPlayVC  {
-    
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        view.endEditing(true)
+//extension VideoPlayVC: MHAVPlayerSDKDelegate {
+//
+//    func mhGoBack() {
+//
+//        print("goBack")
+//
+//        //            mhPlayer?.mhStopPlayer()
+//        //            self.dismiss(animated: true, completion: nil)
 //    }
 //
+//    func mhNextPlayer() {
+//        mhPlayer?.mhPlayerURL = "http://120.25.226.186:32812/resources/videos/minion_01.mp4"
+//        mhPlayer?.mhPlayerTitle = "第二部";
+//    }
+//
+//}
+
+
+extension VideoPlayVC  {
+    
+    //    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    //        view.endEditing(true)
+    //    }
+    //
     @objc func keyboardWillHiden(_ notification: Notification) {
         
         let info = notification.userInfo
@@ -344,7 +411,7 @@ extension VideoPlayVC  {
         
         let offsetY = kbRect.origin.y - UIScreen.main.bounds.height
         finalOffsetY = offsetY - 50
-    
+        
         if blackView == nil {
             blackView = UIView(frame: view.bounds)
             blackView.alpha = 0.3
@@ -355,12 +422,12 @@ extension VideoPlayVC  {
         } else {
             blackView.alpha = 0.3
         }
-    
+        
         let window = UIApplication.shared.keyWindow
         window!.addSubview(blackView)
         window!.bringSubview(toFront: inTF)
         
-    
+        
         UIView.animate(withDuration: duration!) {
             self.inTF.transform = CGAffineTransform(translationX: 0, y: self.finalOffsetY)
         }

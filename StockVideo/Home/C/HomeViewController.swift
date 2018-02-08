@@ -476,10 +476,10 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //        let vc = JPVideoPlayerDemoVC_home()
-        //        navigationController?.pushViewController(vc, animated: true)
-        
-        let vc = SomeoneViewController()
-        navigationController?.pushViewController(vc, animated: true)
+                let vc = JPVideoPlayerDemoVC_home()
+                navigationController?.pushViewController(vc, animated: true)
+//        
+//        let vc = SomeoneViewController()
+//        navigationController?.pushViewController(vc, animated: true)
     }
 }

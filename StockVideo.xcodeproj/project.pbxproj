@@ -8,6 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		5209B63920284547003659DF /* JPVideoPlayerDemoVC_homeee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209B63820284547003659DF /* JPVideoPlayerDemoVC_homeee.swift */; };
+		52157CD7202C274D0091CB1E /* AVAsset+EZPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CBA202C274D0091CB1E /* AVAsset+EZPlayer.swift */; };
+		52157CD8202C274D0091CB1E /* AVPlayer+EZPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CBB202C274D0091CB1E /* AVPlayer+EZPlayer.swift */; };
+		52157CD9202C274D0091CB1E /* AVPlayerItem+EZPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CBC202C274D0091CB1E /* AVPlayerItem+EZPlayer.swift */; };
+		52157CDA202C274D0091CB1E /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CBD202C274D0091CB1E /* Delay.swift */; };
+		52157CDB202C274D0091CB1E /* EZPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CBF202C274D0091CB1E /* EZPlayer.swift */; };
+		52157CDC202C274D0091CB1E /* EZPlayer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52157CC0202C274D0091CB1E /* EZPlayer.xcassets */; };
+		52157CDD202C274D0091CB1E /* EZPlayerAudibleLegibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CC1202C274D0091CB1E /* EZPlayerAudibleLegibleViewController.swift */; };
+		52157CDE202C274D0091CB1E /* EZPlayerAudibleLegibleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52157CC2202C274D0091CB1E /* EZPlayerAudibleLegibleViewController.xib */; };
+		52157CDF202C274D0091CB1E /* EZPlayerAVAssetResourceLoaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CC3202C274D0091CB1E /* EZPlayerAVAssetResourceLoaderDelegate.swift */; };
+		52157CE0202C274D0091CB1E /* EZPlayerContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CC4202C274D0091CB1E /* EZPlayerContentItem.swift */; };
+		52157CE1202C274D0091CB1E /* EZPlayerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CC5202C274D0091CB1E /* EZPlayerControlView.swift */; };
+		52157CE2202C274D0091CB1E /* EZPlayerControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52157CC6202C274D0091CB1E /* EZPlayerControlView.xib */; };
+		52157CE3202C274D0091CB1E /* EZPlayerFairPlayResourceLoaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CC7202C274D0091CB1E /* EZPlayerFairPlayResourceLoaderDelegate.swift */; };
+		52157CE4202C274D0091CB1E /* EZPlayerFloatContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CC8202C274D0091CB1E /* EZPlayerFloatContainer.swift */; };
+		52157CE5202C274D0091CB1E /* EZPlayerFloatContainerRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CC9202C274D0091CB1E /* EZPlayerFloatContainerRootViewController.swift */; };
+		52157CE6202C274D0091CB1E /* EZPlayerFloatContainerRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52157CCA202C274D0091CB1E /* EZPlayerFloatContainerRootViewController.xib */; };
+		52157CE7202C274D0091CB1E /* EZPlayerFloatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CCB202C274D0091CB1E /* EZPlayerFloatView.swift */; };
+		52157CE8202C274D0091CB1E /* EZPlayerFloatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52157CCC202C274D0091CB1E /* EZPlayerFloatView.xib */; };
+		52157CE9202C274D0091CB1E /* EZPlayerFullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CCD202C274D0091CB1E /* EZPlayerFullScreenViewController.swift */; };
+		52157CEA202C274D0091CB1E /* EZPlayerLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CCE202C274D0091CB1E /* EZPlayerLoading.swift */; };
+		52157CEB202C274D0091CB1E /* EZPlayerNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CCF202C274D0091CB1E /* EZPlayerNotification.swift */; };
+		52157CEC202C274D0091CB1E /* EZPlayerThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CD0202C274D0091CB1E /* EZPlayerThumbnail.swift */; };
+		52157CED202C274D0091CB1E /* EZPlayerTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CD1202C274D0091CB1E /* EZPlayerTransport.swift */; };
+		52157CEE202C274D0091CB1E /* EZPlayerTransportExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CD2202C274D0091CB1E /* EZPlayerTransportExtension.swift */; };
+		52157CEF202C274D0091CB1E /* EZPlayerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CD3202C274D0091CB1E /* EZPlayerUtils.swift */; };
+		52157CF0202C274D0091CB1E /* EZPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CD4202C274D0091CB1E /* EZPlayerView.swift */; };
+		52157CF2202C274D0091CB1E /* Timer+EZPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CD6202C274D0091CB1E /* Timer+EZPlayer.swift */; };
+		52157CFC202C2B020091CB1E /* MediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52157CFB202C2B020091CB1E /* MediaManager.swift */; };
 		521DF3762022A58000D11388 /* EditMeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 521DF3742022A58000D11388 /* EditMeView.xib */; };
 		521DF3782022A90200D11388 /* EditMeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DF3772022A90200D11388 /* EditMeView.swift */; };
 		521DF37C2022B8CD00D11388 /* EditSelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DF37B2022B8CD00D11388 /* EditSelfViewController.swift */; };
@@ -84,7 +112,6 @@
 		52DA66C2200F158300AB32E9 /* UpAndDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DA66C1200F158300AB32E9 /* UpAndDownCell.xib */; };
 		52DA66C4200F4A4E00AB32E9 /* ExtensionUIVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA66C3200F4A4E00AB32E9 /* ExtensionUIVIew.swift */; };
 		52DFD817200D99AB0047D9A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DFD816200D99AB0047D9A9 /* AppDelegate.swift */; };
-		52DFD819200D99AB0047D9A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DFD818200D99AB0047D9A9 /* ViewController.swift */; };
 		52DFD81E200D99AB0047D9A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DFD81D200D99AB0047D9A9 /* Assets.xcassets */; };
 		52DFD821200D99AB0047D9A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DFD81F200D99AB0047D9A9 /* LaunchScreen.storyboard */; };
 		52DFD829200D9A950047D9A9 /* BBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DFD828200D9A950047D9A9 /* BBTabBarController.swift */; };
@@ -115,6 +142,34 @@
 /* Begin PBXFileReference section */
 		4B9D6062254F922EFB9B25E5 /* Pods_StockVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5209B63820284547003659DF /* JPVideoPlayerDemoVC_homeee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPVideoPlayerDemoVC_homeee.swift; sourceTree = "<group>"; };
+		52157CBA202C274D0091CB1E /* AVAsset+EZPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVAsset+EZPlayer.swift"; sourceTree = "<group>"; };
+		52157CBB202C274D0091CB1E /* AVPlayer+EZPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+EZPlayer.swift"; sourceTree = "<group>"; };
+		52157CBC202C274D0091CB1E /* AVPlayerItem+EZPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayerItem+EZPlayer.swift"; sourceTree = "<group>"; };
+		52157CBD202C274D0091CB1E /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
+		52157CBF202C274D0091CB1E /* EZPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayer.swift; sourceTree = "<group>"; };
+		52157CC0202C274D0091CB1E /* EZPlayer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = EZPlayer.xcassets; sourceTree = "<group>"; };
+		52157CC1202C274D0091CB1E /* EZPlayerAudibleLegibleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerAudibleLegibleViewController.swift; sourceTree = "<group>"; };
+		52157CC2202C274D0091CB1E /* EZPlayerAudibleLegibleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EZPlayerAudibleLegibleViewController.xib; sourceTree = "<group>"; };
+		52157CC3202C274D0091CB1E /* EZPlayerAVAssetResourceLoaderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerAVAssetResourceLoaderDelegate.swift; sourceTree = "<group>"; };
+		52157CC4202C274D0091CB1E /* EZPlayerContentItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerContentItem.swift; sourceTree = "<group>"; };
+		52157CC5202C274D0091CB1E /* EZPlayerControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerControlView.swift; sourceTree = "<group>"; };
+		52157CC6202C274D0091CB1E /* EZPlayerControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EZPlayerControlView.xib; sourceTree = "<group>"; };
+		52157CC7202C274D0091CB1E /* EZPlayerFairPlayResourceLoaderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerFairPlayResourceLoaderDelegate.swift; sourceTree = "<group>"; };
+		52157CC8202C274D0091CB1E /* EZPlayerFloatContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerFloatContainer.swift; sourceTree = "<group>"; };
+		52157CC9202C274D0091CB1E /* EZPlayerFloatContainerRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerFloatContainerRootViewController.swift; sourceTree = "<group>"; };
+		52157CCA202C274D0091CB1E /* EZPlayerFloatContainerRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EZPlayerFloatContainerRootViewController.xib; sourceTree = "<group>"; };
+		52157CCB202C274D0091CB1E /* EZPlayerFloatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerFloatView.swift; sourceTree = "<group>"; };
+		52157CCC202C274D0091CB1E /* EZPlayerFloatView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EZPlayerFloatView.xib; sourceTree = "<group>"; };
+		52157CCD202C274D0091CB1E /* EZPlayerFullScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerFullScreenViewController.swift; sourceTree = "<group>"; };
+		52157CCE202C274D0091CB1E /* EZPlayerLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerLoading.swift; sourceTree = "<group>"; };
+		52157CCF202C274D0091CB1E /* EZPlayerNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerNotification.swift; sourceTree = "<group>"; };
+		52157CD0202C274D0091CB1E /* EZPlayerThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerThumbnail.swift; sourceTree = "<group>"; };
+		52157CD1202C274D0091CB1E /* EZPlayerTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerTransport.swift; sourceTree = "<group>"; };
+		52157CD2202C274D0091CB1E /* EZPlayerTransportExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerTransportExtension.swift; sourceTree = "<group>"; };
+		52157CD3202C274D0091CB1E /* EZPlayerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerUtils.swift; sourceTree = "<group>"; };
+		52157CD4202C274D0091CB1E /* EZPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZPlayerView.swift; sourceTree = "<group>"; };
+		52157CD6202C274D0091CB1E /* Timer+EZPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+EZPlayer.swift"; sourceTree = "<group>"; };
+		52157CFB202C2B020091CB1E /* MediaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaManager.swift; sourceTree = "<group>"; };
 		521DF3742022A58000D11388 /* EditMeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditMeView.xib; sourceTree = "<group>"; };
 		521DF3772022A90200D11388 /* EditMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMeView.swift; sourceTree = "<group>"; };
 		521DF37B2022B8CD00D11388 /* EditSelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSelfViewController.swift; sourceTree = "<group>"; };
@@ -194,7 +249,6 @@
 		52DA66C3200F4A4E00AB32E9 /* ExtensionUIVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIVIew.swift; sourceTree = "<group>"; };
 		52DFD813200D99AB0047D9A9 /* StockVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DFD816200D99AB0047D9A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52DFD818200D99AB0047D9A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52DFD81D200D99AB0047D9A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52DFD820200D99AB0047D9A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52DFD822200D99AB0047D9A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -243,6 +297,41 @@
 				EC870CDD02000FE6B774C444 /* Pods-StockVideo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		52157CB9202C274D0091CB1E /* EZPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				52157CFB202C2B020091CB1E /* MediaManager.swift */,
+				52157CBA202C274D0091CB1E /* AVAsset+EZPlayer.swift */,
+				52157CBB202C274D0091CB1E /* AVPlayer+EZPlayer.swift */,
+				52157CBC202C274D0091CB1E /* AVPlayerItem+EZPlayer.swift */,
+				52157CBD202C274D0091CB1E /* Delay.swift */,
+				52157CBF202C274D0091CB1E /* EZPlayer.swift */,
+				52157CC0202C274D0091CB1E /* EZPlayer.xcassets */,
+				52157CC1202C274D0091CB1E /* EZPlayerAudibleLegibleViewController.swift */,
+				52157CC2202C274D0091CB1E /* EZPlayerAudibleLegibleViewController.xib */,
+				52157CC3202C274D0091CB1E /* EZPlayerAVAssetResourceLoaderDelegate.swift */,
+				52157CC4202C274D0091CB1E /* EZPlayerContentItem.swift */,
+				52157CC5202C274D0091CB1E /* EZPlayerControlView.swift */,
+				52157CC6202C274D0091CB1E /* EZPlayerControlView.xib */,
+				52157CC7202C274D0091CB1E /* EZPlayerFairPlayResourceLoaderDelegate.swift */,
+				52157CC8202C274D0091CB1E /* EZPlayerFloatContainer.swift */,
+				52157CC9202C274D0091CB1E /* EZPlayerFloatContainerRootViewController.swift */,
+				52157CCA202C274D0091CB1E /* EZPlayerFloatContainerRootViewController.xib */,
+				52157CCB202C274D0091CB1E /* EZPlayerFloatView.swift */,
+				52157CCC202C274D0091CB1E /* EZPlayerFloatView.xib */,
+				52157CCD202C274D0091CB1E /* EZPlayerFullScreenViewController.swift */,
+				52157CCE202C274D0091CB1E /* EZPlayerLoading.swift */,
+				52157CCF202C274D0091CB1E /* EZPlayerNotification.swift */,
+				52157CD0202C274D0091CB1E /* EZPlayerThumbnail.swift */,
+				52157CD1202C274D0091CB1E /* EZPlayerTransport.swift */,
+				52157CD2202C274D0091CB1E /* EZPlayerTransportExtension.swift */,
+				52157CD3202C274D0091CB1E /* EZPlayerUtils.swift */,
+				52157CD4202C274D0091CB1E /* EZPlayerView.swift */,
+				52157CD6202C274D0091CB1E /* Timer+EZPlayer.swift */,
+			);
+			path = EZPlayer;
 			sourceTree = "<group>";
 		};
 		521DF37D202308CC00D11388 /* Login&Register */ = {
@@ -502,6 +591,8 @@
 			children = (
 				52DA66BC200EECAE00AB32E9 /* Podfile */,
 				52DA66B4200EE8AC00AB32E9 /* Common.swift */,
+				52DFD816200D99AB0047D9A9 /* AppDelegate.swift */,
+				52157CB9202C274D0091CB1E /* EZPlayer */,
 				52336B3E20196829004F73F9 /* VideoPlayer */,
 				52DFD815200D99AB0047D9A9 /* StockVideo */,
 				52DFD814200D99AB0047D9A9 /* Products */,
@@ -522,8 +613,6 @@
 			isa = PBXGroup;
 			children = (
 				521DF37D202308CC00D11388 /* Login&Register */,
-				52DFD816200D99AB0047D9A9 /* AppDelegate.swift */,
-				52DFD818200D99AB0047D9A9 /* ViewController.swift */,
 				523B482E202045FB00556868 /* VideoPlay */,
 				522B7047201AFC6B002108F2 /* Other */,
 				522B7041201AD001002108F2 /* Me */,
@@ -650,9 +739,12 @@
 				523B48312020466D00556868 /* VideoPlayTopView.xib in Resources */,
 				52DA66BD200EECAE00AB32E9 /* Podfile in Resources */,
 				523672E1202193AA00D8CAAD /* DetailTopView.xib in Resources */,
+				52157CDE202C274D0091CB1E /* EZPlayerAudibleLegibleViewController.xib in Resources */,
 				522682AF20118E7900FE1ED0 /* TableViewCell.xib in Resources */,
 				52336B4620196843004F73F9 /* JPVideoPlayerDemoVC_Setting.xib in Resources */,
 				52DA5FAD2016C02D0096B220 /* HotView.xib in Resources */,
+				52157CDC202C274D0091CB1E /* EZPlayer.xcassets in Resources */,
+				52157CE8202C274D0091CB1E /* EZPlayerFloatView.xib in Resources */,
 				5240397B201068D7003D94FD /* Main.storyboard in Resources */,
 				521DF381202308F100D11388 /* LoginViewController.xib in Resources */,
 				52336B4B20196843004F73F9 /* JPVideoPlayerDemoCell.xib in Resources */,
@@ -660,6 +752,7 @@
 				522B7046201AD0D7002108F2 /* MeViewController.xib in Resources */,
 				52DFD821200D99AB0047D9A9 /* LaunchScreen.storyboard in Resources */,
 				522B7040201ABA1A002108F2 /* JPVideoPlayerDemoVC_push.xib in Resources */,
+				52157CE2202C274D0091CB1E /* EZPlayerControlView.xib in Resources */,
 				52DA66C2200F158300AB32E9 /* UpAndDownCell.xib in Resources */,
 				523E65A52023F42A00E49750 /* LoginGetPhoneVC.xib in Resources */,
 				52F46E8B2029369C00F837BB /* MessageCell.xib in Resources */,
@@ -667,6 +760,7 @@
 				523E65C320243BEB00E49750 /* WatchCell.xib in Resources */,
 				522F6817202A856200A96A93 /* CommentFromOtherCell.xib in Resources */,
 				52F46E95202997DA00F837BB /* StarFromOtherCell.xib in Resources */,
+				52157CE6202C274D0091CB1E /* EZPlayerFloatContainerRootViewController.xib in Resources */,
 				527294B22015B56900107AE7 /* CommonCell.xib in Resources */,
 				523E65A92023F5DF00E49750 /* RegisterViewController.xib in Resources */,
 				52DFD81E200D99AB0047D9A9 /* Assets.xcassets in Resources */,
@@ -745,12 +839,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52157CD9202C274D0091CB1E /* AVPlayerItem+EZPlayer.swift in Sources */,
 				522F681B202AEC2C00A96A93 /* inTF.swift in Sources */,
+				52157CEE202C274D0091CB1E /* EZPlayerTransportExtension.swift in Sources */,
 				52A8A22720182B4600710054 /* ColumnViewController.swift in Sources */,
 				523E65A82023F5DF00E49750 /* RegisterViewController.swift in Sources */,
-				52DFD819200D99AB0047D9A9 /* ViewController.swift in Sources */,
 				522B703F201ABA1A002108F2 /* JPVideoPlayerDemoVC_push.swift in Sources */,
+				52157CEA202C274D0091CB1E /* EZPlayerLoading.swift in Sources */,
+				52157CEF202C274D0091CB1E /* EZPlayerUtils.swift in Sources */,
+				52157CDA202C274D0091CB1E /* Delay.swift in Sources */,
 				52DFD898200DFAC10047D9A9 /* CHChartAlgorithm.swift in Sources */,
+				52157CEB202C274D0091CB1E /* EZPlayerNotification.swift in Sources */,
 				523E65C220243BEB00E49750 /* WatchCell.swift in Sources */,
 				523E65AC2024112F00E49750 /* ResetPasswordVC.swift in Sources */,
 				522B704B201AFCB8002108F2 /* SomeoneViewController.swift in Sources */,
@@ -765,29 +864,38 @@
 				523B48332020555100556868 /* VideoPlayTopView.swift in Sources */,
 				525FCAD52019690400243838 /* JPQRCodeTool.m in Sources */,
 				527294BA2015DC6800107AE7 /* GCDGroup.swift in Sources */,
+				52157CE1202C274D0091CB1E /* EZPlayerControlView.swift in Sources */,
 				527294BF2015E35400107AE7 /* TranformFadeView.swift in Sources */,
 				52336B4920196843004F73F9 /* JPVideoPlayerDemoCell.swift in Sources */,
 				523672DF2021939E00D8CAAD /* DetailTopView.swift in Sources */,
+				52157CD8202C274D0091CB1E /* AVPlayer+EZPlayer.swift in Sources */,
 				521DF3782022A90200D11388 /* EditMeView.swift in Sources */,
 				523E65B320242ABB00E49750 /* UIResponder+LKBubble.swift in Sources */,
 				52DA5FAF2016C9110096B220 /* HeadView.swift in Sources */,
 				52DFD89C200DFAC10047D9A9 /* CHKLineChartStyle.swift in Sources */,
 				52DA66B5200EE8AC00AB32E9 /* Common.swift in Sources */,
+				52157CED202C274D0091CB1E /* EZPlayerTransport.swift in Sources */,
 				52DFD832200DF0E20047D9A9 /* BBViewController.swift in Sources */,
 				52DFD89A200DFAC10047D9A9 /* CHExtension.swift in Sources */,
 				52F46E8F20293EDE00F837BB /* CommentFromOtherVC.swift in Sources */,
 				527294B12015B56900107AE7 /* CommonCell.swift in Sources */,
 				521DF380202308F100D11388 /* LoginViewController.swift in Sources */,
 				52F46E9120297E7500F837BB /* ActionSheetView.swift in Sources */,
+				52157CE3202C274D0091CB1E /* EZPlayerFairPlayResourceLoaderDelegate.swift in Sources */,
+				52157CFC202C2B020091CB1E /* MediaManager.swift in Sources */,
+				52157CF0202C274D0091CB1E /* EZPlayerView.swift in Sources */,
 				523E65B220242ABB00E49750 /* LKBubbleInfo.swift in Sources */,
 				523E65C5202441DA00E49750 /* MessageViewController.swift in Sources */,
 				522F6819202A918D00A96A93 /* SettingViewController.swift in Sources */,
 				52DA66C0200F152600AB32E9 /* UpAndDownCell.swift in Sources */,
+				52157CDB202C274D0091CB1E /* EZPlayer.swift in Sources */,
 				523672DD2021920800D8CAAD /* DetailViewController.swift in Sources */,
 				522682B8201191CC00FE1ED0 /* CircleTableViewController.swift in Sources */,
 				52DFD817200D99AB0047D9A9 /* AppDelegate.swift in Sources */,
 				527294BD2015DC6800107AE7 /* GCDTimer.swift in Sources */,
+				52157CE9202C274D0091CB1E /* EZPlayerFullScreenViewController.swift in Sources */,
 				52DFD829200D9A950047D9A9 /* BBTabBarController.swift in Sources */,
+				52157CEC202C274D0091CB1E /* EZPlayerThumbnail.swift in Sources */,
 				523E65B6202435BB00E49750 /* MyWatchController.swift in Sources */,
 				52F46E94202997DA00F837BB /* StarFromOtherCell.swift in Sources */,
 				52DFD82D200D9BA10047D9A9 /* BBNavigationController.swift in Sources */,
@@ -804,10 +912,14 @@
 				523E65A42023F42A00E49750 /* LoginGetPhoneVC.swift in Sources */,
 				52DFD834200DF24F0047D9A9 /* KLineViewController.swift in Sources */,
 				52DA5FAB2016C0170096B220 /* HotView.swift in Sources */,
+				52157CDD202C274D0091CB1E /* EZPlayerAudibleLegibleViewController.swift in Sources */,
+				52157CF2202C274D0091CB1E /* Timer+EZPlayer.swift in Sources */,
 				527294A920156DA600107AE7 /* BBAboutVideoViewController.swift in Sources */,
 				522F6816202A856200A96A93 /* CommentFromOtherCell.swift in Sources */,
+				52157CE4202C274D0091CB1E /* EZPlayerFloatContainer.swift in Sources */,
 				52DA5FB32016DA840096B220 /* ResetPageControl.swift in Sources */,
 				52DA5FB52016DBA10096B220 /* Math.swift in Sources */,
+				52157CE5202C274D0091CB1E /* EZPlayerFloatContainerRootViewController.swift in Sources */,
 				522682B220118F4C00FE1ED0 /* GlobalVariables.swift in Sources */,
 				523672DA20215C9800D8CAAD /* CommentCell.swift in Sources */,
 				52DFD8A0200DFDD70047D9A9 /* SwiftyJSON.swift in Sources */,
@@ -816,8 +928,12 @@
 				527294BC2015DC6800107AE7 /* GCDQueuePriority.swift in Sources */,
 				527294BB2015DC6800107AE7 /* GCDQueue.swift in Sources */,
 				52DFD82B200D9B0D0047D9A9 /* CommentViewController.swift in Sources */,
+				52157CD7202C274D0091CB1E /* AVAsset+EZPlayer.swift in Sources */,
+				52157CE7202C274D0091CB1E /* EZPlayerFloatView.swift in Sources */,
 				52DA66B7200EEA7500AB32E9 /* BBNetworkTool.swift in Sources */,
+				52157CE0202C274D0091CB1E /* EZPlayerContentItem.swift in Sources */,
 				52336B4720196843004F73F9 /* JPVideoPlayerDemoVC_Setting.swift in Sources */,
+				52157CDF202C274D0091CB1E /* EZPlayerAVAssetResourceLoaderDelegate.swift in Sources */,
 				52DFD89E200DFAC10047D9A9 /* CHSeries.swift in Sources */,
 				52336B4A20196843004F73F9 /* JPVideoPlayerDemoVC_home.swift in Sources */,
 				52A8A22B201856B800710054 /* VideoPlayVC.swift in Sources */,
@@ -952,12 +1068,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZRD54JLZW;
 				INFOPLIST_FILE = StockVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Boxin.StockVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StockVideo/StockVideo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -972,12 +1090,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZRD54JLZW;
 				INFOPLIST_FILE = StockVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Boxin.StockVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StockVideo/StockVideo-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
