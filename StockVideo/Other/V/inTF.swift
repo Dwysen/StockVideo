@@ -18,15 +18,10 @@ class inTF: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         sendBtn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
-        
     }
     
     @objc private func btnClick(){
-        
         delegate.btnClick(text: textF.text!)
-        
     }
-   
 }

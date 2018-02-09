@@ -60,8 +60,9 @@ extension ColumnViewController:UICollectionViewDataSource,UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = VideoPlayVC()
-        vc.title = String( indexPath.row )
+     
+        let vc = CircleTableViewController()
+        vc.title = "社区"
         navigationController?.pushViewController(vc, animated: true)
     }
     

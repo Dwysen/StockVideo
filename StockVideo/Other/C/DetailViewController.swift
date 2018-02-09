@@ -23,8 +23,6 @@ class DetailViewController: UIViewController {
     
     private let imgMargin : CGFloat = 6
     
-    
-    
     private var imgArr = ["http://e.hiphotos.baidu.com/image/pic/item/500fd9f9d72a6059099ccd5a2334349b023bbae5.jpg","http://e.hiphotos.baidu.com/image/pic/item/500fd9f9d72a6059099ccd5a2334349b023bbae5.jpg","http://a.hiphotos.baidu.com/image/pic/item/9213b07eca8065388cef4c5d9cdda144ad348273.jpg","http://g.hiphotos.baidu.com/image/pic/item/a6efce1b9d16fdfa09022da0bf8f8c5494ee7b16.jpg","http://b.hiphotos.baidu.com/image/pic/item/71cf3bc79f3df8dc086b64dfc611728b4710282e.jpg","http://b.hiphotos.baidu.com/image/pic/item/71cf3bc79f3df8dc086b64dfc611728b4710282e.jpg","http://b.hiphotos.baidu.com/image/pic/item/42166d224f4a20a417ead7899b529822730ed08c.jpg","http://h.hiphotos.baidu.com/image/pic/item/caef76094b36acaff9bf372b77d98d1000e99c8e.jpg","http://h.hiphotos.baidu.com/image/pic/item/caef76094b36acaff9bf372b77d98d1000e99c8e.jpg","http://h.hiphotos.baidu.com/image/pic/item/caef76094b36acaff9bf372b77d98d1000e99c8e.jpg","http://h.hiphotos.baidu.com/image/pic/item/caef76094b36acaff9bf372b77d98d1000e99c8e.jpg"]
     
     override func viewDidLoad() {
@@ -44,8 +42,6 @@ class DetailViewController: UIViewController {
         setupHeadView()
         
         setupImgView()
-        
-      
         
     }
     
@@ -76,9 +72,7 @@ class DetailViewController: UIViewController {
         headView = UIView(frame: CGRect(x: 0, y: 0, width: Common.screenWidth, height: 666))
         
         setupTitleView()
-    
 
-        
     }
     
     private func setupTitleView(){
@@ -124,6 +118,8 @@ class DetailViewController: UIViewController {
 
             imgBgView.addSubview(imgView)
             imgView.kf.setImage(with: URL.init(string: imgArr[i]),placeholder:UIImage.init(named: "test"))
+            
+            
         }
     
     }

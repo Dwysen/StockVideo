@@ -15,9 +15,6 @@ public protocol EZPlayerDelegate : class {
     func player(_ player: EZPlayer ,playerDisplayModeDidChange displayMode: EZPlayerDisplayMode)
     
     func player(_ player: EZPlayer ,playerControlsHiddenDidChange controlsHidden: Bool , animated: Bool)
-    
-    
-    
     func player(_ player: EZPlayer ,bufferDurationDidChange  bufferDuration: TimeInterval , totalDuration: TimeInterval)
     func player(_ player: EZPlayer , currentTime   : TimeInterval , duration: TimeInterval)
     func playerHeartbeat(_ player: EZPlayer )
@@ -27,9 +24,6 @@ public protocol EZPlayerDelegate : class {
     
     
 }
-
-
-
 
 public enum EZPlayerError: Error {
     case invalidContentURL              //
@@ -48,8 +42,6 @@ public enum EZPlayerState {
     case pause // 播放暂停
     case stopped // 播放结束
 }
-
-
 
 public enum EZPlayerDisplayMode  {
     case none
@@ -101,7 +93,6 @@ open class EZPlayer: NSObject {
             }
         }
     }
-    
     
     /// 设置url会自动播放
     open var autoPlay = true
@@ -633,6 +624,7 @@ open class EZPlayer: NSObject {
     }
     
     open func toEmbedded(animated: Bool = true , completion: ((Bool) -> Swift.Void)? = nil){
+        
         if self.isChangingDisplayMode == true {
             completion?(false)
             return
@@ -838,9 +830,7 @@ open class EZPlayer: NSObject {
         
     }
     
-    
-    
-    
+
     // MARK: - public
     
     open func setControlsHidden(_ hidden: Bool, animated: Bool = false){

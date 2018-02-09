@@ -88,8 +88,6 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-   
-        
         setupTitleView()
         
         view.addSubview(contentScrollView)
@@ -178,10 +176,7 @@ class HomeViewController: BaseViewController {
         tranformFadeViewTwo.image                = currentImage()
         tranformFadeViewTwo.titleLabel.text      = "标题2"
         tranformFadeViewTwo.start(animated: false, transformTo: .fade)
-        
-        
-        
-        
+    
         setTimer(delay: 0)
         
     }

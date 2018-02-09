@@ -13,14 +13,9 @@ class DetailTopView: UIView {
     @IBOutlet weak var addWatchBtn: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         addWatchBtn.layer.cornerRadius = 5
         addWatchBtn.layer.masksToBounds = true
         addWatchBtn.layer.borderColor = UIColor.orange.cgColor
         addWatchBtn.layer.borderWidth = 1
-        
-        
-        
     }
-
 }

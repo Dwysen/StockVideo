@@ -26,7 +26,6 @@ class CommentViewController: BBViewController {
         tableView.showsVerticalScrollIndicator = false
         tableView.backgroundColor = UIColor.brown
         
-        
         tableView.contentInsetAdjustmentBehavior = .always
 //        self.automaticallyAdjustsScrollViewInsets = false
         

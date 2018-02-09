@@ -25,11 +25,7 @@ class EditSelfViewController: UIViewController {
         self.navigationController?.setAlpha()
             
                 let editMeView = Bundle.main.loadNibNamed("EditMeView", owner: nil, options: nil)?.first as! EditMeView
-    
-        
-        
 
-        
                 editMeView.width = Common.screenWidth
                 editMeView.y -= 64
                 scrollView.addSubview(editMeView)
@@ -42,18 +38,5 @@ class EditSelfViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

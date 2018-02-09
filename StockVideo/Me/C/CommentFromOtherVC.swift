@@ -17,9 +17,7 @@ class CommentFromOtherVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         title = "评论"
-        
         tableView = UITableView(frame: CGRect(x: 0, y: 0, width: Common.screenWidth, height: Common.screenHeight - 64 ))
         tableView.delegate = self
         tableView.dataSource = self
@@ -50,6 +48,4 @@ extension CommentFromOtherVC : UITableViewDataSource,UITableViewDelegate {
         cell.commentFromOtherLabel.attributedText = Common.getAttributeStringWithString("评论了我:" + testArr[indexPath.row], lineSpace: 2)
         return cell
     }
-    
-    
 }

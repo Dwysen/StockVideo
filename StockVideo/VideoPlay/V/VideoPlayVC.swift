@@ -19,7 +19,6 @@ class VideoPlayVC: BBViewController {
     var image : UIImage!
     
     var videoPlayView : UIView!
-//    var mhPlayer: MHAVPlayerSDK?
     
     var addWatchView : UIView!
     var columnLabel  : UILabel!
@@ -42,53 +41,29 @@ class VideoPlayVC: BBViewController {
         return scrollView
     }()
     
-    
-    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
-        
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            
-            return .landscapeRight
-            
-        } else {
-            
-            return .portrait
-            
+        override var shouldAutorotate : Bool {
+           return true
         }
-        
-    }
-    
-    
-//        override var shouldAutorotate : Bool {
-//           return true
-//        }
-//
-//        override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
-//            if UIDevice.current.userInterfaceIdiom == .pad {
-//                return .landscape
-//            }else {
-//                return .portrait
-//            }
-//        }
-//
-//        override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation{
-//            if UIDevice.current.userInterfaceIdiom == .pad {
-//                return .landscapeRight
-//            }else {
-//                return .portrait
-//            }
-//        }
+
+        override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                return .landscape
+            }else {
+                return .portrait
+            }
+        }
+
+        override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation{
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                return .landscapeRight
+            }else {
+                return .portrait
+            }
+        }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //        let imageView = UIImageView.init(frame: view.bounds)
-        //        imageView.contentMode = .scaleAspectFill
-        //        imageView.layer.masksToBounds = true
-        //        imageView.image = image
-        //        view.addSubview(imageView)
-        //
-        //        setupBottomScrollView()
-        
+    
         self.navigationController?.isNavigationBarHidden = true
         self.navigationController?.jp_useCustomPopAnimationForCurrentViewController = true
         
@@ -109,7 +84,6 @@ class VideoPlayVC: BBViewController {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardWillShow(_:)),
                                                name: .UIKeyboardWillShow, object: nil)
-        
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardWillHiden(_:)),
                                                name: .UIKeyboardWillHide, object: nil)
@@ -123,42 +97,12 @@ class VideoPlayVC: BBViewController {
     
     private func setupPlayView(){
         
-        //            videoPlayView = UIView()
-        //            let screenWidth = UIScreen.main.bounds.size.width
-        //            videoContainer.frame = CGRect(x: 0, y: 100, width: screenWidth, height: screenWidth * 9.0 / 16.0)
-        //            self.view.addSubview(videoContainer)
-        //            videoContainer.jp_videoPlayerDelegate = self
-        //            guard let path = videoPath else {
-        //                return
-        //            }
-        
         guard playUrl != nil else {
-            
             print("playUrl is nil")
-            
             return
-        
-        
-            
         }
         
         MediaManager.sharedInstance.playEmbeddedVideo(url: URL.init(string: playUrl)!, embeddedContentView: self.videoPlayView)
-//        
-//        let player = EZPlayer.init(controlView: videoPlayView)
-//        player.fullScreenMode = .landscape
-//        player.playWithURL()
-       
-        
-//        videoPlayView.jp_playVideo(with: URL(string: playUrl))
-        
-//        mhPlayer = MHAVPlayerSDK(frame:videoPlayView.bounds)
-//        mhPlayer?.mhPlayerURL = "http://media.vtibet.com/masvod/public/2014/01/23/20140123_143bd4c1b14_r1_300k.mp4"
-//        mhPlayer?.mhPlayerTitle = "第一部"
-//        mhPlayer?.MHAVPlayerSDKDelegate = self
-//        mhPlayer?.mhLastTime = 50
-//        mhPlayer?.mhAutoOrient = true
-//        videoPlayView.addSubview(mhPlayer!)
-        
         
     }
     
@@ -205,16 +149,7 @@ class VideoPlayVC: BBViewController {
         
     }
     
-    //    private func setupBottomScrollView(){
-    //
-    //        view.addSubview(scrollView)
-    //        let scrollTopView = Bundle.main.loadNibNamed("VideoPlayTopView", owner: nil, options: nil)?.first as! VideoPlayTopView
-    //        scrollTopView.frame = CGRect(x: 0, y: 0, width: Common.screenWidth, height: 252)
-    //        scrollView.addSubview(scrollTopView)
-    //
-    //
-    //    }
-    
+
     func setupTouchEvents() {
         let tapGestureRecognize = UITapGestureRecognizer(target: self, action: #selector(self.didTapVideoView(gestureRecognizer:)))
         tapGestureRecognize.numberOfTapsRequired = 2
@@ -241,32 +176,20 @@ class VideoPlayVC: BBViewController {
         commentTableView = UITableView(frame: CGRect(x: 0, y: 240, width: Common.screenWidth, height: Common.screenHeight - 240 ))
         commentTableView.delegate = self
         commentTableView.dataSource = self
-        
         commentTableView.showsVerticalScrollIndicator = false
-        
         commentTableView.register(UINib.init(nibName: "CommentCell", bundle: nil), forCellReuseIdentifier: "cell")
-        //        commentTableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "cell")
         commentTableView.separatorStyle = .none
-        
-        //        commentTableView.rowHeight = UITableViewAutomaticDimension
         commentTableView.estimatedRowHeight = 200
-        
         
         let tableTopView = Bundle.main.loadNibNamed("VideoPlayTopView", owner: nil, options: nil)?.first as! VideoPlayTopView
         commentTableView.tableHeaderView = tableTopView
         
         view.addSubview(commentTableView)
         view.bringSubview(toFront: addWatchView)
-        
-        //        scrollView.addSubview(commentTableView)
-        //        scrollView.contentSize = CGSize.init(width: Common.screenWidth, height: 1200)
-        
     }
     
     
     deinit {
-        //        NotificationCenter.default.removeObserver(self)
-        
         print("VideoPlayVC release")
     }
     
@@ -287,10 +210,6 @@ extension VideoPlayVC : UITableViewDataSource,UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CommentCell
         cell.contentTextLabel.attributedText = Common.getAttributeStringWithString(testStr[indexPath.row], lineSpace: 2)
         cell.delegate = self
-        
-        //        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        //        return cell
-        
         return cell
     }
     
@@ -298,22 +217,16 @@ extension VideoPlayVC : UITableViewDataSource,UITableViewDelegate {
 
 extension VideoPlayVC : tapAvatarDelegate,ActionSheetViewDelegate {
     
-    
-    
     func actionSheetAndClickButtonAtIndex(actionSheet: ActionSheetView, buttonIndex: NSInteger) {
         print(buttonIndex)
         
         if inTF == nil {
-            
             inTF = Bundle.main.loadNibNamed("inTF", owner: nil, options: nil)?.first as! inTF
-            //
             inTF.delegate = self
             inTF.frame = CGRect.init(x: 0, y: Common.screenHeight, width: Common.screenWidth, height: 50)
             inTF.textF.placeholder = "回复" + currentName
-            
             let window = UIApplication.shared.keyWindow
             window?.addSubview(inTF)
-            
         }
         
         inTF.textF.becomeFirstResponder()
@@ -343,18 +256,11 @@ extension VideoPlayVC : sendBtnClickDelegate {
     
     // 回复评论
     func btnClick(text: String) {
-        
         let string = "我 回复 " + currentName + ":" + text
-        
         let attrstring:NSMutableAttributedString = NSMutableAttributedString(string:string)
-        
         let range = attrstring.string.range(of: "回复")
         let nsrange = attrstring.string.nsRange(from: range!)
-        
         attrstring.addAttribute(.foregroundColor, value: UIColor.red, range: nsrange!)
-        
-        //        testStr.append(att)
-        
         testStr.append("我 回复 " + currentName + ":" + text)
         commentTableView.reloadData()
         showRightWithTitle(title: "发送成功", autoCloseTime: 0.5)
@@ -362,32 +268,8 @@ extension VideoPlayVC : sendBtnClickDelegate {
     }
     
 }
-
-//extension VideoPlayVC: MHAVPlayerSDKDelegate {
-//
-//    func mhGoBack() {
-//
-//        print("goBack")
-//
-//        //            mhPlayer?.mhStopPlayer()
-//        //            self.dismiss(animated: true, completion: nil)
-//    }
-//
-//    func mhNextPlayer() {
-//        mhPlayer?.mhPlayerURL = "http://120.25.226.186:32812/resources/videos/minion_01.mp4"
-//        mhPlayer?.mhPlayerTitle = "第二部";
-//    }
-//
-//}
-
-
 extension VideoPlayVC  {
-    
-    //    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    //        view.endEditing(true)
-    //    }
-    //
-    @objc func keyboardWillHiden(_ notification: Notification) {
+        @objc func keyboardWillHiden(_ notification: Notification) {
         
         let info = notification.userInfo
         let kbRect = (info?[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
@@ -435,11 +317,6 @@ extension VideoPlayVC  {
     }
     
     @objc private func tapBlackView(){
-        
         inTF.textF.resignFirstResponder()
-        
     }
-    
-    
-    
 }

@@ -28,7 +28,7 @@ class ColumnCollectionCell: UICollectionViewCell {
         titleLabel = UILabel.init(frame: CGRect.init(x: Common.screenWidth / 4 - 40, y: 80, width: 80, height: 20))
         titleLabel.textAlignment = .center
         titleLabel.textColor = UIColor.white
-        titleLabel.text = "教育"
+        titleLabel.text = "社区"
         backImgView.addSubview(titleLabel)
         
     }

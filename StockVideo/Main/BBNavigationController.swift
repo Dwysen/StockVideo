@@ -33,33 +33,33 @@ class BBNavigationController: JPNavigationController {
 //
 //    }
     
-//    override var shouldAutorotate : Bool {
-//        if self.topViewController != nil{
-//            return self.topViewController!.shouldAutorotate
-//        }else{
-//            return  super.shouldAutorotate
-//        }
-//    }
-//    
-//    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
-//        if self.topViewController != nil{
-//            return self.topViewController!.supportedInterfaceOrientations
-//        }else{
-//            return  super.supportedInterfaceOrientations
-//        }
-//    }
-//    
-//    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation{
-//        if self.topViewController != nil{
-//            return self.topViewController!.preferredInterfaceOrientationForPresentation
-//        }else{
-//            return  super.preferredInterfaceOrientationForPresentation
-//        }
-//    }
-//    
-//    override var preferredStatusBarStyle : UIStatusBarStyle {
-//        return self.topViewController!.preferredStatusBarStyle
-//    }
+    override var shouldAutorotate : Bool {
+        if self.topViewController != nil{
+            return self.topViewController!.shouldAutorotate
+        }else{
+            return  super.shouldAutorotate
+        }
+    }
+    
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        if self.topViewController != nil{
+            return self.topViewController!.supportedInterfaceOrientations
+        }else{
+            return  super.supportedInterfaceOrientations
+        }
+    }
+    
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation{
+        if self.topViewController != nil{
+            return self.topViewController!.preferredInterfaceOrientationForPresentation
+        }else{
+            return  super.preferredInterfaceOrientationForPresentation
+        }
+    }
+    
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return self.topViewController!.preferredStatusBarStyle
+    }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         /// 这时push进来的控制器viewController，不是第一个子控制器（不是根控制器）
