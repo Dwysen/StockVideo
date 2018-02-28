@@ -10,8 +10,4 @@ import UIKit
 
 class ResetPageControl: UIPageControl{
  
-
-    
-    
-
 }

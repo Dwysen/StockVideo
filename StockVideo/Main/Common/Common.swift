@@ -95,7 +95,6 @@ struct Common {
         
     }
     
-    
     static func autoLabelHeight(with text:String , labelWidth: CGFloat ,attributes : [NSAttributedStringKey : Any]) -> CGFloat{
         var size = CGRect()
         let size2 = CGSize(width: labelWidth, height: 0)//设置label的最大宽度

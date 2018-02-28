@@ -119,7 +119,6 @@ class DetailViewController: UIViewController {
             imgBgView.addSubview(imgView)
             imgView.kf.setImage(with: URL.init(string: imgArr[i]),placeholder:UIImage.init(named: "test"))
             
-            
         }
     
     }
@@ -169,7 +168,7 @@ extension DetailViewController : HJImageBrowserDelegate {
     
     func getTheThumbnailImage(_ indexRow: Int) -> UIImage {
         
-        print(indexRow)
+//        print(indexRow)
         
         let selectetView = imgBgView.viewWithTag(indexRow + 1000) as! ImageView
         

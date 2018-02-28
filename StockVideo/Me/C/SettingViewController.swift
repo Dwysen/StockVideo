@@ -28,11 +28,8 @@ class SettingViewController: UIViewController {
         let isLogin = UserDefaults.standard.object(forKey: "isLogin") as? Bool
         
         if isLogin != nil{
-            
             self.setupQuitBtn()
-            
         }
-        
     }
     
     private func setupTableView(){
@@ -68,12 +65,10 @@ class SettingViewController: UIViewController {
         
     }
     
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
-    
     
     func fileSizeOfCache()-> Int {
         // 取出cache文件夹目录 缓存文件都在这个目录下
@@ -99,7 +94,6 @@ class SettingViewController: UIViewController {
         let mm = size / 1024 / 1024
         return mm
     }
-    
     
     func clearCache() {
         // 取出cache文件夹目录 缓存文件都在这个目录下
@@ -247,6 +241,7 @@ extension SettingViewController:UITableViewDataSource,UITableViewDelegate{
             }
             
         case 1:break
+            
 //            HXNetwork.shareNetworkTool.getVersion { (softUrl, versionCode) in
 //
 //                print(versionCode)
@@ -282,7 +277,6 @@ extension SettingViewController:UITableViewDataSource,UITableViewDelegate{
                 
                 tableView.reloadData()
                 
-                
             } else {
                 
 //                let vc = InformationHDetailViewController()
@@ -290,13 +284,9 @@ extension SettingViewController:UITableViewDataSource,UITableViewDelegate{
 //                vc.bannerLink = Common.AboutUsUrl
 //                vc.title = "关于我们"
 //                navigationController?.pushViewController(vc, animated: true)
-                
-                
-            }
             
+            }
         }
-        
     }
-    
 }
 

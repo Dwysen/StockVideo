@@ -14,7 +14,6 @@ class HeadView: UIView {
         super.init(frame: frame)
         backgroundColor = UIColor.white
         
-        
     }
     
     convenience init(frame:CGRect,imgName:String) {

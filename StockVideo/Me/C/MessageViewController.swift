@@ -20,9 +20,7 @@ class MessageViewController: UIViewController {
         title = "消息"
         
         setupTableView()
-        
-
-        // Do any additional setup after loading the view.
+    
     }
     
     private func setupTableView(){

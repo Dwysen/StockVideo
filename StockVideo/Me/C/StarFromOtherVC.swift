@@ -44,6 +44,5 @@ extension StarFromOtherVC : UITableViewDelegate,UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! StarFromOtherCell
         return cell
     }
-    
-    
+
 }

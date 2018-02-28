@@ -15,7 +15,7 @@ class MeViewController: UIViewController {
     @IBOutlet weak var avatarImgView: UIImageView!
     @IBOutlet weak var myWatchView: UIView!
     
-    private var titleText = ["我的消息","我的积分","观看记录"]
+    private var titleText = ["我的消息","我的积分","观看记录","查看行情"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,7 +86,7 @@ class MeViewController: UIViewController {
 extension MeViewController : UITableViewDataSource,UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -98,8 +98,20 @@ extension MeViewController : UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = MessageViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        
+        if indexPath.row == 3 {
+            
+            let vc = MarketViewController()
+            navigationController?.pushViewController(vc, animated: true)
+            
+        } else {
+          
+            let vc = MessageViewController()
+            navigationController?.pushViewController(vc, animated: true)
+            
+        }
+        
+   
     }
     
 }

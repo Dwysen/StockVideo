@@ -368,10 +368,8 @@ class HomeViewController: BaseViewController {
         let vc = VideoPlayVC()
         vc.image = currentImg
         navigationController?.pushViewController(vc, animated: true)
-        
         // gcdTimer.destroy()
         // setTimer(delay: 6)
-        
     }
     
     @objc fileprivate func tapHot(sender:UITapGestureRecognizer){
@@ -473,7 +471,7 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
                 let vc = JPVideoPlayerDemoVC_home()
                 navigationController?.pushViewController(vc, animated: true)
-//        
+//
 //        let vc = SomeoneViewController()
 //        navigationController?.pushViewController(vc, animated: true)
     }

@@ -15,8 +15,6 @@ let kSCREEN_WIDTH = UIScreen.main.bounds.size.width
 let kSCREEN_HEIGHT = UIScreen.main.bounds.size.height
 let kSCREEN_SIZE = UIScreen.main.bounds.size
 
-
-//这个参数，是我们UI给图的时候，会给一个px 我懒得换算，直接写了一个这个东西
 let kSCREEN_SCALE = kSCREEN_WIDTH/750
 
 

@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class ColumnViewController: UIViewController {
 
     var collectionView : UICollectionView!
@@ -18,7 +17,6 @@ class ColumnViewController: UIViewController {
 
         setupCollectionView()
 
-    
     }
 
     private func setupCollectionView(){
@@ -53,8 +51,6 @@ extension ColumnViewController:UICollectionViewDataSource,UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ColumnCollectionCell
-        
-
         return cell
         
     }
